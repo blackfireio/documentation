@@ -114,4 +114,4 @@ three services:
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-5icUW9pUH8?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-5icUW9pUH8?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
