@@ -23,7 +23,7 @@ profiling.
 
 .. raw:: html
 
-    <iframe width=700 height=394 src="https://www.youtube-nocookie.com/embed/bS4dzuzkir0?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allowfullscreen></iframe>
+    <iframe width=700 height=394 src="https://www.youtube-nocookie.com/embed/bS4dzuzkir0?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 
 Monitoring
 ----------
