@@ -2,7 +2,6 @@ Glossary
 ========
 
 .. glossary::
-  :sorted:
 
   Call-Graph
     A call-graph is a relational visualization method. Blackfire profiles are

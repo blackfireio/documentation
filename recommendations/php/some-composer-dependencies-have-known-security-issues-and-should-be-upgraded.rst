@@ -11,5 +11,3 @@ these dependencies.
 - list all outdated dependencies with ``composer outdated`` (`composer outdated documentation <https://getcomposer.org/doc/03-cli.md#outdated>`_)
 - Composer ``v2.4+`` has a ``composer audit`` command to help you list and identify security
   vulnerability (`composer audit documentation <https://getcomposer.org/doc/03-cli.md#audit>`_)
-
-{% endverbatim %}{{ vulnerabilities | default() | raw }}{% verbatim %}

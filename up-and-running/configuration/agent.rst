@@ -23,8 +23,6 @@ platform:
 The most important entries are ``server-id`` and ``server-token``. Here is a
 typical configuration for the Agent that you can use as a template:
 
-:include_twig:`configuration_reference_agent`
-
 .. code-block:: ini
 
     [blackfire]

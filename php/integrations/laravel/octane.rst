@@ -1,5 +1,3 @@
-:status: beta
-
 Laravel Octane [language: PHP][status: beta]
 ============================================
 

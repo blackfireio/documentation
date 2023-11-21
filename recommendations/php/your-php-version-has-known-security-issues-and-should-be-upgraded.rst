@@ -8,6 +8,4 @@ strongly recommend that you upgrade to the most recent and secure PHP version.
 **Recommended action:** Update your application to use a supported and secure version
 of PHP. Check the `official PHP website`_ for the latest stable releases.
 
-{% endverbatim %}{{ vulnerabilities | default() | raw }}{% verbatim %}
-
 .. _`official PHP website`: https://www.php.net/
