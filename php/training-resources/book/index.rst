@@ -37,11 +37,3 @@ Ready? Start reading `chapter 1 » <01-introduction>`_.
     22-php-internals
     23-continuous-integration
     24-another-look
-
-.. sidebar:: Getting a hard copy of the book
-
-    If you attend `conferences sponsored by Blackfire <https://blog.blackfire.io/events>`_, we often give away some
-    hard copies of the book.
-
-    Else, you can buy a hard copy from `Amazon <https://www.amazon.com/exec/obidos/ASIN/2918390364>`_
-    and `Barnes and Noble <https://www.barnesandnoble.com/w/php-code-performance-explained-fabien-potencier/1129944407>`_.
