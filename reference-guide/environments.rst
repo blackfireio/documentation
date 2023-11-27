@@ -70,6 +70,8 @@ And they cannot:
 Example Use Case: Monitoring Production
 ---------------------------------------
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/px_kVnbzNk8?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+.. include-twig:: `youtube-iframe`
+    :title: monitoring-production
+    :src: https://www.youtube-nocookie.com/embed/px_kVnbzNk8?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 560px
+    :height: 315px

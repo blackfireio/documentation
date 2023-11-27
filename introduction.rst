@@ -21,9 +21,11 @@ insights, which help you fix issues.
 Blackfire supports PHP and Python monitoring and profiling. It also supports Go
 profiling.
 
-.. raw:: html
-
-    <iframe width=700 height=394 src="https://www.youtube-nocookie.com/embed/bS4dzuzkir0?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/bS4dzuzkir0?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
 
 Monitoring
 ----------
