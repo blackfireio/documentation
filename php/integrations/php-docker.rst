@@ -12,7 +12,7 @@ example of a ``Dockerfile`` based on the official Docker PHP image:
     Choose the snippet corresponding to the base system you are using
     (``Linux`` or ``Alpine``).
 
-:include_twig:`docker_php_probe`
+.. include-twig:: `docker_php_probe`
 
 .. note:: 
 
@@ -54,7 +54,7 @@ Docker Compose
 If you use ``docker compose``, you can connect your ``PHP`` container and the
 agent using the following snippet:
 
-:include_twig:`docker_compose_context`
+.. include-twig:: `docker_compose_context`
 
 Using the Client for CLI Profiling
 -----------------------------------

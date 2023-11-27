@@ -17,7 +17,7 @@ Setting-Up Blackfire Credentials In Your Project
 Set the Blackfire **server credentials** as environment variables (run this
 command from the root directory of your project):
 
-:include_twig:`platformsh_configuration`
+.. include-twig:: `platformsh_configuration`
 
 .. note::
 
@@ -32,7 +32,7 @@ The **client credentials** are required to :doc:`trigger profiles with the CLI
 In this case, set the **client credentials** as environment variables (run this
 command from the root directory of your project):
 
-:include_twig:`platformsh_client_configuration`
+.. include-twig:: `platformsh_client_configuration`
 
 .. include:: ../../profiling-cookbooks/_cli-profiling-warning.rst
 
@@ -88,7 +88,7 @@ To do so, follow these steps:
 
 #. Run the following command:
 
-:include_twig:`platformsh_hook`
+.. include-twig:: `platformsh_hook`
 
 The command asks several questions. Hit enter to accept the default for all of
 them. If you get a permission error, ask a project admin to upgrade your account

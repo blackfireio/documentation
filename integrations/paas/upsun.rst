@@ -29,7 +29,7 @@ HTTP requests can be profiled without any extra configuration, but the
 Set the **client credentials** as environment variables (run this
 command from the root directory of your project):
 
-:include_twig:`upsun_client_configuration`
+.. include-twig:: `upsun_client_configuration`
 
 .. include:: ../../profiling-cookbooks/_cli-profiling-warning-simplified.rst
 
@@ -48,7 +48,7 @@ To do so, follow these steps:
 
 #. Run the following command:
 
-:include_twig:`upsun_hook`
+.. include-twig:: `upsun_hook`
 
 The command asks several questions. Hit enter to accept the default for all of
 them. If you get a permission error, ask a project admin to upgrade your account

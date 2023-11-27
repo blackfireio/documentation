@@ -2,7 +2,7 @@
 
   Sets the client ID and client Token used to authenticate with Blackfire.
 
-  :include_twig:`client_credentials`
+  .. include-twig:: `client_credentials`
 
 - ``BLACKFIRE_LOG_LEVEL``
 

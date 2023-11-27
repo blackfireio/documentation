@@ -17,14 +17,14 @@ SQL queries in an assertion, you would write ``metrics.sql.queries.count <= 10``
 
 The available dimensions for metrics are the following ones.
 
-:include_twig:`dimensions`
+.. include-twig:: `dimensions`
 
 .. _metrics-built-in-metrics:
 
 Built-in Metrics
 ----------------
 
-:include_twig:`builtin_metrics`
+.. include-twig:: `builtin_metrics`
 
 .. _metrics-custom-metrics:
 

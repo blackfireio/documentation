@@ -8,7 +8,7 @@ from our recipes to install the Client and the Probe.
 To ease the process of using Blackfire with Docker, define these environment
 variables on the Docker **host** machine:
 
-:include_twig:`docker_credentials`
+.. include-twig:: `docker_credentials`
 
 From now on, we assume that these environment variables are set up properly.
 
@@ -18,7 +18,7 @@ Docker Compose
 If you use ``docker compose``, you can declare the Blackfire agent as a service.
 To do so, use the following snippet:
 
-:include_twig:`docker_compose`
+.. include-twig:: `docker_compose`
 
 .. _docker-http-profiling:
 
@@ -69,7 +69,7 @@ Debugging the Agent
 By default, the agent is quiet and does not produce logs. To debug problems,
 increase the log verbosity by setting ``BLACKFIRE_LOG_LEVEL`` to ``4``:
 
-:include_twig:`docker_compose_level4`
+.. include-twig:: `docker_compose_level4`
 
 You may then tail the logs with ``docker compose``:
 

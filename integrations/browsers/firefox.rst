@@ -8,7 +8,7 @@ Chrome </integrations/browsers/chrome>`.
 Installing the Firefox Extension
 --------------------------------
 
-:include_twig:`companion_firefox_install`
+.. include-twig:: `companion_firefox_install`
 
 Upgrading the Extension
 -----------------------

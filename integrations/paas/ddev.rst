@@ -17,13 +17,13 @@ Configuration
 The Blackfire probe is installed by default and the agent is added as an
 additional service. It can be configured globally with this command:
 
-:include_twig:`ddev_credentials`
+.. include-twig:: `ddev_credentials`
 
 The credentials can be configured for a specific project by updating its
 `DDEV config file <https://ddev.readthedocs.io/en/latest/users/configuration/config/>`_
 located in ``.ddev/config.yaml``:
 
-:include_twig:`ddev_credentials_config`
+.. include-twig:: `ddev_credentials_config`
 
 Restart DDEV
 ------------
@@ -102,4 +102,4 @@ enriching its standard behavior. Let's setup a ``ddev player`` command for a
 project by creating it configuration file ``.ddev/commands/host/player`` with this
 content:
 
-:include_twig:`blackfire_player_ddev`
+.. include-twig:: `blackfire_player_ddev`

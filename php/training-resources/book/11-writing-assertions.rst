@@ -84,7 +84,7 @@ cross or green tick will immediately tell you if any assertions failed.
 To writing assertions on the main profile costs, add a valid dimension name to
 the ``main.`` prefix:
 
-:include_twig:`dimensions`
+.. include-twig:: `dimensions`
 
 Testing Nodes
 -------------

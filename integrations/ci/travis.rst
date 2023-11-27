@@ -25,9 +25,9 @@ commit in your repository**:
 
 Replace the placeholders above with your client and server credentials:
 
-:include_twig:`client_credentials`
+.. include-twig:: `client_credentials`
 
-:include_twig:`server_credentials`
+.. include-twig:: `server_credentials`
 
 Then, encrypt the file and commit the encrypted file
 (``.blackfire.travis.ini.enc``) to the GitHub repository (replace

@@ -31,7 +31,7 @@ Configuration
 
 1. Configure Blackfire within Lando by setting up a service:
 
-:include_twig:`lando_credentials`
+.. include-twig:: `lando_credentials`
 
 2. Rebuild Lando:
 

@@ -36,7 +36,7 @@ Usage
 To run a scenario located in the ``my-scenario.bkf`` file, run the following
 command:
 
-:include_twig:`blackfire_player`
+.. include-twig:: `blackfire_player`
 
 The ``pwd`` part is the local working directory (we are using the current
 directory here) and it is mapped to the ``/app`` path in the Docker container.
@@ -58,7 +58,7 @@ convenient report.
     (that you can store in a ``.bashrc`` or ``.zshrc`` file depending on your
     shell):
 
-    :include_twig:`blackfire_player_alias`
+    .. include-twig:: `blackfire_player_alias`
 
     Don't forget to restart your terminal for it to take effect. You can then
     use ``blackfire-player`` as if it was the binary itself:

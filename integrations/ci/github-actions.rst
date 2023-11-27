@@ -28,12 +28,12 @@ variables in your project settings
 
 Define secrets for your **Client** credentials:
 
-:include_twig:`client_credentials`
+.. include-twig:: `client_credentials`
 
 Define secrets for the **Server** credentials. Select the Blackfire
 environment which you want to use for your GitHub Actions-triggered tests:
 
-:include_twig:`server_credentials`
+.. include-twig:: `server_credentials`
 
 Configuring your Job
 --------------------

@@ -73,7 +73,7 @@ in assertions by default and :ref:`how to create your own
 
 The available dimensions for metrics are the following ones:
 
-:include_twig:`dimensions`
+.. include-twig:: `dimensions`
 
 .. _units:
 

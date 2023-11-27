@@ -20,11 +20,11 @@ your ``blackfire-player`` command. You may use either the environment name or it
     The :doc:`Blackfire Player </builds-cookbooks/player>` documentation provides
     complete information on its configuration.
 
-    :include_twig:`blackfire_player_with_env`
+    .. include-twig:: `blackfire_player_with_env`
 
     Or, using a :ref:`fully configured alias <player-alias>`:
 
-    :include_twig:`blackfire_player_with_env_alias`
+    .. include-twig:: `blackfire_player_with_env_alias`
 
 Builds
 ------

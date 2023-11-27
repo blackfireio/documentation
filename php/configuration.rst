@@ -125,7 +125,7 @@ configuration via the ``http``, ``server``, and ``location`` sections. For more
 information, see the `Nginx documentation
 <https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_param>`_.
 
-:include_twig:`php_nginx`
+.. include-twig:: `php_nginx`
 
 .. note::
 
@@ -153,7 +153,7 @@ virtual-host configuration or via a ``.htaccess`` file.
 Use the following example to adjust your configuration. For more information, see
 the `PHP documentation <https://www.php.net/manual/en/configuration.changes.php>`_.
 
-:include_twig:`php_apache`
+.. include-twig:: `php_apache`
 
 PHP-FPM Pool Configuration Settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -163,7 +163,7 @@ You can override the default credentials of the Probe per PHP-FPM pool. Open the
 reference or the `FPM documentation
 <https://www.php.net/manual/en/install.fpm.configuration.php>`_.
 
-:include_twig:`php_fpm`
+.. include-twig:: `php_fpm`
 
 .. note::
     :class: doc-cta

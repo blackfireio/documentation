@@ -32,7 +32,7 @@ PHP extension in your ``.magento.app.yaml`` project file:
 Set the Blackfire **server credentials** as environment variables, for each
 branch on which you want to configure Blackfire.
 
-:include_twig:`magentocloud_configuration`
+.. include-twig:: `magentocloud_configuration`
 
 .. _trigger-magentocloud:
 
@@ -48,7 +48,7 @@ Follow these steps to enable Blackfire builds on each of your **Adobe Commerce
 Cloud environments** each time a branch is deployed (after a ``push``, ``merge``,
 or ``redeploy`` event):
 
-:include_twig:`magentocloud_hook`
+.. include-twig:: `magentocloud_hook`
 
 The command asks several questions. Hit the ``Enter`` key to accept the default
 for all of them. If you get a permission error, ask a project admin to

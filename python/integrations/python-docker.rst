@@ -41,7 +41,7 @@ Docker Compose
 If you use ``docker compose``, you can connect your ``Python`` container and the
 agent using the following snippet:
 
-:include_twig:`docker_compose_context`
+.. include-twig:: `docker_compose_context`
 
 Using the Client for CLI Profiling
 -----------------------------------

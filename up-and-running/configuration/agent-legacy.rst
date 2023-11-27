@@ -136,7 +136,7 @@ The Agent can also be configured using environment variables:
 
   Sets the server id and server token used to authenticate with Blackfire
 
-  :include_twig:`server_credentials`
+  .. include-twig:: `server_credentials`
 
 - ``BLACKFIRE_LOG_LEVEL``
 

@@ -9,4 +9,4 @@ the impact of an action, like a deployment.
 It is possible to mark events in the Monitoring timeline using the following curl
 command:
 
-:include_twig:`apm_event_credentials`
+.. include-twig:: `apm_event_credentials`

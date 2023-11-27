@@ -12,7 +12,7 @@ Install
 
 Configure the Blackfire credentials from your project root directory:
 
-:include_twig:`heroku_configuration`
+.. include-twig:: `heroku_configuration`
 
 .. note::
     You may use your Blackfire *personal server credentials* or

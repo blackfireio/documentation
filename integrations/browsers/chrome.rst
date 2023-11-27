@@ -8,7 +8,7 @@ Using a Web Browser is the easiest way to :doc:`profile web applications
 Installing the Chrome Extension
 -------------------------------
 
-:include_twig:`companion_chrome_install`
+.. include-twig:: `companion_chrome_install`
 
 Upgrading the Extension
 -----------------------
