@@ -135,8 +135,8 @@ execution (destructors behavior for instance or insights about PHP garbage
 collector behavior).
 
 Blackfire is supported, packaged, and maintained for `many different platforms
-<https://blackfire.io/docs/up-and-running/installation>`_ and `configuration
-management tools <https://blackfire.io/docs/integrations/index>`_.
+<https://docs.blackfire.io/up-and-running/installation>`_ and `configuration
+management tools <https://docs.blackfire.io/integrations/index>`_.
 
 Xhprof provides a minimal web interface with large tables of numbers and static
 image call-graphs that are hard to navigate and most of the time impossible

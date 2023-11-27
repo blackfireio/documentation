@@ -769,7 +769,7 @@ Blackfire Profiler integration
 
 Blackfire Player integrates seamlessly with Blackfire Profiler.
 Read out `the dedicated documentation to learn more about Blackfire
-Profiler integration <https://blackfire.io/docs/integrations/blackfire-player>`_.
+Profiler integration <https://docs.blackfire.io/integrations/blackfire-player>`_.
 
 .. _scraping-values:
 

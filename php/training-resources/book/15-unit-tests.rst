@@ -176,7 +176,7 @@ Conclusion
 ----------
 
 Read our `PHPUnit integration documentation
-<https://blackfire.io/docs/php/integrations/phpunit>`_ for more tips on how to
+<https://docs.blackfire.io/php/integrations/phpunit>`_ for more tips on how to
 leverage Blackfire in PHPUnit test suites.
 
 **Blackfire lets you test your code's behavior without the need for mocks**.

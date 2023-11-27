@@ -74,14 +74,14 @@ true``) and to generate 10 requests (``samples: 10``) for the profile.
 .. note::
 
     Blackfire scenarios have more options as described in the `scenarios
-    documentation <https://blackfire.io/docs/builds-cookbooks/scenarios>`_.
+    documentation <https://docs.blackfire.io/builds-cookbooks/scenarios>`_.
 
 Triggering Scenarios
 --------------------
 
 Now that the Finding Bigfoot scenarios are defined, we need a way to trigger
 them. Blackfire has `several ways to trigger them
-<https://blackfire.io/docs/builds-cookbooks/index>`_, but the
+<https://docs.blackfire.io/builds-cookbooks/index>`_, but the
 most simple one is to use a **periodic build**.
 
 Periodic Builds
@@ -108,7 +108,7 @@ Webhook
 .. note::
 
     The Production Edition of Blackfire offers all `ways to trigger them
-    <https://blackfire.io/docs/builds-cookbooks/index>`_, such
+    <https://docs.blackfire.io/builds-cookbooks/index>`_, such
     as the webhook.
 
 Go to the ``Builds`` section of your environment and click the "Start
@@ -207,7 +207,7 @@ degrades.
 
 Blackfire notification channels alert you when a build fails or when a
 project's status changes. Blackfire comes with many `built-in notification
-channels <https://blackfire.io/docs/builds-cookbooks/notification-channels>`_,
+channels <https://docs.blackfire.io/builds-cookbooks/notification-channels>`_,
 but the simplest one is the **email notification channel**.
 
 On the dashboard Builds view, add an email notification channel.
@@ -229,8 +229,8 @@ the email notification channel to receive a notification whenever a build fails.
 
 For production, configure the Blackfire "Periodic builds" to automatically
 profile your application on a periodic basis and use the `Slack
-<https://blackfire.io/docs/integrations/notifiers/slack>`_ or `Microsoft
-Teams <https://blackfire.io/docs/integrations/notifiers/microsoft-teams>`_
+<https://docs.blackfire.io/integrations/notifiers/slack>`_ or `Microsoft
+Teams <https://docs.blackfire.io/integrations/notifiers/microsoft-teams>`_
 notification channel to get fast feedback.
 
 But there is more. Builds are also available in the SDK, which opens the door to

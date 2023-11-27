@@ -12,7 +12,7 @@ Load-testing tools work by simulating user sessions browsing your application
 for a period of time. These statistics can provide some insight, but they
 cannot explain why your code becomes slower when it is under stress. One way to
 get more information is to run some Blackfire scenarios (via `Blackfire player
-<https://blackfire.io/docs/builds-cookbooks/player>`_) while the load is high
+<https://docs.blackfire.io/builds-cookbooks/player>`_) while the load is high
 and compare these profiles with ones generated under negligible load. The
 comparison graph should highlight which parts of the code degrade under stress.
 

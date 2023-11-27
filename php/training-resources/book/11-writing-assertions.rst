@@ -152,7 +152,7 @@ an aggregation of nodes:
 .. note::
 
     The format of metric definitions is defined in the `metrics
-    <https://blackfire.io/docs/testing-cookbooks/metrics>`_ documentation.
+    <https://docs.blackfire.io/testing-cookbooks/metrics>`_ documentation.
 
 Testing Comparisons
 -------------------
@@ -289,7 +289,7 @@ metrics!
 .. note::
 
     The format of metric definitions is defined in the
-    `https://blackfire.io/docs/testing-cookbooks/metrics </testing-cookbooks/metrics>`_
+    `https://docs.blackfire.io/testing-cookbooks/metrics </testing-cookbooks/metrics>`_
     documentation.
 
 Testing CLI Commands
@@ -350,7 +350,7 @@ Conclusion
 ----------
 
 Blackfire tests use a rich `expression language
-<https://blackfire.io/docs/testing-cookbooks/assertions>`_ that allows
+<https://docs.blackfire.io/testing-cookbooks/assertions>`_ that allows
 developers to express any kind of assertion. Tests can be used for:
 
 * defining a project performance reference;
