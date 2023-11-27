@@ -72,6 +72,8 @@ Develop on GitHub, Deploy to Upsun and Test on Blackfire
 Here is a full video tutorial to get you started with the integration of the
 three services:
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-5icUW9pUH8?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+.. include-twig:: `youtube-iframe`
+    :title: upsun-integration-tutorial
+    :src: https://www.youtube-nocookie.com/embed/-5icUW9pUH8?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 560px
+    :height: 315px

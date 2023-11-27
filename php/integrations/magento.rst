@@ -29,9 +29,11 @@ The following video shows an example workflow when integrating GitHub, Adobe
 Commerce Cloud, and Blackfire to automatically check the performance of your
 code at each commit.
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jAFXh7I9Dns?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+.. include-twig:: `youtube-iframe`
+    :title: magento-integration
+    :src: https://www.youtube-nocookie.com/embed/jAFXh7I9Dns?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 560px
+    :height: 315px
 
 Magento On Premise
 ------------------

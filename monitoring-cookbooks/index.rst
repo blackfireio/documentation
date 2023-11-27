@@ -16,9 +16,11 @@ Blackfire Monitoring is fully integrated with Blackfire Profiler, enabling
 :doc:`automated profiling </monitoring-cookbooks/automatic-profiling>`, and
 providing enhanced :doc:`Health Reports </monitoring-cookbooks/health-report>`.
 
-.. raw:: html
-
-    <iframe width="700" height="394" src="https://www.youtube-nocookie.com/embed/snJvEixS4Ro?rel=0&showinfo=0&modestbranding=1&autoplay=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+.. include-twig:: `youtube-iframe`
+    :title: blackfire-monitoring-demo
+    :src: https://www.youtube-nocookie.com/embed/snJvEixS4Ro?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
 
 Read More on Monitoring
 -----------------------
