@@ -419,7 +419,7 @@ features:
 * etc.
 
 You can read Blackfire Player's `extensive documentation
-<https://blackfire.io/docs/builds-cookbooks/player>`_ to learn more about all
+<https://docs.blackfire.io/builds-cookbooks/player>`_ to learn more about all
 its features.
 
 Similar to Blackfire Player, there are many other Open-Source libraries that

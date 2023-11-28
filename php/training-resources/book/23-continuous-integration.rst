@@ -152,12 +152,12 @@ status associated with the pull request:
 .. note::
 
     If you are a **Platform.sh** user, follow the `Platform.sh instructions
-    <https://blackfire.io/docs/integrations/paas/platformsh>`_ to tightly
+    <https://docs.blackfire.io/integrations/paas/platformsh>`_ to tightly
     integrate Platform.sh auto-deployment of pull requests, automatic Blackfire
     scenarios triggers, and GitHub statuses on pull requests.
 
     If you are a **Adobe Commerce Cloud** user, follow the `Adobe Commerce Cloud
-    instructions <https://blackfire.io/docs/php/integrations/magento>`_
+    instructions <https://docs.blackfire.io/php/integrations/magento>`_
     to tightly integrate Adobe Commerce Cloud auto-deployment of pull requests,
     automatic Blackfire scenarios triggers, and GitHub statuses on pull
     requests.

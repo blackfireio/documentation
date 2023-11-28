@@ -66,13 +66,13 @@ Installation on Staging, Testing, and Production
 When deploying code to testing, staging, or production environments, you can
 use the same installation procedure as in the previous section, or use
 Blackfire's integrations with `Chef
-<https://blackfire.io/docs/integrations/chef>`_, `Puppet, Ansible
+<https://docs.blackfire.io/integrations/chef>`_, `Puppet, Ansible
 <https://blog.blackfire.io/ansible-puppet-support.html>`_, or `Docker
-<https://blackfire.io/docs/up-and-running/docker>`_.
+<https://docs.blackfire.io/up-and-running/docker>`_.
 
 Blackfire is also pre-installed on some platforms, such as `Adobe Commerce
-Cloud <https://blackfire.io/docs/php/integrations/magento>`_ or `Platform.sh
-<https://blackfire.io/docs/integrations/paas/platformsh>`_. The configuration
+Cloud <https://docs.blackfire.io/php/integrations/magento>`_ or `Platform.sh
+<https://docs.blackfire.io/integrations/paas/platformsh>`_. The configuration
 procedure might be a little different, please make sure to refer to those
 platform's documentation.
 
@@ -82,8 +82,8 @@ Next Steps
 You are now ready to profile your very own projects!
 
 First, validate your installation by generating a profile from a browser
-extension (`Firefox <https://blackfire.io/docs/integrations/browsers/firefox>`_
-and `Google Chrome <https://blackfire.io/docs/integrations/browsers/chrome>`_).
+extension (`Firefox <https://docs.blackfire.io/integrations/browsers/firefox>`_
+and `Google Chrome <https://docs.blackfire.io/integrations/browsers/chrome>`_).
 If you have any problems, read our `troubleshooting
 <https://support.blackfire.platform.sh/hc/en-us/sections/4792498935058-Troubleshooting>`_
 guide or :route:`contact our support <contact-us>`.

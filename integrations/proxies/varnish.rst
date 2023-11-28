@@ -15,7 +15,7 @@ VCL Sample
        "x.y.z.w";
 
        # Add the Blackfire.io IPs when using builds:
-       # Ref https://blackfire.io/docs/reference-guide/faq#how-should-i-configure-my-firewall-to-let-blackfire-access-my-apps
+       # Ref https://docs.blackfire.io/reference-guide/faq#how-should-i-configure-my-firewall-to-let-blackfire-access-my-apps
        "46.51.168.2";
        "54.75.240.245";
     }

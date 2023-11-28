@@ -205,7 +205,7 @@ your API calls, but the general idea looks like this:
 .. tip::
 
     If you are using Guzzle, you can simplify the code as Blackfire provides a
-    `native integration <https://blackfire.io/docs/php/integrations/guzzle>`_:
+    `native integration <https://docs.blackfire.io/php/integrations/guzzle>`_:
 
     .. code-block:: php
 

@@ -199,7 +199,7 @@ as a phar, and execute it on the Twig source code like this:
     Blackfire run completed
     Graph                 https://blackfire.io/profiles/61cb30d1-c025-4f96-8a66-ffd2766e47ce/graph
     Timeline              https://blackfire.io/profiles/61cb30d1-c025-4f96-8a66-ffd2766e47ce/graph?settings%5Bdimension%5D=timeline
-    No tests!             Create some now https://blackfire.io/docs/testing-cookbooks/tests
+    No tests!             Create some now https://docs.blackfire.io/testing-cookbooks/tests
     12 recommendations    https://blackfire.io/profiles/61cb30d1-c025-4f96-8a66-ffd2766e47ce/graph?settings%5BtabPane%5D=recommendations
 
     Wall Time     17.6s
@@ -464,9 +464,9 @@ Conclusion
 
 The Blackfire command line tool is the best way to profile any code and do some
 basic automation. The `profiling CLI commands
-<https://blackfire.io/docs/profiling-cookbooks/profiling-cli>`_ and
+<https://docs.blackfire.io/profiling-cookbooks/profiling-cli>`_ and
 `profiling HTTP requests
-<https://blackfire.io/docs/profiling-cookbooks/profiling-http-via-cli>`_
+<https://docs.blackfire.io/profiling-cookbooks/profiling-http-via-cli>`_
 cookbooks are a good reference for all supported options.
 
 Time again to profile your own applications and see if you can find some more
