@@ -31,7 +31,7 @@ Profiles generated with deactivated pruning and anonymization show:
 .. note::
     :class: warning
 
-    As per :route:`our terms of use <view_tou>` please ensure that you never
+    As per :route:`our terms of use <view_tos>` please ensure that you never
     send any personal or sensitive information to Blackfire while profiling non
     anonymized requests.
 
