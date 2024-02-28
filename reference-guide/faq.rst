@@ -135,5 +135,5 @@ For regular usages, you should never hit 350 builds per day per user.
 Does Blackfire support Go?
 --------------------------
 
-Blackfire dropped its current beta support of Go. An OpenTelemetry-based
-solution is being developed to better handle Go applications in the future.
+:doc:`Blackfire Continuous Profiler </continuous-profiling-cookbooks/index>`
+supports Go, Node.js, PHP, and Python.
