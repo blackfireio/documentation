@@ -9,4 +9,3 @@ Testing Cookbooks
     assertions
     metrics
     recommendations
-    

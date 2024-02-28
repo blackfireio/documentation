@@ -7,5 +7,6 @@ Blackfire for PHP
 
     Installation </install/php>
     Configuration <configuration>
+    Continuous Profiling <continuous-profiling>
     integrations/index
     training-resources/index

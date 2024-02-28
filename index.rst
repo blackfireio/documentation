@@ -15,6 +15,8 @@ Blackfire Documentation
     up-and-running/index
     PHP <php/index>
     Python <python/index>
+    Node.js <nodejs/index>
+    Go <go/index>
     Monitor <monitoring-cookbooks/index>
     Continuous Profiling <continuous-profiling-cookbooks/index>
     Profile <profiling-cookbooks/index>
