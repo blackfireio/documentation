@@ -15,8 +15,9 @@ Blackfire Documentation
     up-and-running/index
     PHP <php/index>
     Python <python/index>
-    Profile <profiling-cookbooks/index>
     Monitor <monitoring-cookbooks/index>
+    Continuous Profiling <continuous-profiling-cookbooks/index>
+    Profile <profiling-cookbooks/index>
     Test <testing-cookbooks/index>
     Build <builds-cookbooks/index>
     Integrate <integrations/index>
