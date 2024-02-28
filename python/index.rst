@@ -7,6 +7,6 @@ Blackfire for Python
 
     Installation </install/python>
     Configuration <configuration>
-    Continuous Profiling </continuous-profiling-cookbooks/python>
+    Continuous Profiling <continuous-profiling>
     integrations/index
     training-resources/django-profiling
