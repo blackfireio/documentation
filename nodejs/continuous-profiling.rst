@@ -2,3 +2,5 @@
 
 Node.js Continuous Profiler
 ============================
+
+:doc:`Link to the Node.js Continous Profiler documentation </continuous-profiling-cookbooks/nodejs>`.

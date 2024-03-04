@@ -54,6 +54,14 @@ Hovering a frame displays in-depth information on it.
     :align: center
     :alt: Hovering the continuous profiling flame graph displays in-depth information
 
+Double-clicking on a frame narrows down the flame graph to the callers and callee
+nodes of that frame.
+
+.. image:: ../images/continuous-profiling/flame-graph-clicked.gif
+    :width: 400px
+    :align: center
+    :alt: Double-click the continuous profiling flame graph narrows it down
+
 Table view
 -----------
 
