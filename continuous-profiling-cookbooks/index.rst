@@ -24,6 +24,26 @@ a split view combining the flame graph and table views.
 Each view helps make sense of the profiling data for the selected dimension and
 time frame. The available dimensions vary with the runtime profiled.
 
+Color-coded node dimensions
+----------------------------
+
+The continuous profiling dashboard employs a color-coded system to represent
+each dimension, ensuring consistency across different runtimes.
+
+The intensity of a node's background color is directly proportional to the
+resources it consumes. As resource consumption increases, so does the vibrancy
+of the background color. This visual representation pinpoints application areas
+that may require optimization.
+
+.. image:: ../images/continuous-profiling/cont-prof-color-code.png
+    :align: center
+    :width: 400px
+    :alt: Continuous profiling color coding
+
+The contrast between the dimension color and the greyscale of regular nodes has
+been designed to ensure accessibility for all users and allow colorblind users
+to benefit from this feature.
+
 Flame graph
 ------------
 
@@ -41,8 +61,7 @@ Rectangles in a flame graph are called frames. Each frame represents a function,
 arranged vertically (y-axis) to show the sequence of method calls.
 
 The width of a frame relates to its resource usage. It helps pinpoint the most
-resource-intensive function calls. Their colors are not performance-related.
-They are meant to differentiate between functions.
+resource-intensive function calls.
 
 Horizontally (x-axis), methods are sorted by name, not the order in which they
 run.
