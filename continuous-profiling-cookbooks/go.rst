@@ -54,7 +54,7 @@ and uploads it to the Blackfire Agent periodically.
         profiler.WithCPUDuration(3 * time.Second),
         profiler.WithCPUProfileRate(1000),
         profiler.WithProfileTypes(profiler.CPUProfile, profiler.HeapProfile, profiler.GoroutineProfile),
-        profiler.WithLabels({
+        profiler.WithLabels(map[string]string{
                 "key1": "value1",
                 "key2": "value2",
         }),
