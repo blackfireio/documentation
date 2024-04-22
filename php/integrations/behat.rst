@@ -29,7 +29,7 @@ Requirements
 
 .. note::
 
-    Note that the original ``behat/mink-extension``, ``behat/symfony2-extension`` and ``minkphp/mink-browserkit-driver``
+    Note that the original ``behat/mink-extension``, ``behat/symfony2-extension``, and ``minkphp/mink-browserkit-driver``
     will not work with the Blackfire extension.
 
 Installation
@@ -139,8 +139,8 @@ However, you can control this behavior with the ``disableProfiling()`` and
 .. warning::
     If you use the Symfony driver, Blackfire will interpret these profiles as
     coming from a command, not an HTTP request, since no actual requests are made.
-    The assertions defined for your commands will be evaluated, and not those
-    for your HTTP requests.
+    Blackfire will therefore evaluate the assertions defined for your commands
+    instead of those defined for your HTTP requests.
 
 Builds Comparison
 -----------------
