@@ -17,8 +17,9 @@ framework and whether you are in a development environment or not.
 Recommendations are displayed in a dedicated tab on a profile view and in build
 reports (they do not impact the test results in terms of fail/pass). Any
 recommendation can be directly copied as a test that you'll paste in your
-`.blackfire.yaml` file. By clicking on the `?` icon near to it, you will be able
-to read more about the recommendation, and how to write the corresponding test.
+`.blackfire.yaml` file. By clicking on the `How to fix` button near to it, you
+will be able to read more about the recommendation, and how to write the
+corresponding test.
 
 Recommendations depend on your environment's configuration. A development
 environment's recommendations will differ from non-development environments,
