@@ -25,10 +25,11 @@ Requirements
 - Behat 3
 - ``friends-of-behat/mink-extension`` >= 2.0
 - ``friends-of-behat/mink-browserkit-driver`` >= 1.5
+- ``friends-of-behat/symfony-extension`` >= 2.0 (Optional. Required only with the Symfony driver)
 
 .. note::
 
-    Note that the original ``behat/mink-extension`` and ``minkphp/mink-browserkit-driver``
+    Note that the original ``behat/mink-extension``, ``behat/symfony2-extension``, and ``minkphp/mink-browserkit-driver``
     will not work with the Blackfire extension.
 
 Installation
@@ -42,6 +43,13 @@ driver:
     :zerocopy:
 
     composer require blackfire/php-sdk friends-of-behat/mink-extension friends-of-behat/mink-browserkit-driver
+
+Install the Behat Symfony extension if you'd like to use the Symfony driver:
+
+.. code-block:: bash
+    :zerocopy:
+
+    composer require friends-of-behat/symfony-extension
 
 Usage
 -----
@@ -77,6 +85,22 @@ Now, every time you launch the ``behat`` command, Mink is going to use the
 Blackfire driver. Every step in your Behat scenario is going to be profiled
 unless you tell it otherwise from a feature context.
 
+Optionally, if you are using :doc:`Symfony </php/integrations/symfony/index>`,
+you may use the kernel browser driver. This driver does not perform actual
+requests. It only simulates them by calling the Symfony kernel directly, which is
+faster. In this case, change the above configuration to:
+
+.. code-block:: yaml
+    :emphasize-lines: 6
+
+    # behat.yaml.dist
+                ...
+                sessions:
+                    default:
+                        # Declare the Blackfire Symfony kernel browser driver
+                        blackfire_symfony: ~
+
+
 **A Blackfire Build is created for each defined Behat Suite**.
 As such, every scenario defined in a suite is considered part of the corresponding
 :doc:`Blackfire Build </builds-cookbooks/index>`.
@@ -111,6 +135,12 @@ However, you can control this behavior with the ``disableProfiling()`` and
             $this->visitPath('/foo/bar');
         }
     }
+
+.. warning::
+    If you use the Symfony driver, Blackfire will interpret these profiles as
+    coming from a command, not an HTTP request, since no actual requests are made.
+    Blackfire will therefore evaluate the assertions defined for your commands
+    instead of those defined for your HTTP requests.
 
 Builds Comparison
 -----------------
