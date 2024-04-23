@@ -15,7 +15,7 @@ Continuous profiling on Blackfire
 ---------------------------------
 
 The continuous profiling dashboard is available directly under the
-`Continuous Profiling` tab of your environments.
+``Continuous Profiling`` tab of your environments.
 
 It lets you visualize the profiling data of a specific application and is
 composed of several views: flame graph, table view, as well as a split view
@@ -86,7 +86,7 @@ Table view
 
 The table view displays a list of all the frames sorted by their resource
 consumption, for the selected dimension and timeframe. By default, the table is
-sorted by `exclusive` resource consumption, which is the total value of the frame,
+sorted by ``exclusive`` resource consumption, which is the total value of the frame,
 minus the combined total values of its direct children.
 
 .. image:: ../images/continuous-profiling/table-view.png
