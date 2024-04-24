@@ -29,15 +29,15 @@ The main technical requirements are the following:
     A profile can be propagated to applications written in all languages
     supported by Blackfire.
 
-    For example, a profile of a CLI application written in Go can be
+    For example, a profile of a CLI application written in Python can be
     propagated to an HTTP application written in PHP, and to another one
-    written in Python.
+    written in any language Blackfire supports.
 
     .. code-block:: bash
 
-        Go app (CLI)
+        Python app (CLI)
         ├── PHP app (HTTP)
-        │   └── Go app (CLI)
+        │   └── Python app (CLI)
         └── Python app (HTTP)
 
 How Does It Work?
