@@ -21,3 +21,7 @@ Please check their dedicated documentation:
 * :doc:`Laravel Tests </php/integrations/laravel/tests>`
 
 * :doc:`Platform.sh </integrations/paas/platformsh>` (Production only)
+
+* :doc:`Upsun </integrations/paas/upsun>` (Production only)
+
+* :doc:`Adobe Commerce Cloud </integrations/paas/adobe-commerce-cloud>` (Production only)
