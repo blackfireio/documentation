@@ -48,15 +48,15 @@ Environments configuration include:
       the same environment you can execute your test scenarios on different
       domains/sub-domains.
 
-Favorites Environments
+Favorite Environments
 ----------------------
 
 You can quickly access your most-used environments by marking them as favorites.
-Favorites environments are listed first within your organizations and your
+Favorite environments are listed first within your organizations and your
 `environments page <https://app.blackfire.io/my/environments>`_.
 
-Environments can be added to or removed from the favorite list using the
-star-shaped icon at top right of their tiles:
+To add or remove an environment from your list of favorites, click the
+star icon on the top right of its tile:
 
 .. image:: ../images/favorite-environments.png
 
