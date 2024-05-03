@@ -108,11 +108,3 @@ Profile
 Profile using the regular :doc:`Blackfire CLI </up-and-running/installation>`
 tools or a browser (:doc:`Firefox </integrations/browsers/firefox>` or :doc:`Chrome
 </integrations/browsers/chrome>`).
-
-.. note::
-
-    If your app spans across several dynos, you might have to turn on `Session Affinity`_
-    using the ``heroku features:enable http-session-affinity`` command so that only one
-    dyno is profiled when aggregation is enabled (the default).
-
-.. _`Session Affinity`: https://devcenter.heroku.com/articles/session-affinity

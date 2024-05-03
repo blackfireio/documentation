@@ -53,36 +53,6 @@ any HTTP request you want to profile with Blackfire:
 If you execute this script, two profiles will be created on your Blackfire
 account (tests defined in ``.blackfire.yaml`` will be executed as well if any).
 
-You can also take several samples of the same page to get more accurate results
-as done by default by the Blackfire CLI or the browser extension:
-
-.. code-block:: php
-    :emphasize-lines: 7,15
-
-    $blackfire = new BlackfireClient();
-
-    // the number of samples to take
-    $samples = 10;
-
-    $config = new \Blackfire\Profile\Configuration();
-    $config->setSamples($samples);
-
-    $client = new GoutteClient();
-    $config->setTitle('Blog Home');
-    $profileRequest = $blackfire->createRequest($config);
-    $client->setHeader('X-Blackfire-Query', $profileRequest->getToken());
-
-    // requests the target $samples times
-    for ($i = 1; $i <= $samples; $i++) {
-        $crawler = $client->request('GET', 'https://www.symfony.com/blog/');
-    }
-
-    // get the profile for the request
-    $profile = $blackfire->getProfile($profileRequest->getUuid());
-
-When running this script, you will get one profile which will be the
-aggregation of the 10 HTTP requests executed.
-
 Learn more about :ref:`profiling configuration settings
 <php-sdk-profile-configuration>` in the PHP SDK documentation.
 

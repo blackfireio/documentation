@@ -97,13 +97,13 @@ from the *Copy* submenu:
     :align: center
 
 Using the browser to get the exact URL to profile is very convenient. Now, in
-your console, enter ``blackfire --samples=1`` and paste the copied URL, as
+your console, enter ``blackfire`` and paste the copied URL, as
 illustrated below:
 
 .. code-block:: bash
     :zerocopy:
 
-    blackfire --samples=1 curl 'https://fix2.book.b7e.io/api/github-organization' \
+    blackfire curl 'https://fix2.book.b7e.io/api/github-organization' \
         -H 'Origin: https://fix2.book.b7e.io' \
         -H 'Accept-Encoding: gzip, deflate' \
         -H 'Accept-Language: en-US,en;q=0.8,fr;q=0.6' \
@@ -113,15 +113,6 @@ illustrated below:
         -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' \
         -H 'Cache-Control: max-age=0' -H 'Referer: https://fix2.book.b7e.io' \
         -H 'Connection: keep-alive' -H 'DNT: 1' --data 'query=loader' --compressed
-
-
-.. note::
-
-    Using ``--samples=1`` avoids running several iterations. It is good
-    practice when profiling API endpoints, that could be rate-limited.
-
-    ``--samples=1`` the default value when profiling non-GET or non-HEAD HTTP
-    requests.
 
 The generated profile should look something like this:
 
@@ -175,13 +166,7 @@ The output looks like before:
     Network         n/a
 
 The call graph for this profile is not that interesting but notice that "Hello
-World!" is displayed only once. By default, Blackfire only runs the code once
-for command line scripts. You can change this behavior using the ``--samples``
-option:
-
-.. code-block:: php
-
-    blackfire --samples=5 run php -r 'echo "Hello World!";'
+World!" is displayed only once.
 
 To make profiling from the command line more exciting, let's run `PHP Mess
 detector <https://phpmd.org/>`_ on Twig. PHP Mess Detector is a nice static
@@ -397,7 +382,7 @@ tool is to trigger a profile by modifying the HTTP request or the CLI command,
 which in turns enables code instrumentation.
 
 For HTTP requests, Blackfire adds a header, ``X-Blackfire-Query``. The header
-value contains the profile configuration (like the number of samples, ...) and
+value contains the profile configuration and
 a signature that identifies the user triggering the profile.
 
 For CLI scripts, Blackfire defines an environment variable,

@@ -19,14 +19,6 @@ run``:
 At the end of the execution, ``blackfire`` outputs the URL where the profile
 can be found (this can be hidden by passing the ``-q`` option.)
 
-To get more accurate results, you can also take several samples via the
-``--samples`` option (only do that if you are sure that two successive calls to
-your script do the same thing without unwanted side effects):
-
-.. code-block:: bash
-
-    $ blackfire --samples 10 run php my-script.php
-
 .. include:: _cli-profiling-warning.rst
 
 JSON Output

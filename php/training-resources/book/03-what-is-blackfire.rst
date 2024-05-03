@@ -75,8 +75,7 @@ In addition to this average time, you should also calculate the **standard
 deviation**. If it is too big, reasoning about the numbers becomes very hard
 and often just plain wrong.
 
-Blackfire takes several measurements of the code execution and aggregates
-them to get more accurate results. More importantly, time
+Blackfire takes measurements of the code execution. More importantly, time
 comes in several flavors. Besides the wall-clock time (what ``microtime()``
 returns), Blackfire also gives you the CPU time and the I/O time of
 each function call; we will cover this topic in a few chapters but you can

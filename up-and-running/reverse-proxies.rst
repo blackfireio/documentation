@@ -39,47 +39,16 @@ The following HTTP response headers need to be preserved:
 * ``X-Blackfire-Response``
 * ``X-Blackfire-Error``
 
-Those headers are needed by the Blackfire clients, especially when profiling
-multiple samples of a single page or script.
+Those headers are needed by the Blackfire clients.
 
 .. _configuration-load-balancer:
 
 Load Balancer
 -------------
 
-If you are using multiple application servers behind a load-balancer, you have
-several options to profile your application:
+If you are using multiple application servers behind a load-balancer:
 
-* The **recommended** option is to:
-
- - Install the **Blackfire Probe** and the **Blackfire Agent** on a single server;
-
- - Configure the load balancer to route all requests containing a header
-   whose name matched ``X-Blackfire-Query`` to the configured server.
-
-* Another option is to:
-
- - Setup a single **Blackfire Agent** for all the servers and :ref:`configure it
-   <configuration-agent>` to listen on the network using a TCP socket:
-
-   .. code-block:: text
-
-       socket=tcp://0.0.0.0:8307
-
-   .. note::
-
-       Please note that using the legacy ``blackfire-agent`` package on Linux,
-       the socket configuration is defined in ``/etc/default/blackfire-agent``.
-       You can refer to the :ref:`/etc/default/blackfire-agent section
-       <etc-default-blackfire-agent-legacy>` for more information.
-
- - Setup the **Blackfire Probe** on all the servers and :ref:`configure
-   it <configuration-probe-php>` using the TCP socket defined above in the ``php.ini``
-   configuration:
-
-   .. code-block:: text
-
-       blackfire.agent_socket = tcp://10.0.0.1:8307
+ - Install the **Blackfire Probe** and the **Blackfire Agent** on every server;
 
 Reverse Proxies and CDNs
 ------------------------

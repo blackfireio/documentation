@@ -134,9 +134,6 @@ This implementation suffers from several problems:
 * Each profile leads to several HTTP round-trips to Blackfire's servers,
   slowing down the consumer significantly;
 
-* Profiles that aggregate several iterations of the same code might be more
-  accurate.
-
 If all consumed messages are of the same type you can use the PHP SDK to
 aggregate several messages into one profile:
 

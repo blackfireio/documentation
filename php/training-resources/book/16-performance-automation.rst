@@ -52,10 +52,6 @@ Finding Bigfoot scenarios could look like the following:
             visit url('/login')
                 name 'Failed login attempt'
                 method 'POST'
-                # Default samples for POST requests is 1 without warmup.
-                # Here we explicitely use 10 samples aggregation with a warmup request
-                # since this POST request with no payload is idempotently safe.
-                samples 10
                 warmup true
 
 In the example, all scenarios, but the last one, trigger profiles on HTTP
@@ -69,7 +65,7 @@ we end up in the state after the request is processed.
 By default, scenarios for non-GET requests have no warmup and profiles are
 generated from only one iteration. But as this "Failed login attempt" is
 *idempotent*, the scenario is explicitly configured to enable warmup (``warmup:
-true``) and to generate 10 requests (``samples: 10``) for the profile.
+true``) for the profile.
 
 .. note::
 

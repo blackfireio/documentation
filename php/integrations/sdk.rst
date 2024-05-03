@@ -120,7 +120,7 @@ This class gives you the possibility to:
          * Creates a sub-query string to create a new profile linked to the current one.
          * Generated query must be set in the X-Blackire-Query HTTP header or in the BLACKFIRE_QUERY environment variable.
          *
-         * @return string|null The sub-query or null if the current profile is not the first sample or profiling is disabled.
+         * @return string|null The sub-query or null if profiling is disabled.
          */
         public function createSubProfileQuery() {}
 
@@ -219,11 +219,6 @@ your code:
 Note that having many ``enable()/disable()`` sections might make your call
 graph very difficult to interpret. You might want to create several profiles
 instead.
-
-.. tip::
-
-    If you want to profile the same code more than once, use the :ref:`samples
-    feature <php-sdk-samples>`.
 
 .. tip::
 
@@ -381,55 +376,6 @@ or an array of method selectors:
     .. code-block:: php
 
         $metric = new Metric('cache.write_calls', array('=Cache::write', '=Cache::store'));
-
-.. _php-sdk-samples:
-
-Profile Samples
-~~~~~~~~~~~~~~~
-
-When profiling from the CLI or a browser, you can set the number of samples you
-want for a profile (to get more accurate results). You can do the same with the
-Client, via the ``setSamples()`` configuration method:
-
-.. code-block:: php
-
-    $config->setSamples(10);
-
-Be warned, **you need to generate the samples manually in your code** as
-Blackfire has no way to do it automatically:
-
-.. code-block:: php
-
-    // define the number of samples
-    $samples = 10;
-
-    $blackfire = new \Blackfire\Client();
-
-    $config = (new \Blackfire\Profile\Configuration())->setSamples($samples);
-
-    // explicitly pass the configuration
-    // and disable auto-enable
-    $probe = $blackfire->createProbe($config, false);
-
-    for ($i = 1; $i <= $samples; $i++) {
-        // enable instrumentation
-        $probe->enable();
-
-        foo();
-
-        // finish the profile
-        // so that another one will be taken on the next loop iteration
-        $probe->close();
-    }
-
-    // send the results back to Blackfire
-    $profile = $blackfire->endProbe($probe);
-
-.. caution::
-
-    If you do not call ``$probe->close()`` the same number of times as the
-    number of configured samples, you will get a 404 (not found) result when
-    calling ``$blackfire->endProbe()``.
 
 .. _php-sdk-http-profiling:
 

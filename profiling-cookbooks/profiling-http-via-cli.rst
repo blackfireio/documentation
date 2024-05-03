@@ -44,14 +44,6 @@ You can get a list of options available for the ``curl`` sub-command:
 
     blackfire help curl
 
-To get more accurate results, take several samples of the request via the
-``--samples`` option (we recommend you to use this option only for "safe" HTTP
-requests like ``GET`` requests):
-
-.. code-block:: bash
-
-    blackfire --samples 10 curl http://example.com/
-
 At the end of the request, ``blackfire`` outputs the URL where the profile can
 be found (hide it by passing the ``-q`` option.)
 

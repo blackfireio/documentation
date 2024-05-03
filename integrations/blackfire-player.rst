@@ -109,12 +109,6 @@ variables:
 Other Supported Instructions
 ----------------------------
 
-Samples
-~~~~~~~
-
-The ``samples`` instruction tells Blackfire Profiler how many samples must be
-aggregated for a single profile. The default value is ``1``.
-
 Warmup
 ~~~~~~
 
@@ -123,8 +117,7 @@ requested URL first.
 
 Its value can be:
 
-* **true**: Warmups safe HTTP requests, or when the number of samples is
-  more than one. Warmup will be executed 3 times. (default value)
+* **true**: Warmups safe HTTP requests. Warmup will be executed 3 times. (default value)
 
 * **A number**: Same behavior as **true**, but allows to change the number of
   warmup requests.
@@ -137,5 +130,4 @@ Its value can be:
         visit url('/blog/')
             name "Blog homepage"
             assert main.peak_memory < 10M
-            samples 2
             warmup true

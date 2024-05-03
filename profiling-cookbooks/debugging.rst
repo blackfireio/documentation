@@ -43,6 +43,3 @@ Additional notes:
 * This feature does not affect/add more data on the :doc:`timeline
   </profiling-cookbooks/understanding-timelines>`; it only does on
   :doc:`call-graphs </profiling-cookbooks/understanding-call-graphs>`;
-
-* Using this feature automatically disables profiles aggregation, which means
-  that only one sample of each request is profiled.
