@@ -8,6 +8,8 @@ features:
 * :doc:`Access Management </up-and-running/access-management/index>`.
 * :doc:`Real-time Monitoring </monitoring-cookbooks/index>` for both HTTP and
   CLI traffic.
+* :doc:`Continuous Profiling</continuous-profiling-cookbooks/index>` for PHP,
+  Python, Node.js, and Golang.
 * :doc:`Alerting </monitoring-cookbooks/alerting>`.
 * :doc:`Automatic Profiling </monitoring-cookbooks/automatic-profiling>`.
 * :doc:`Distributed Profiling </profiling-cookbooks/distributed-profiling>`.
@@ -25,18 +27,22 @@ To make to most out of the Production Edition, follow these steps:
 1. Configure :doc:`Blackfire environments </reference-guide/environments>`
    based on your workflows, tooling and infrastructure. If you need help,
    :route:`contact Support <contact-us>`.
-2. :doc:`Configure access </up-and-running/access-management/index>` to your 
+2. :doc:`Configure access </up-and-running/access-management/index>` to your
    organization and environments.
-3. If you have configured Blackfire on a public website, set up :ref:`periodic
+3. Configure Continuous Profiling for your :doc:`PHP</continuous-profiling-cookbooks/php>`,
+   :doc:`Python</continuous-profiling-cookbooks/python>`,
+   :doc:`Node.js</continuous-profiling-cookbooks/nodejs>`, and
+   :doc:`Golang</continuous-profiling-cookbooks/go>` applications.
+4. If you have configured Blackfire on a public website, set up :ref:`periodic
    builds <trigger-scheduled>`.
-4. Write your first :doc:`tests </testing-cookbooks/tests>`,
+5. Write your first :doc:`tests </testing-cookbooks/tests>`,
    :doc:`scenarios </builds-cookbooks/scenarios>` and :doc:`metrics
    </testing-cookbooks/metrics>`.
-5. Learn how to :doc:`trigger builds</builds-cookbooks/index>` using
+6. Learn how to :doc:`trigger builds</builds-cookbooks/index>` using
    :doc:`native integrations </integrations/index>`, :doc:`CI/CD pipelines
    </integrations/ci/index>` and the API (:doc:`PHP </php/integrations/sdk>`
    or :doc:`Python </python/integrations/sdk>`).
-6. Set up :doc:`notification channels </builds-cookbooks/notification-channels>`
+7. Set up :doc:`notification channels </builds-cookbooks/notification-channels>`
    for your monitoring alerts and build results.
 
 When you configure :doc:`Blackfire environments </reference-guide/environments>`,
