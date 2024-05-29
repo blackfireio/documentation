@@ -32,6 +32,8 @@ with two methods:
 
 * Blackfire's profiling automation of the most impactful requests.
 
+.. _monitoring_profile_next_request:
+
 Profile Next Request
 --------------------
 
@@ -40,6 +42,15 @@ view and find the "Profile Next Request" button.
 
 Once configured the next matching request on your production server will be
 profiled.
+
+.. caution::
+
+    Profile Next Request won't work for :ref:`unnamed transactions
+    <monitoring_unnamed_transactions>` or :ref:`transactions named from the UI
+    <monitoring_naming_transactions_from_ui>`.
+
+    You may ensure that transactions are :ref:`properly programmatically identified
+    <monitoring_naming_transactions_programmatically>`.
 
 .. _monitoring_automatic_profiling:
 
@@ -56,12 +67,13 @@ Doing so enables Blackfire to collect :doc:`recommendations
 </testing-cookbooks/recommendations>` for the top ten most impactful transactions,
 and offers actionable insights to help you optimize your code.
 
-.. note::
+.. caution::
 
-    Automatic Profiling is not triggered on :ref:`Unnamed Transactions
-    <monitoring_unnamed_transactions>`.
+    Automatic profiling is not triggered on :ref:`unnamed transactions
+    <monitoring_unnamed_transactions>` and :ref:`transactions named from the UI
+    <monitoring_naming_transactions_from_ui>`.
 
-    You may ensure that transactions are :ref:`properly identified server-side
+    You may ensure that transactions are :ref:`properly programmatically identified
     <monitoring_naming_transactions_programmatically>`.
 
 Pre transaction detection
