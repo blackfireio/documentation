@@ -14,7 +14,7 @@ platform:
 
 * On Linux: ``/etc/blackfire/agent``;
 
-* On macOS: 
+* On macOS:
   * Intel Macs: ``/usr/local/etc/blackfire/agent``;
   * Apple Silicon Macs: ``/opt/homebrew/etc/blackfire/agent``;
 

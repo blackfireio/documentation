@@ -1,13 +1,20 @@
-Agent Configuration
-===================
+Legacy Agent v1 Configuration (deprecated)
+==========================================
+
+.. warning::
+
+  The legacy Agent v1 is deprecated and no longer maintained.
+
+  :doc:`Upgrading to Agent v2 </up-and-running/agent-upgrade>` is required.
+
 
 .. _configuration-agent-legacy:
 
-The Blackfire agent can be configured via a configuration file, flags passed to
-the binary, or environment variables.
+The legacy Blackfire agent v1 can be configured via a configuration file, flags
+passed to the binary, or environment variables.
 
-Configuring the Agent via a Configuration File
-----------------------------------------------
+Configuring the legacy Agent v1 via a Configuration File
+--------------------------------------------------------
 
 The location of the *default* agent configuration file depends on your
 platform:
@@ -127,8 +134,8 @@ typical configuration for the Agent that you can use as a template:
 
 .. _configuration-agent-legacy-envvars:
 
-Configuring the Agent via Environment Variables
------------------------------------------------
+Configuring the legacy Agent v1 via Environment Variables
+---------------------------------------------------------
 
 The Agent can also be configured using environment variables:
 
@@ -237,8 +244,8 @@ supported, or in your global shell configuration file (such as ``~/.bashrc`` or
     export BLACKFIRE_LOG_LEVEL=4
     export BLACKFIRE_LOG_FILE=/tmp/agent.log
 
-Running the Agent Behind an HTTP(s) Proxy
------------------------------------------
+Running the legacy Agent v1 Behind an HTTP(s) Proxy
+---------------------------------------------------
 
 .. warning::
 
