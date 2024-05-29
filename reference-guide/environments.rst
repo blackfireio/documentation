@@ -40,13 +40,25 @@ Environments configuration include:
       and agent of a unique Blackfire Environment on multiple servers.
     * There's no limit on the number of projects: The same Blackfire Environment
       can be used to gather data from as many projects as you need
-    * There's no limit in the number of webhook endpoints: If you’re a
+    * There's no limit in the number of webhook endpoints: If you're a
       Production user, you can start builds using the webhook and have access
       to Platform.sh integrations.
       As an Production user, you have access to all notification channels.
-      There’s no limit in an environment’s endpoint configuration, so that with
+      There's no limit in an environment's endpoint configuration, so that with
       the same environment you can execute your test scenarios on different
       domains/sub-domains.
+
+Favorite Environments
+----------------------
+
+You can quickly access your most-used environments by marking them as favorites.
+Favorite environments are listed first within your organizations and your
+`environments page <https://app.blackfire.io/my/environments>`_.
+
+To add or remove an environment from your list of favorites, click the
+star icon on the top right of its tile:
+
+.. image:: ../images/favorite-environments.png
 
 Environment Admin Role
 ----------------------
