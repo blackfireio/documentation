@@ -21,8 +21,8 @@ the  Bigfoot/Sasquatch enthusiasts community, as illustrated on the dedicated
     SymfonyCasts team for their Blackfire.io screencast:  `Revealing Performance
     Secrets with Profiling <https://symfonycasts.com/screencast/blackfire>`_.
     The source code is  is available at
-    `https://github.com/blackfireio/bigfoot
-    <https://github.com/blackfireio/bigfoot>`_.
+    `https://github.com/platformsh-templates/bigfoot-workshop
+    <https://github.com/platformsh-templates/bigfoot-workshop>`_.
 
 For the purpose of this tutorial, we have created a special publicly profilable
 version of the Finding Bigfoot demo server at `https://www.book.b7e.io/
@@ -274,12 +274,9 @@ new method:
 
     class CommentHelper
     {
-        private $commentRepository;
-
-        public function __construct(CommentRepository $commentRepository)
-        {
-            $this->commentRepository = $commentRepository;
-        }
+        public function __construct(
+            private CommentRepository $commentRepository
+        ) { }
 
         public function countRecentCommentsForUser(User $user): int
         {

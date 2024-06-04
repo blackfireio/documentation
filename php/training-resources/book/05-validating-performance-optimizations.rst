@@ -66,12 +66,9 @@ where we applied our 2 patches from the previous chapter:
 
          class CommentHelper
          {
-    +        private $commentRepository;
-    +
-    +        public function __construct(CommentRepository $commentRepository)
-    +        {
-    +            $this->commentRepository = $commentRepository;
-    +        }
+    +        public function __construct(
+    +            private CommentRepository $commentRepository
+    +        ) { }
 
             public function countRecentCommentsForUser(User $user): int
             {
@@ -176,15 +173,12 @@ Let's then add a simple caching strategy:
     @@ -11,10 +13,12 @@ use Twig\TwigFunction;
     class AppExtension extends AbstractExtension
     {
-        private $commentHelper;
-    +    private $cache;
-
-    -    public function __construct(CommentHelper $commentHelper)
-    +    public function __construct(CommentHelper $commentHelper, CacheInterface $cache)
-        {
-            $this->commentHelper = $commentHelper;
-    +        $this->cache = $cache;
-        }
+    -    public function __construct(private CommentHelper $commentHelper)
+    +    public function __construct(
+    +         private CommentHelper $commentHelper,
+    +         private CacheInterface $cache
+    +    ) {
+         }
 
         public function getFilters(): array
     @@ -25,6 +29,17 @@ class AppExtension extends AbstractExtension
@@ -383,11 +377,10 @@ Let's refactor the ``BigFootSignthing`` Entity accordingly:
     @@ -55,7 +55,7 @@ class BigFootSighting
              private $createdAt;
 
-            /**
-    -        * @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="bigFootSighting")
-    +        * @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="bigFootSighting", fetch="EXTRA_LAZY")
-             * @ORM\OrderBy({"createdAt"="DESC"})
-             */
+    -        #[ORM\OneToMany(targetEntity: Comment::class, mappedBy: "bigFootSighting")]
+    +        #[ORM\OneToMany(targetEntity: Comment::class, mappedBy: "bigFootSighting", fetch: "EXTRA_LAZY")]
+             #[ORM\OrderBy(['createdAt' => 'DESC'])]
+             #[Groups(['sighting:item'])]
              private $comments;
 
 By now, you know the story by heart. Go to

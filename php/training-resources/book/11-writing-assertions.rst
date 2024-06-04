@@ -63,7 +63,7 @@ and notice the new green tick in the browser profile summary:
 .. image:: ../../../images/book/bigfoot-homepage-tests.png
     :width: 400px
     :align: center
- 
+
 Do the same with a `Sighting page <https://blackfireyaml.book.b7e.io/sighting/135>`_
 and you should see a red cross. When viewing the associated profile, select the
 "Assertions" tab to better understand which assertions failed and why:
