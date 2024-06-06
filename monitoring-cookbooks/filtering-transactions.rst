@@ -19,7 +19,7 @@ Top Transactions
 .. image:: ../images/monitoring/top_transactions.gif
 
 The Monitoring Dashboard displays the list of top transactions for the selected
-timeframe. This list is primarly sorted by impact, representing the percentage
+timeframe. This list is primarily sorted by impact, representing the percentage
 of time spent processing one transaction versus all the other ones.
 
 A best practice is to optimize high impact transactions first.

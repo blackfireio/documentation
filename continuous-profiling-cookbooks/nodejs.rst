@@ -1,7 +1,7 @@
 Configuring Blackfire Continuous Profiler for Node.js [level: Production]
 =========================================================================
 
-The Node.js continuous profiling is currently made accross 2 dimensions:
+The Node.js continuous profiling is currently made across 2 dimensions:
 
 - **wall-time**: elapsed time per function call
 

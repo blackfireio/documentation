@@ -43,7 +43,7 @@ To activate Blackfire after every ``ddev restart``, run the following command:
 
     ddev blackfire
 
-To activate Blackfire every time your project starts, in the ``.ddev/confiy.yml``
+To activate Blackfire every time your project starts, in the ``.ddev/config.yml``
 file of your DDEV project, define a custom `hook <https://ddev.readthedocs.io/en/stable/users/configuration/hooks/>`_
 similar to:
 

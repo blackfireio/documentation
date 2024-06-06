@@ -5,7 +5,7 @@ Using a cache-based session backend improves performance so it is advised to use
 cached sessions on production.
 
 A local-memory cache backend doesn't retain data long enough to be a good choice 
-for caching session. More details on selecting appropiate cache backend for 
+for caching session. More details on selecting appropriate cache backend for 
 sessions can be found in `Using cached sessions`_ documentation.
 
 See `Deployment Checklist for sessions`_ for more details.

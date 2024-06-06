@@ -34,7 +34,7 @@ provides all the details on the differences and complementarity between
 Blackfire's monitoring :term:`traces <Trace>`,
 :term:`extended traces <Extended Trace>`, and :term:`profiles <Profile>`.
 
-Continuous Profiling: Probabilitic observability
+Continuous Profiling: Probabilistic observability
 _________________________________________________
 
 **Probabilistic profiling** involves capturing data intermittently. It collects

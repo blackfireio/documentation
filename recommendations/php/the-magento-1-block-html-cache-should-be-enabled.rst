@@ -10,7 +10,7 @@ includes tens of layout files for its themes, modules and components.
 
 Rendering all the blocks included in a page consumes lots of resources.
 For that reason, Magento includes a special cache to store the
-processed blocks. Some blocks are cachable, some are not.
+processed blocks. Some blocks are cacheable, some are not.
 
 It is highly recommended to enable the cache of these blocks to improve the
 page rendering performance.

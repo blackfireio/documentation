@@ -314,7 +314,7 @@ The ``BlackfireTestCaseTrait`` leverages the ``setUpBeforeClass()`` and
 ``tearDownAfterClass()`` methods from the base PHPUnit ``TestCase`` class.
 
 If you already use them within a test case that you want to use with Blackfire,
-the scenario auto-start will not work, as the mentioned methods will be overriden
+the scenario auto-start will not work, as the mentioned methods will be overridden
 by the ones defined in your test case class.
 
 In this case, you need to :ref:`create the scenarios manually

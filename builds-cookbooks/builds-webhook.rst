@@ -17,7 +17,7 @@ For instance, you can:
 
 * Configure your continuous integration tooling to automatically test any branch
   you deployed on your testing environment (e.g. with a pull-request from
-  Github). You can then decide if the code is ready to be merged.
+  GitHub). You can then decide if the code is ready to be merged.
 
 .. _build-webhook-tokens:
 

@@ -76,7 +76,7 @@ With the Extended Sample Rate, you can balance:
 - the possibility for you to collect in-depth performance metrics with
   "real-world" context.
 
-.. _monitoring_span_treshold:
+.. _monitoring_span_threshold:
 
 .. note::
 

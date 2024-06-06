@@ -197,7 +197,7 @@ Assertions' Description
 -----------------------
 
 An optional description can be added to an assertion. This could provide a
-context or an educational note left for the other delevopers of your team.
+context or an educational note left for the other developers of your team.
 
 This note can help understand the
 performance challenges of some parts of the application.

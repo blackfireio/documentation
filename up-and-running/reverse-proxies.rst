@@ -20,7 +20,7 @@ HTTP Headers
 
 In order to successfully profile your application, several HTTP headers are
 processed by the client. These headers are required to pass through to and
-from your application (and the Blacfkire probe).
+from your application (and the Blackfire probe).
 
 Request Headers
 ~~~~~~~~~~~~~~~

@@ -1,7 +1,7 @@
 Configuring Blackfire Continuous Profiler for PHP [level: Production]
 ======================================================================
 
-The PHP continuous profiling is currently made accross 4 dimensions:
+The PHP continuous profiling is currently made across 4 dimensions:
 
 - **CPU Time**: time spent running on the CPU
 

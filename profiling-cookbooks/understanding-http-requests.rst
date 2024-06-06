@@ -46,11 +46,11 @@ The Metadata may contain:
     host (or proxy) was completed. When a redirect is followed, the time from
     each request is added together;
 
-  * Pre-Transfert Time: time from the request start until the file transfer is
+  * Pre-Transfer Time: time from the request start until the file transfer is
     about to begin. When a redirect is followed, the time from each request is
     added together;
 
-  * Start-Transfert Time: time from the request start until the first byte is
+  * Start-Transfer Time: time from the request start until the first byte is
     received. When a redirect is followed, the time from each request is
     added together;
 
