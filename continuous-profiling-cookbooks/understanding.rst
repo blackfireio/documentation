@@ -35,7 +35,7 @@ Blackfire's monitoring :term:`traces <Trace>`,
 :term:`extended traces <Extended Trace>`, and :term:`profiles <Profile>`.
 
 Continuous Profiling: Probabilistic observability
-_________________________________________________
+__________________________________________________
 
 **Probabilistic profiling** involves capturing data intermittently. It collects
 information at defined intervals, logging functions or services activated by any
