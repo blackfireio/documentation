@@ -47,7 +47,7 @@ A ``get_view_name`` method must be defined to have the requests of your WSGI-bas
 application be instrumented by :doc:`Blackfire Monitoring</monitoring-cookbooks/index>`.
 
 This function is required only for the monitoring of your application. Its
-definition can be omited if you are not considering it.
+definition can be omitted if you are not considering it.
 
 The ``get_view_name`` method retrieves the view name executing or handling the
 HTTP request. Blackfire Monitoring relies on this information to :doc:`group
@@ -81,7 +81,7 @@ Builds [level: Production]
 A ``build_blackfire_yml_response`` method must be defined to be able to use
 :doc:`Blackfire Builds</builds-cookbooks/index>`.
 
-This function is required only by Blackfire Build. Its definition can be omited if
+This function is required only by Blackfire Build. Its definition can be omitted if
 you are not considering the Synthetic Monitoring of your application.
 
 This function is called to handle Blackfire builds. When a build ``POST``
@@ -105,10 +105,10 @@ The function receives 4 parameters:
 The ``build_blackfire_yml_response`` function should return a framework specific
 HTTP response.
 
-In the example below, the function returns an instance of ``werkzeug.wrappers.Reponse``.
+In the example below, the function returns an instance of ``werkzeug.wrappers.Response``.
 
 In the `Django middleware <https://github.com/blackfireio/blackfire.io/blob/master/languages/python/src/sdk/hooks/django/middleware.py>`_,
-it returns an instance of ``django.http.HttpResonse``.
+it returns an instance of ``django.http.HttpResponse``.
 
 .. code-block:: python
 

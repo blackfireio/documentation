@@ -24,7 +24,7 @@ Ready? Start reading `chapter 1 » <01-introduction>`_.
     09-call-graphs-galore
     10-environments
     11-writing-assertions
-    12-tests-best-pratices
+    12-tests-best-practices
     13-code-behavior
     14-consumers-daemons
     15-unit-tests

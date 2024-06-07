@@ -6,7 +6,7 @@ While it may seem counter intuitive to enable the
 through PHP's realpath cache. This means that the check is usually really fast as
 it doesn't hit the (slow) file system.
 
-By enabling this setting, your PHP engine behaves in a more predictible way, and
+By enabling this setting, your PHP engine behaves in a more predictable way, and
 allows enabling the `opcache.enable_file_override`_ ini setting.
 
 .. _`opcache.validate_timestamps`: https://www.php.net/manual/opcache.configuration.php#ini.opcache.validate-timestamps

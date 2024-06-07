@@ -118,7 +118,7 @@ This class gives you the possibility to:
 
         /**
          * Creates a sub-query string to create a new profile linked to the current one.
-         * Generated query must be set in the X-Blackire-Query HTTP header or in the BLACKFIRE_QUERY environment variable.
+         * Generated query must be set in the X-Blackfire-Query HTTP header or in the BLACKFIRE_QUERY environment variable.
          *
          * @return string|null The sub-query or null if profiling is disabled.
          */
@@ -193,7 +193,7 @@ your code:
 
     $blackfire = new \Blackfire\Client();
 
-    // false here means that we want to instrument the code ourself
+    // false here means that we want to instrument the code ourselves
     $probe = $blackfire->createProbe(null, false);
 
     // some code that won't be instrumented
@@ -506,7 +506,7 @@ Using builds and scenarios has the following benefits:
 * A scenario consolidates tests results and generates a :ref:`Report <build-report>`
 
 * A build consolidates **scenarios results** and **sends notifications**
-  (Github, Slack, ...);
+  (GitHub, Slack, ...);
 
 * A build contains **all profiles from a profiling session** (individual profiles
   are not displayed in the dashboard anymore);
@@ -555,7 +555,7 @@ UUID). Optionally pass an array of options:
 
 * ``external_id``: A unique identifier for the build; commonly, a unique
   reference from a third party service like the Git commit sha1 related to the
-  build. It is used by some notifications (like Github);
+  build. It is used by some notifications (like GitHub);
 
 * ``external_parent_id``: The unique identifier of the parent build.
 

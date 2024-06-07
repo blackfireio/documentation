@@ -274,7 +274,7 @@ not just the wall time.
 Profiling Again
 ---------------
 
-57% improvement on the Fiding Bigfoot sighting page is impressive, but can we do
+57% improvement on the Finding Bigfoot sighting page is impressive, but can we do
 better? Profiling is a never-ending process. Whenever you fix a bug or add a
 new feature, you need to check the performance impact of that change.
 
@@ -366,7 +366,7 @@ of association the ``BigFootSighting`` entity has with the ``Comment`` one. Doct
 has `an EXTRA_LAZY association <https://www.doctrine-project.org/projects/doctrine-orm/en/2.13/tutorials/extra-lazy-associations.html>`_
 type which allows counting the collection without having to fully load its members.
 
-Let's refactor the ``BigFootSignthing`` Entity accordingly:
+Let's refactor the ``BigFootSighting`` Entity accordingly:
 
 .. code-block:: diff
 

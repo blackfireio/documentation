@@ -30,7 +30,7 @@ The expected workflow is as follows:
 .. tip::
 
     Some PaaS, like :doc:`Platform.sh </integrations/paas/platformsh>` have
-    built-in support for automatically deploying Pull Requests and triggerring
+    built-in support for automatically deploying Pull Requests and triggering
     Blackfire scenarios.
 
 If your toolchain enables you to deploy your code automatically for each new Pull

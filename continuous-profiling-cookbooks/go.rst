@@ -1,7 +1,7 @@
 Configuring Blackfire Continuous Profiler for Go [level: Production]
 =====================================================================
 
-The GO continuous profiling is currently made accross 6 dimensions:
+The GO continuous profiling is currently made across 6 dimensions:
 
 - **Allocations**: Number of objects allocated
 

@@ -31,7 +31,7 @@ explicitly to override default units <units>`.
 
     Whenever possible, **we recommend you write assertions that do not
     depend on time**. The main reason is that :doc:`time is always a consequence
-    </php/training-resources/book/12-tests-best-pratices>`, a symptom of a deeper issue.
+    </php/training-resources/book/12-tests-best-practices>`, a symptom of a deeper issue.
 
 Comparison Assertions
 ---------------------
@@ -197,7 +197,7 @@ Assertions' Description
 -----------------------
 
 An optional description can be added to an assertion. This could provide a
-context or an educational note left for the other delevopers of your team.
+context or an educational note left for the other developers of your team.
 
 This note can help understand the
 performance challenges of some parts of the application.

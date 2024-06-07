@@ -93,8 +93,8 @@ minus the combined total values of its direct children.
     :align: center
     :alt: Continuous profiling table view
 
-Read More on Continous Profiling
----------------------------------
+Read More on Continuous Profiling
+----------------------------------
 
 .. toctree::
     :maxdepth: 2

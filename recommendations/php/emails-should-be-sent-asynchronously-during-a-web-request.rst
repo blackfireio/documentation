@@ -36,7 +36,7 @@ emails. Read the `How to Spool Emails`_ tutorial in the Symfony documentation to
 learn more about this command.
 
 In Laravel applications this technique is called *"queueing mail"*. First you
-must configure a queue and then use the ``queue()`` method of the ``Mail`` façade:
+must configure a queue and then use the ``queue()`` method of the ``Mail`` facade:
 
 .. code-block:: php
 

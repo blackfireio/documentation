@@ -25,7 +25,7 @@ covering the output of the method:
 But how can we test a SQL query is only executed the very first time
 ``getUserActivityText()`` is called for a specific ``User``?
 
-Have a look at the contructor and ``calculateUserActivityText()`` method
+Have a look at the constructor and ``calculateUserActivityText()`` method
 implementation and note the usage of the
 ``Symfony\Contracts\Cache\CacheInterface`` class:
 

@@ -103,7 +103,7 @@ Running Assertions [level: Development/Production]
 In addition to expectations, the player can also generate profiles and run
 assertions defined in the ``.blackfire.yaml`` file. Let's begin by
 :ref:`removing time-based assertions <forget-about-time>` in the file defined
-:ref:`previoulsy <final-blackfire-yaml>`:
+:ref:`previously <final-blackfire-yaml>`:
 
 .. code-block:: yaml
 

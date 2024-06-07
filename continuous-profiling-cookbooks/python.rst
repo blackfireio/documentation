@@ -1,7 +1,7 @@
 Configuring Blackfire Continuous Profiler for Python [level: Production]
 =========================================================================
 
-The Python continuous profiling is currently made accross 5 dimensions:
+The Python continuous profiling is currently made across 5 dimensions:
 
 - **CPU Time**: time spent running on the CPU
 

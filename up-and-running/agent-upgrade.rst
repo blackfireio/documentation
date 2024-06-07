@@ -37,7 +37,7 @@ Docker
 ------
 
 We provide a new ``2`` tag for the ``blackfire/blackfire`` Docker image that
-points to the lastest version of the image.
+points to the latest version of the image.
 
 There is also a ``1`` tag alongside the existing ``latest`` tag that points to
 the previous version of the image for backward compatibility.

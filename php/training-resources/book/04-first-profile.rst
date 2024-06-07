@@ -237,7 +237,7 @@ the implementation of ``countRecentCommentsForUser()``:
     }
 
 Apparently, we are getting and hydrating all the comments a user made only to
-count the most recent ones iterating over them. This is quite an unefficient way
+count the most recent ones iterating over them. This is quite an inefficient way
 of achieving our goal.
 
 To refactor this, we can add a method in the ``CommentRepository`` class,
