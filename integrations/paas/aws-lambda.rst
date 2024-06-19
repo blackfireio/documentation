@@ -1,7 +1,10 @@
 AWS Lambda
 ==========
 
-Blackfire supports Amazon Lambda for PHP and Python languages.
+.. warning::
+
+  The support for Amazon Lambda for PHP and Python languages is unofficial and
+  community-driven.
 
 The Agent
 ---------
