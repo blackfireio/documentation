@@ -30,25 +30,25 @@ typical configuration for the CLI that you can use as a template:
     ;
     ; setting: client-id
     ; desc   : Sets the Client ID used for API authentication
-    ; default: 
+    ; default:
     client-id=<YOUR_CLIENT_ID>
 
     ;
     ; setting: client-token
     ; desc   : Sets the Client Token used for API authentication
-    ; default: 
+    ; default:
     client-token=<YOUR_CLIENT_TOKEN>
 
     ;
     ; setting: http-proxy
     ; desc   : Sets the HTTP proxy to use
-    ; default: 
+    ; default:
     ; http-proxy=
 
     ;
     ; setting: https-proxy
     ; desc   : Sets the HTTPS proxy to use
-    ; default: 
+    ; default:
     ; https-proxy=
 
     ;
@@ -66,7 +66,7 @@ typical configuration for the CLI that you can use as a template:
     ;
     ; setting: ca-cert
     ; desc   : Sets the PEM encoded certificates to use
-    ; default: 
+    ; default:
     ; ca-cert=
 
 Configuring the CLI via Environment Variables

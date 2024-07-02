@@ -1,10 +1,10 @@
 Flask DEBUG Flag Should Not Be True In Production
 =================================================
 
-Running `Flask in Debug mode`_ is not recommended and should only be used for 
+Running `Flask in Debug mode`_ is not recommended and should only be used for
 local development purposes.
 
-Debug mode exposes information that can be useful to attackers, such as 
+Debug mode exposes information that can be useful to attackers, such as
 paths, user details, environment settings, operating system versions and might
 allow execution of arbitrary code.
 

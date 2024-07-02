@@ -132,7 +132,7 @@ This class gives you the possibility to:
         /**
          * Disables Blackfire Monitoring instrumentation for a transaction.
          */
-        public function ignoreTransaction() {}       
+        public function ignoreTransaction() {}
     }
 
 Blackfire PHP SDK

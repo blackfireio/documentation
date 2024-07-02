@@ -35,7 +35,7 @@ traffic, usually in production, sometimes in staging.
 
 It is a key feature to **detect when something is going wrong** in your application,
 and give you high-level pointers to **understand which transaction is consuming
-most of the server resources**. Blackfire also breaks down that information into 
+most of the server resources**. Blackfire also breaks down that information into
 time spent within the application, and time spent within external services (eg
 HTTP, SQL, Queues, etc.).
 

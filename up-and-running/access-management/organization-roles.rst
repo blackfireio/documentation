@@ -42,5 +42,5 @@ and manage their access level for each environment.
 The Owner and each Admin count towards the paying users quota of the
 organization.
 
-Members and Billing Managers are counted in the user quota only when they are 
+Members and Billing Managers are counted in the user quota only when they are
 assigned to at least one environment.

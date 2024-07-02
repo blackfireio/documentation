@@ -1,8 +1,8 @@
 Django Cached Template Loader Should Be Enabled On Production
 =============================================================
 
-Enabling the cached template loader often improves performance drastically, as 
-it avoids compiling each template every time it needs to be rendered. The cached 
+Enabling the cached template loader often improves performance drastically, as
+it avoids compiling each template every time it needs to be rendered. The cached
 loader stores the compiled templates in memory. It should be enabled on production.
 
 See `Cached Template Loader`_ for more details on how to enable and use it.

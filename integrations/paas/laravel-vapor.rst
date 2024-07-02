@@ -2,7 +2,7 @@ Laravel Vapor
 =============
 
 Thanks to our :doc:`AWS Lambda support </integrations/paas/aws-lambda>`, Blackfire
-can also be deployed on Laravel Vapor. 
+can also be deployed on Laravel Vapor.
 
 The official documentation to install Blackfire on Vapor is pending. For now, we
 recommend `Alex Vanderbist's cookbook

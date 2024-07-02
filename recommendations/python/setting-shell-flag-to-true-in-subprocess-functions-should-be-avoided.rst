@@ -1,7 +1,7 @@
 Setting Shell Flag To True In Subprocess Functions Should Be Avoided
 ====================================================================
 
-Calling `Subprocess functions`_ ``subprocess.run``, ``subprocess.call`` or 
+Calling `Subprocess functions`_ ``subprocess.run``, ``subprocess.call`` or
 ``subprocess.Popen`` with ``Shell=True`` can lead to local or remote code execution.
 
 If the shell is invoked explicitly via ``shell=True``, it is the responsibility of

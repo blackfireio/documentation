@@ -69,7 +69,7 @@ the ``initialize()`` method via optional parameters:
 
     Please note that ``log_file`` and ``log_level`` parameters are deprecated and
     removed in version ``1.10.0``. You can configure the log file and level
-    via the ``BLACKFIRE_LOG_FILE`` and ``BLACKFIRE_LOG_LEVEL`` 
+    via the ``BLACKFIRE_LOG_FILE`` and ``BLACKFIRE_LOG_LEVEL``
     :doc:`environment variables</python/configuration>`.
 
 
@@ -233,7 +233,7 @@ in your code, where you want to add such a cue-point:
 Profiling multiple threads simultaneously
 -----------------------------------------
 
-Every SDK API call works under thread boundaries: enabling a profiler via 
+Every SDK API call works under thread boundaries: enabling a profiler via
 `probe.enable()` enables it only for the current thread executing the API call.
 Same is true for other API calls as well: e.g., `probe.initialize()`,
 `probe.end()`...etc.
@@ -243,8 +243,8 @@ thread individually in your favorite task queue, such as Celery.
 
 As of version `1.14.0+`, multiple threads can be profiled simultaneously.
 
-For example, you can call `probe.enable()` or `probe.end()` in different threads at 
-the same time and in the same process. The profiler will handle the underlying 
+For example, you can call `probe.enable()` or `probe.end()` in different threads at
+the same time and in the same process. The profiler will handle the underlying
 segregation and aggregation of the profiling results.
 
 This example profiles multiple threads simultaneously using the Sub-Profiles API:
@@ -279,6 +279,6 @@ This example profiles multiple threads simultaneously using the Sub-Profiles API
         t.join()
 
 
-This example generates a single profile, belonging to ``main-thread``, and 
+This example generates a single profile, belonging to ``main-thread``, and
 multiple linked :ref:`Sub-Profiles <distributed-profiling>`.
 

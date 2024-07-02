@@ -16,8 +16,7 @@ features:
 * :doc:`Testing automation features </builds-cookbooks/index>`.
 * :doc:`Advanced integrations </integrations/index>`.
 * :doc:`Notifications </integrations/notifiers/index>`.
-* `Security <https://www.blackfire.io/code-security/>`_ and `Quality 
-  <https://www.blackfire.io/quality/>`_ Addons included.
+* `Security <https://www.blackfire.io/code-security/>`_ and `Quality <https://www.blackfire.io/quality/>`_ Addons included.
 
 Get started with the Production Edition
 ---------------------------------------

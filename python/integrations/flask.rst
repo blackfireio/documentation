@@ -1,7 +1,7 @@
 Flask [language: Python]
 ========================
 
-Our Flask integration lets you instrument individual HTTP requests. Please note 
+Our Flask integration lets you instrument individual HTTP requests. Please note
 that Blackfire supports Flask 0.12 and higher.
 
 :doc:`Install Blackfire for Python </install/python>`.

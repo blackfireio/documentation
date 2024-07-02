@@ -6,7 +6,7 @@ web applications. They are slow because they have to fork a new process and
 read a new executable file, including its dependent libraries. They often also
 have to spawn a shell to parse the command line, making them even slower.
 
-These functions might also lead to arbitrary code execution, if the parameters 
+These functions might also lead to arbitrary code execution, if the parameters
 are not sanitized well and consist malicious user input.
 
 You should prefer implementing the functionality you need in Python. If you have

@@ -89,7 +89,7 @@ fastest way to get the Blackfire agent running:
 
     docker run --name="blackfire" -d -e BLACKFIRE_SERVER_ID -e BLACKFIRE_SERVER_TOKEN blackfire/blackfire:2
 
-.. note:: 
+.. note::
 
     **Upgrading**
 

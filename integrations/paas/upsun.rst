@@ -22,7 +22,7 @@ go to your organization menu and click :ref:`Organization Monitoring Usage <moni
 CLI Profiling
 -------------
 
-HTTP requests can be profiled without any extra configuration, but the 
+HTTP requests can be profiled without any extra configuration, but the
 **client credentials** are required to :doc:`trigger profiles with the CLI
 </profiling-cookbooks/profiling-http-via-cli>` from your Upsun environments.
 

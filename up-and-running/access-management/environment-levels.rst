@@ -4,10 +4,10 @@ Environment Access Levels
 Two levels are available at the Environment level: **Contributor** and
 **Manager**:
 
-- **Contributor**: Can use Monitoring and generate Profiles on the environment. 
+- **Contributor**: Can use Monitoring and generate Profiles on the environment.
   Can view other Members Access Levels and Usage Data for the environment.
 
-- **Manager**: Same as Contributor plus ability to configure the environment, 
+- **Manager**: Same as Contributor plus ability to configure the environment,
   invite Members and configure their access levels.
 
 The **Organization admins** (**Admin** and **Owner**) can perform all possible

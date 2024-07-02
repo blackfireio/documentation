@@ -38,6 +38,6 @@ Transaction Breakdown
 .. image:: ../images/monitoring/top-transaction-breakdown.png
 
 The transaction breakdown graph displays the evolution of the most impactful
-transactions over time, for the selected timeframe and dimension. It provides 
+transactions over time, for the selected timeframe and dimension. It provides
 convenient contextualized information, helping you understand your application's
 dynamics.

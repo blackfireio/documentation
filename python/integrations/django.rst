@@ -3,7 +3,7 @@ Django [language: Python]
 
 .. _python-django:
 
-Our Django integration lets you instrument individual HTTP requests. Please note 
+Our Django integration lets you instrument individual HTTP requests. Please note
 that Blackfire supports Django 1.11 and higher.
 
 :doc:`Install Blackfire for Python </install/python>`.

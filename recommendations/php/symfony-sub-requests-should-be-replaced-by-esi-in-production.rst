@@ -6,8 +6,8 @@ by Symfony to call one or more controllers in the same request. Sub-requests are
 a very convenient way to `embed controllers in a template`_.
 
 However, performing sub-requests can increase the response time of the
-application significantly. Therefore, the application should not make any sub-
-request in the production server. Instead, sub-requests should be served by a
+application significantly. Therefore, the application should not make any sub-request
+in the production server. Instead, sub-requests should be served by a
 reverse proxy such as `Varnish`_ using `ESI`_ (Edge Side Includes), which allows
 to define a separate caching strategy for each sub-request.
 

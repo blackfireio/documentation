@@ -16,7 +16,7 @@ Validating Code Performance before Merging Changes on Adobe Commerce Cloud
 
 Blackfire can be configured on Adobe Commerce Cloud, to:
 
-* :doc:`Profile Magento shops </profiling-cookbooks/index>` on demand on production, 
+* :doc:`Profile Magento shops </profiling-cookbooks/index>` on demand on production,
   staging, integration, and development environments;
 
 * Validate code changes with :doc:`Blackfire builds </builds-cookbooks/index>` at

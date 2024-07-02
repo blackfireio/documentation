@@ -14,7 +14,7 @@ example of a ``Dockerfile`` based on the official Docker PHP image:
 
 .. include-twig:: `docker_php_probe`
 
-.. note:: 
+.. note::
 
     **Base image**
 
@@ -40,7 +40,7 @@ Build your container as usual:
 
     docker build -t php-blackfire .
 
-.. note:: 
+.. note::
 
     **Upgrading**
 

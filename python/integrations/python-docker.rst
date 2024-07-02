@@ -13,7 +13,7 @@ example of a ``Dockerfile`` based on the official Docker Python image:
 
     RUN pip install --upgrade pip blackfire
 
-.. note:: 
+.. note::
 
     **Base image**
 
@@ -27,7 +27,7 @@ Build your container as usual:
 
     docker build -t python-blackfire .
 
-.. note:: 
+.. note::
 
     **Upgrading**
 

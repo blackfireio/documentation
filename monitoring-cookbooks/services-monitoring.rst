@@ -25,7 +25,7 @@ The values are stacked on the graph.
 .. note::
 
     The values displayed in the Response Time Break-Down graph are averaged values
-    while the Global Response Time graph displays medians and the 96th percentile. 
+    while the Global Response Time graph displays medians and the 96th percentile.
 
 The average values are calculated over the total number of traces, including
 traces with 0 response times for this service.

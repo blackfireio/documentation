@@ -1,8 +1,8 @@
 Django XFrameOptions middleware should be enabled
 =================================================
 
-Clickjacking attack occurs when a malicious site tricks a user into clicking on 
-a concealed element of another site which they have loaded in a hidden frame or 
+Clickjacking attack occurs when a malicious site tricks a user into clicking on
+a concealed element of another site which they have loaded in a hidden frame or
 iframe. ``XFrameOptionsMiddleware`` adds protection against Clickjacking attacks by
 setting proper `X-Frame-Options`_ HTTP header in all responses.
 

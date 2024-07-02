@@ -5,7 +5,7 @@ When Python is compiled via PGO (Profile Guided Optimization), it usually runs r
 ``10%``-``20%`` faster.
 
 Most Linux/Windows distributions come with PGO enabled binaries. However,
-there might be some exceptions, e.g.: Ubuntu as of 2021. For macOS, you might 
+there might be some exceptions, e.g.: Ubuntu as of 2021. For macOS, you might
 need to compile it yourself. See https://bugs.python.org/issue41181 for details.
 
 You can check if the Python interpreter is compiled with PGO by running the following command:

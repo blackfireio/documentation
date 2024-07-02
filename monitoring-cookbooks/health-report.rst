@@ -14,8 +14,8 @@ activate at least, on a given environment:
 .. note::
 
     The Health Report generates an overview of your application's performance
-    over 7 days. It compares it with the previous 7 days period. 
-    
+    over 7 days. It compares it with the previous 7 days period.
+
     Therefore, to generate a thorough Health Report, Blackfire Builds and
     Monitoring should run on a given environment for a period of at least 14
     days.

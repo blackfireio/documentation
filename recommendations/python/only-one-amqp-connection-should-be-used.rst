@@ -12,7 +12,7 @@ different server. Therefore, connecting to AMQP brokers introduces some overhead
 due to the TCP/IP connection.
 
 Blackfire detects the connections established with the popular `pyamqp`_,
-`librabbitmq`_ and `pika`_ libraries. Unless configured differently, you'll see 
+`librabbitmq`_ and `pika`_ libraries. Unless configured differently, you'll see
 this recommendation when establishing more than one AMQP connection during the
 application execution.
 

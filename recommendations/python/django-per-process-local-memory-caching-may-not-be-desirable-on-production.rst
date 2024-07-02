@@ -2,7 +2,7 @@ Django Per-Process Local-Memory Caching May Not Be Desirable On Production
 ==========================================================================
 
 If you're using a cache, Django defaults to per-process local-memory caching
-which may not be desirable on production. It would be a better practice to use 
+which may not be desirable on production. It would be a better practice to use
 a different cache backend on production.
 
 See `local-memory caching`_ for more details.

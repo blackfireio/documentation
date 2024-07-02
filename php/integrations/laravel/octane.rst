@@ -48,7 +48,7 @@ registered in the ``config/app.php`` configuration file:
 Profiling
 ---------
 
-The **Laravel Octane Profiler Middleware** allows to trigger Profiles from the 
+The **Laravel Octane Profiler Middleware** allows to trigger Profiles from the
 :doc:`Browser Extensions</profiling-cookbooks/profiling-http-via-browser>`.
 
 Edit your ``app/Http/Kernel.php``:

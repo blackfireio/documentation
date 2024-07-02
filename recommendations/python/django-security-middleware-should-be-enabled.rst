@@ -1,7 +1,7 @@
 Django Security Middleware Should Be Enabled
 ============================================
 
-Django Security Middleware provides several security enhancements to the 
+Django Security Middleware provides several security enhancements to the
 request/response cycle. Please see `Django Security Middleware`_ to see the whole
 list of security enhancements.
 

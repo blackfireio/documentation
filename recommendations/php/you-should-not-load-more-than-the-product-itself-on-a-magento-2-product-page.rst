@@ -28,12 +28,12 @@ The following example shows what **your code should not do**:
          * @var \Magento\Catalog\Model\Product
          */
         protected $_product;
-    
+
         /**
          * @var \Magento\Catalog\Model\ProductFactory
          */
         protected $_productFactory;
-    
+
         /**
          * Set the product
          * @param int $productId
@@ -58,7 +58,7 @@ The following example shows what **your code should do** instead:
          * @var \Magento\Catalog\Model\Product
          */
         protected $_product;
-    
+
         /**
          * Set the product
          * @param Product $product

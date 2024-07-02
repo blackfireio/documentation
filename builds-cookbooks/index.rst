@@ -5,12 +5,12 @@ Blackfire Builds offer various options to automatically profile your code, and
 to :doc:`run assertions </testing-cookbooks/assertions>` against it.
 
 A Build is a collection of profiles, resulting from :doc:`scenarios
-</builds-cookbooks/scenarios>` which are triggered upon an event. 
+</builds-cookbooks/scenarios>` which are triggered upon an event.
 
 Build Statuses
 --------------
 
-When complete, Builds have a status (Successful, Failed or Errored). 
+When complete, Builds have a status (Successful, Failed or Errored).
 
 The Successful and Failed statuses depend on the :doc:`assertions
 </testing-cookbooks/assertions>` which you write. If you don't write any

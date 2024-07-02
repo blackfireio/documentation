@@ -8,9 +8,9 @@ Periodic Builds constitute a **unique Synthetic Monitoring technique**.
 They allow you to simulate regularly a given set of actions or path that an end-user
 would take on your site. Each scenario step triggering back-end code execution
 (PHP or Python) automatically generates a :doc:`profile
-</profiling-cookbooks/understanding-call-graphs>` of that code. 
+</profiling-cookbooks/understanding-call-graphs>` of that code.
 Each profile is being tested against your :doc:`custom assertions
-</testing-cookbooks/assertions>` as well as Blackfire 
+</testing-cookbooks/assertions>` as well as Blackfire
 :doc:`recommendations </testing-cookbooks/recommendations>`.
 
 Getting Started with Periodic Builds

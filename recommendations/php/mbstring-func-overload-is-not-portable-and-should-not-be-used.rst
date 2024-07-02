@@ -4,8 +4,8 @@
 The `mbstring.func_overload`_ ini setting allows replacing some string related
 functions with their counterparts from the `mbstring`_ extension.
 
-Using this setting makes applications non-portable, and can introduce hard-to-
-debug issues when used with third-party libraries that don't expect the string
+Using this setting makes applications non-portable, and can introduce hard-to-debug
+issues when used with third-party libraries that don't expect the string
 functions to behave differently than the default ones.
 
 For these reasons, the ``mbstring.func_overload`` setting has been deprecated in
