@@ -16,7 +16,7 @@ The Python continuous profiling is currently made across 5 dimensions:
 Requirements
 ------------
 
-- Python >= 3.7.O
+- Python >= 3.7.0
 
 - Blackfire Agent >= 2.13.0
 
