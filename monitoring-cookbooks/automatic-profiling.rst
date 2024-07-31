@@ -3,14 +3,14 @@ Automatic Profiling
 
 Blackfire offers three levels of insights into your application performance:
 
-* Simple traces: those collect high-level metrics, including overall response
+* **Simple traces**: those collect high-level metrics, including overall response
   time and peak memory usage of a request (close to no overhead);
 
-* Extended traces: those collect key metrics on your code, including
+* **Extended traces**: those collect key metrics on your code, including
   the most significant calls, SQL queries, etc (low overhead); they result in
   "Spans" in a mini-timeline within a transaction view;
 
-* Profiles: do collect the finest details on your application behavior, including
+* **Profiles**: do collect the finest details on your application behavior, including
   Wall-time, I/O, CPU, Memory, Network, HTTP, SQL, at the function call level
   (highest overhead).
 

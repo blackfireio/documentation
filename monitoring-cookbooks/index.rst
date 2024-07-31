@@ -32,6 +32,7 @@ Read More on Monitoring
     configuration
     Alerting <alerting>
     health-report
+    Monitoring dashboard <dashboard>
     filtering-transactions
     naming-transactions
     ignoring-transactions

@@ -1,11 +1,32 @@
 Understanding Comparisons
 =========================
 
-One of the greatest features of the Blackfire profiler is the ability to
-display a call graph that represents the consumed resource changes (A and B)
-between two profiles to make it easy to find gains and losses.
+One of Blackfire Profiler's key features is the ability to compare profiles.
+This helps users understand the differences between two versions of the same
+endpoint or the discrepancies between samples taken days apart.
+
+Knowing if changes in the code base or the application configuration have
+introduced side effects on other parts of the code while working on a new feature
+is really helpful—anticipating the consequences of changes is even better.
+
+Comparing two Profiles
+----------------------
+
+Comparisons can be initiated from the `profile list <https://app.blackfire.io/my/profiles>`_.
+A compare button on the right-hand side of each profile allows you to select
+the source and the destination of this comparison.
+
+.. image:: ../images/profile-compare-1.png
+    :width: 300px
+    :align: center
 
 The graph is a superposition of all calls from the two original graphs.
+The number displayed in a node is the performance gain or loss for the node
+itself, including all its children.
+
+.. image:: ../images/profile-compare-2.png
+    :width: 400px
+    :align: center
 
 Shared Nodes
 ------------

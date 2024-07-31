@@ -72,3 +72,9 @@ Deterministic and probabilistic profiling each hold value within the development
 process. The former delivers a thorough and detailed view, while the latter
 offers a wider, more adaptable perspective. Developers may choose one or even
 combine both approaches based on the project's specifics and the issues faced.
+
+.. note::
+
+    Check out this `blog post <https://blog.blackfire.io/understanding-continuous-profiling-part-1.html>`_
+    to know more about how continuous profiling integrates with the other data
+    type collected.

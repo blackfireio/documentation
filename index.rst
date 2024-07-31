@@ -13,6 +13,7 @@ Blackfire Documentation
 
     introduction
     up-and-running/index
+    onboarding/index
     PHP <php/index>
     Python <python/index>
     Node.js <nodejs/index>

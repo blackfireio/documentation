@@ -88,8 +88,13 @@ Glossary
     it collects. This is the minimal amount of data gathered for all parts of
     the monitored application and at whichever desired frequency.
 
+  Transaction
+    From a Monitoring perspective, a transaction is a group of server-side
+    requests which have been traced by Blackfire, and for which a name has been
+    defined. (see :doc:`Naming Transactions </monitoring-cookbooks/naming-transactions>`)
+
   Wall-Time
     The wall time for a function call is the measure of the real time it took to
-    execute the code. It’s the difference between the time at which the function
+    execute the code. It's the difference between the time at which the function
     was entered and the time at which the function was left. It is the sum of
     CPU time + I/O time.
