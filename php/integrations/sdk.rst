@@ -333,8 +333,8 @@ generation:
 
 .. _php-sdk-assertions-configuration:
 
-Profile Assertions Configuration [level: Development/Production]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Profile Assertions Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Besides basic profile configuration, you can also configure :doc:`assertions
 </testing-cookbooks/assertions>`:

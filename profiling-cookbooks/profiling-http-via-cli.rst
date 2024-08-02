@@ -113,8 +113,8 @@ After instrumenting your code, use the ``blackfire`` utility as above to
 profile your application. When not using Blackfire, all calls are converted to
 *no-ops*.
 
-Profiling all Requests While you Browse [level: Development/Production]
------------------------------------------------------------------------
+Profiling all Requests While you Browse
+---------------------------------------
 
 Profiling POST requests, Ajax requests, and API calls can be done
 via the "Profile all Requests" link in the browser extension.

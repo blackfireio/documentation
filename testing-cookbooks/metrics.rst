@@ -368,8 +368,8 @@ the example):
 
 .. _custom-metrics-timeline:
 
-Using Custom Metrics in the Timeline View [level: Development/Production]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using Custom Metrics in the Timeline View
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the timeline view, all captured metrics are displayed as blocks,
 positioned with time offsets. In the left pane, all metrics are listed and

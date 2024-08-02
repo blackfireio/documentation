@@ -97,8 +97,8 @@ displayed. The command also exits with a status code of ``64`` instead of ``0``:
 Use ``-vvv`` to make the logs very verbose. This flag adds debug
 information to the output.
 
-Running Assertions [level: Development/Production]
---------------------------------------------------
+Running Assertions
+------------------
 
 In addition to expectations, the player can also generate profiles and run
 assertions defined in the ``.blackfire.yaml`` file. Let's begin by
