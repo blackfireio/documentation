@@ -49,8 +49,8 @@ requests from the command line and to automate profiling in scripts:
 
 .. image:: ../images/firefox-copy-as-curl.png
 
-Profiling all Requests [level: Development/Production]
-------------------------------------------------------
+Profiling all Requests
+----------------------
 
 If you want to profile all pages from a session, open the extension and click
 on the *Profile all requests* link, then click on the *Record!* button.

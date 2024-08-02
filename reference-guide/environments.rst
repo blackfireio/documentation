@@ -1,5 +1,5 @@
-Environments [level: Development/Production]
-============================================
+Environments
+============
 
 What's a Blackfire Environment?
 -------------------------------

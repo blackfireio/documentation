@@ -1,5 +1,5 @@
-Understanding Timelines [level: Development/Production]
-=======================================================
+Understanding Timelines
+=======================
 
 .. note::
     :class: doc-cta
@@ -93,8 +93,8 @@ Considering the threshold value, significant events are function calls that are
 worth paying attention to. An event is usually considered significant when its
 *exclusive wall-time* exceeds the threshold value.
 
-Custom Metrics [level: Development/Production]
-----------------------------------------------
+Custom Metrics
+--------------
 
 The timeline only displays relevant metrics that are configured and curated by
 the Blackfire team.

@@ -1,5 +1,5 @@
-Assertions [level: Development/Production]
-==========================================
+Assertions
+==========
 
 An assertion is **an expression that must return a Boolean** (``true`` if the
 assertion succeeds, ``false`` otherwise).
