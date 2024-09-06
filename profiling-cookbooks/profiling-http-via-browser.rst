@@ -49,11 +49,15 @@ requests from the command line and to automate profiling in scripts:
 
 .. image:: ../images/firefox-copy-as-curl.png
 
+.. _profiling-all-requests:
+
 Profiling all Requests
 ----------------------
 
 If you want to profile all pages from a session, open the extension and click
-on the *Profile all requests* link, then click on the *Record!* button.
+on the ":ref:`Profile all requests <profiling-all-requests>`" link, then click
+on the *Record!* button.
+
 Blackfire will then profile all requests including POST requests, Ajax
 requests, and API calls.
 
@@ -63,6 +67,8 @@ all profiled requests will be listed. Stop the session by clicking on the
 
 All profiled requests will be available on your :route:`dashboard
 <dashboard>`.
+
+.. include:: _profiling-all-request-chrome-warning.rst
 
 Limitations on 304 HTTP Responses
 ---------------------------------

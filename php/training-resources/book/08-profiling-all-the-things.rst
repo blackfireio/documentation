@@ -21,6 +21,8 @@ domain they are on! For instance, if an Ajax request in your application hits
 another domain where you installed Blackfire as well, that request will also be
 profiled!
 
+.. include:: /profiling-cookbooks/_profiling-all-request-chrome-warning.rst
+
 Using the Blackfire CLI
 -----------------------
 

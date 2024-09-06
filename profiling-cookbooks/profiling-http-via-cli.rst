@@ -117,7 +117,8 @@ Profiling all Requests While you Browse
 ---------------------------------------
 
 Profiling POST requests, Ajax requests, and API calls can be done
-via the "Profile all Requests" link in the browser extension.
+via the ":ref:`Profile all requests <profiling-all-requests>`" link in the
+browser extension.
 
 When profiling from a browser, select "Profile all requests", then "Record!".
 Blackfire will instrument all requests until you click on the "Stop"
@@ -128,3 +129,5 @@ where all profiled requests will be listed.
 
 All PHP requests which have been profiled will be shown on your
 :route:`dashboard <dashboard>`.
+
+.. include:: _profiling-all-request-chrome-warning.rst
