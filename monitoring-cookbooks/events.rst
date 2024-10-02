@@ -14,3 +14,6 @@ command:
 .. note::
 
     The ``name`` parameter can be up to 64 characters long.
+
+    The ``timestamp`` parameter is optional (default to current datetime) and must
+    be a valid unix timestamp.
