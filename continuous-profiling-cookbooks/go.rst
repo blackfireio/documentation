@@ -18,7 +18,7 @@ The GO continuous profiling is currently made across 6 dimensions:
 Requirements
 ------------
 
-- Go >=1.18
+- Go >= 1.18
 
 - Blackfire Agent >= 2.13.0
 
