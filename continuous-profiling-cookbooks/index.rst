@@ -37,4 +37,6 @@ Read More on Continuous Profiling
     Python configuration <python>
     Node.js configuration <nodejs>
     Go configuration <go>
+    Ruby configuration <ruby>
+    Rust configuration <rust>
     Dashboard <dashboard>

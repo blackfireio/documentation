@@ -18,6 +18,8 @@ Blackfire Documentation
     Python <python/index>
     Node.js <nodejs/index>
     Go <go/index>
+    Ruby <ruby/index>
+    Rust <rust/index>
     Monitor <monitoring-cookbooks/index>
     Continuous Profiling <continuous-profiling-cookbooks/index>
     Profile <profiling-cookbooks/index>
