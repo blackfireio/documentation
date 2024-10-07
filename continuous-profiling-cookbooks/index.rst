@@ -32,6 +32,7 @@ Read More on Continuous Profiling
     :titlesonly:
 
     Deterministic vs probabilistic profiling <understanding>
+    Comparing timeframes <comparison>
     PHP configuration <php>
     Python configuration <python>
     Node.js configuration <nodejs>
