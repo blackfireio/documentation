@@ -33,3 +33,4 @@ Read More on Continuous Profiling
     index
     configuration
     dashboard
+    comparison
