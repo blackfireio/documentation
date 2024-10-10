@@ -23,7 +23,7 @@ It lets you know when and where a specific issue happened so you can react quick
 Continuous profiling
 --------------------
 
-:doc:`Continuous </continuous-profiling-cookbooks/index>` profiling is a powerful
+:doc:`Continuous profiling </continuous-profiling-cookbooks/index>` is a powerful
 observability feature that combines profiling and monitoring with minimal overhead.
 
 The continuous profiler periodically captures data at specified intervals. It

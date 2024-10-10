@@ -1,9 +1,30 @@
 What is Blackfire?
 ==================
 
-Welcome to **Blackfire**, your *Code Performance Observability Solution*.
+Welcome to **Blackfire**, your *Continuous Observability Solution*.
 
-Blackfire helps to improve web applications' performance at each step of its
+Blackfire empowers your to monitor your applications' real-time behavior and
+proactively identify existing bottlenecks or the consequences of upcoming changes
+before they reach production.
+
+By speeding up the discovery process and allowing long-term performance
+optimization, Blackfire lets you stay in control, even during crises, to build
+and grow your applications confidently.
+
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/SNqQTYzHl0o?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
+Blackfire provides a comprehensive view of performance issues, allowing you to
+quickly drill down from a high-level overview to pinpoint root causes at the
+function or service call level.
+
+Across all of your sites and testing pipelines, get actionable reports and
+insights, which help you fix issues and enforce long-last improvements.
+
+Blackfire helps you to improve web applications' performance at each step of its
 lifecycle: from development to test, staging and production.
 
 .. image:: images/book/lifecycle.png
@@ -13,25 +34,24 @@ lifecycle: from development to test, staging and production.
     :align: center
     :alt: Blackfire lifecycle
 
-It offers a unique blend of monitoring, often called APM, and profiling features.
+Continuous Profiling
+--------------------
 
-Across all of your sites and testing pipelines, get actionable reports and
-insights, which help you fix issues.
+Blackfire's :doc:`continuous profiling </continuous-profiling-cookbooks/index>`
+let you maximize performance efficiency with real-time insights:
 
-Blackfire supports PHP and Python monitoring and profiling. It also supports Go
-profiling.
-
-.. include-twig:: `youtube-iframe`
-    :title: introduction-to-blackfire
-    :src: https://www.youtube-nocookie.com/embed/bS4dzuzkir0?rel=0&showinfo=0&modestbranding=1&autoplay=0
-    :width: 700px
-    :height: 394px
+- Quickly identify performance bottlenecks and improve the most resource-intensive
+  parts of your applications.
+- Benefit from low overhead and holistic observability.
+- Immediate bottleneck identification with continuous monitoring of your£
+  application and analysis of code execution.
 
 Monitoring
 ----------
 
-Monitoring a web application is about collecting performance metrics on live
-traffic, usually in production, sometimes in staging.
+:doc:`Monitoring </monitoring-cookbooks/index>` a web application is about
+collecting performance metrics on live traffic, usually in production, sometimes
+in staging.
 
 It is a key feature to **detect when something is going wrong** in your application,
 and give you high-level pointers to **understand which transaction is consuming
@@ -46,9 +66,9 @@ is limited. This is where our profiler shines.
 Profiling
 ---------
 
-Profiling is collecting deep performance metrics while the code is running, and
-have full details and context on the code's behavior to **find the root cause of
-performance bottlenecks**.
+Blackfire's :doc:`Deterministic profiler </profiling-cookbooks/index>` collects
+deep performance metrics while the code is running, and have full details and
+context on the code's behavior to **find the root cause of performance bottlenecks**.
 
 A profile includes information on the number of calls per function, caller-callee
 relationships, wall-time, I/O time, CPU time, memory, network, HTTP calls and
@@ -82,8 +102,9 @@ A Unique Blend of Features
 --------------------------
 
 Blackfire is the only tool to offer natively integrated monitoring, advanced
-profiling and testing features. Thanks to that blend, get actionable insights and
-reports so that you can fix issues rather than spend time finding them.
+determinist and continuous profiling and testing features. Thanks to that blend,
+get actionable insights and reports so that you can fix issues rather than
+spend time finding them.
 
 To better understand how Blackfire works, check our doc on
 :doc:`the Blackfire stack </reference-guide/faq>`.
@@ -91,23 +112,7 @@ To better understand how Blackfire works, check our doc on
 What's Next?
 ------------
 
-1. :doc:`Install </up-and-running/installation>` Blackfire in production and
-   :doc:`activate Monitoring </monitoring-cookbooks/configuration>`;
+Head to our :doc:`dedicated onboarding section </up-and-running/installation>`
+to be guided at every step of your way into getting the most out of Blackfire.
 
-2. Install the stack your personal computer;
-
-3. Learn more about how to profile HTTP requests via a :doc:`browser
-   </profiling-cookbooks/profiling-http-via-browser>` or the :doc:`CLI
-   </profiling-cookbooks/profiling-http-via-cli>` (Web Pages, Web Services,
-   API calls) and how to :doc:`profile CLI commands</profiling-cookbooks/profiling-cli>`.
-
-If you have never used a profiler before, learn more about :doc:`how to
-understand call graphs </profiling-cookbooks/understanding-call-graphs>`, :doc:`how to
-read a timeline </profiling-cookbooks/understanding-timelines>`, and :doc:`how to
-interpret time </reference-guide/time>`.
-
-Then, learn how to write :doc:`tests </testing-cookbooks/tests>` and :doc:`scenarios
-</builds-cookbooks/scenarios>`.
-
-Finally, learn how to integrate Blackfire with many :doc:`third-party services
-and libraries </integrations/index>`.
+Stop firefighting, today.
