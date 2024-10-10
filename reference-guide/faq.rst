@@ -8,10 +8,10 @@ The Blackfire Stack
 
 The Blackfire Stack is made of **five main components**:
 
-* the **Probe** is a language extension that gathers the raw performance profiles;
+* the **Probe** is a language extension that gathers the raw observability data;
 
-* the **Agent** is a server-side daemon that receives profiles from the Probe,
-  and forwards them to Blackfire;
+* the **Agent** is a server-side daemon that receives raw observability data
+  from the Probe, and forwards them to Blackfire server;
 
 * the **Browser Extension** is a web browser extension used mainly to trigger
   profiling from a browser;

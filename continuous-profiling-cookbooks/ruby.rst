@@ -22,6 +22,8 @@ Installation
 
       gem 'datadog', '~> 2.0'
 
+   .. include:: _datadog-warning.rst
+
 2. Install the gems running the ``bundle install`` command.
 
 3. Enable the Ruby Continuous Profiler by defining these environment variables:
@@ -30,6 +32,11 @@ Installation
      profiler.
 
    - ``DD_SERVICE=my-ruby-app``: sets the application name.
+
+   - ``DD_PROFILING_ALLOCATION_ENABLED=1``: enables allocation profiling
+
+   - ``DD_TRACE_AGENT_URL=unix:///var/run/blackfire/agent.sock``: has Blackfire
+      Agent collect traces.
 
 4. Add the ``ddprofrb exec`` command to your Ruby application start command:
 

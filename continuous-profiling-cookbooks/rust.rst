@@ -30,6 +30,8 @@ Installation
     ``INSTALLATION_TARGET`` specifies the designated location to store the ddprof
     binary. The examples bellow assume ``INSTALLATION_TARGET`` is set to ``./ddprof``.
 
+   .. include:: _datadog-warning.rst
+
 2. Enable the Rust Continuous Profiler by defining these environment variables:
 
    - ``DD_PROFILING_ENABLED=true``: controls the activation of the continuous

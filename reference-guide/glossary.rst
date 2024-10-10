@@ -3,6 +3,10 @@ Glossary
 
 .. glossary::
 
+  Agent
+    The agent is a server-side daemon that receives raw observability data from
+    the :term:`probe <Probe>`, and forwards them to Blackfire servers.
+
   Call-Graph
     A call-graph is a relational visualization method. Blackfire profiles are
     displayed as call-graphs to show the caller-callee relation between
@@ -58,6 +62,9 @@ Glossary
     The value below which a percentage of data falls. Having a 96th percentile
     Response Time of 50ms means that 96% of the transactions have a response
     time below or equal to 50ms.
+
+  Probe
+    The Probe is a language extension that gathers the raw observability data.
 
   Profile
     A profile is the data output while measuring the resource consumption of an

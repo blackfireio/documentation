@@ -33,6 +33,8 @@ Installation
 
 - When loaded, you can see the extension works correctly using ``php --ri datadog-profiling``
 
+.. include:: _datadog-warning.rst
+
 Configuration
 _____________
 
