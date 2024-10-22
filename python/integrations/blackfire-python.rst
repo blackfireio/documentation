@@ -40,6 +40,12 @@ Example with Django using ``gunicorn``:
 
     blackfire-python gunicorn myapp.wsgi
 
+.. caution::
+
+    When using monitoring with the ``uWSGI`` server, ensure that the ``--enable-threads``
+    option is set. Without this, monitoring will not function correctly because
+    Blackfire Monitoring relies on threads to communicate with the Blackfire Agent.
+
 Usage with CLI Commands
 -----------------------
 
