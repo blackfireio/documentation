@@ -1,12 +1,12 @@
-Gitlab [level: Production]
+GitLab [level: Production]
 ==========================
 
-`Gitlab <https://about.gitlab.com/>`_ is an application to code, test, and
+`GitLab <https://about.gitlab.com/>`_ is an application to code, test, and
 deploy code collaboratively. It provides Git repository management, code
 reviews, issue tracking, activity feeds, wikis, and continuous integration
 features.
 
-Integrating Blackfire with Gitlab enables you to automate the performance
+Integrating Blackfire with GitLab enables you to automate the performance
 testing of your code any time you modify it.
 
 Triggering Scenarios on Deployed Environments
@@ -23,19 +23,19 @@ The expected workflow is as follows:
 
 2. The Merge Request is automatically deployed;
 
-3. Gitlab triggers Blackfire to run your scenarios;
+3. GitLab triggers Blackfire to run your scenarios;
 
-4. Blackfire sends a notification to Gitlab that is displayed as a commit
+4. Blackfire sends a notification to GitLab that is displayed as a commit
    status on the corresponding Merge Request.
 
 The first step to configure Blackfire in the above-mentioned workflow is to
-create a webhook payload, that Gitlab will use to let Blackfire run the test
+create a webhook payload, that GitLab will use to let Blackfire run the test
 scenarios.
 
 Please read the :ref:`builds API documentation <build-webhook>` to configure
 them.
 
-To make sure that Gitlab can receive a notification back from
+To make sure that GitLab can receive a notification back from
 Blackfire, please make sure to configure the following parameters:
 
 ====================== =======================
@@ -59,13 +59,13 @@ deploying it. You will need to configure it to:
 
 * :ref:`Generate profiles and aggregate them in a build <php-sdk-builds>`;
 
-* :ref:`Send the build result to Gitlab as a commit status
+* :ref:`Send the build result to GitLab as a commit status
   <php-sdk-commit-status>`.
 
-Setting up the Gitlab Notification Channel
+Setting up the GitLab Notification Channel
 ------------------------------------------
 
-Anytime a build report is available, the :doc:`Gitlab notification channel
+Anytime a build report is available, the :doc:`GitLab notification channel
 </builds-cookbooks/notification-channels>` updates the commit status on the
 corresponding Merge Request.
 
@@ -74,8 +74,8 @@ corresponding Merge Request.
 
     You must make sure to create the webhook payload like described above.
 
-To configure a Gitlab notification channel, open the dashboard build tab of the
+To configure a GitLab notification channel, open the dashboard build tab of the
 related Blackfire environment and look for the *Notification Channels* section.
 Add a new notification channel. The configuration requires the repository
-endpoint (like ``https://gitlab.example.com/api/v4/projects/17``) and a Gitlab
+endpoint (like ``https://gitlab.example.com/api/v4/projects/17``) and a GitLab
 Token to be able to post build statuses on Merge Requests.

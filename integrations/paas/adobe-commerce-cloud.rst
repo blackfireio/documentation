@@ -61,7 +61,7 @@ scenarios will be run for all your pull-requests.
 Git integration [level: Production]
 -----------------------------------
 
-If you are using GitHub, Bitbucket, or Gitlab, and if you have setup the
+If you are using GitHub, Bitbucket, or GitLab, and if you have setup the
 synchronization with Adobe Commerce Cloud, don't forget to configure the
 :doc:`corresponding notification channel </integrations/git/index>`. That
 way, Blackfire can update the status of your pull-requests / merge-requests.

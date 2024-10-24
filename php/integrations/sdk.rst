@@ -781,7 +781,7 @@ the commit status to ease the validation and merge decision.
 
 Commit statuses are associated to builds via the corresponding Git commit sha1.
 After enabling the :doc:`notification channel
-</builds-cookbooks/notification-channels>` (GitHub, Gitlab, or webhooks) for an
+</builds-cookbooks/notification-channels>` (GitHub, GitLab, or webhooks) for an
 environment, pass the Git sha1 to the ``startBuild()`` method options:
 
 .. code-block:: php
