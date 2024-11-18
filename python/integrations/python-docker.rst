@@ -9,7 +9,7 @@ example of a ``Dockerfile`` based on the official Docker Python image:
 
 .. code-block:: bash
 
-    FROM python:3.12-buster
+    FROM python:3.13-buster
 
     RUN pip install --upgrade pip blackfire
 
@@ -66,7 +66,7 @@ that retrieves the client at build time:
 .. code-block:: text
     :zerocopy:
 
-    FROM python:3.12-buster
+    FROM python:3.13-buster
 
     RUN pip install --upgrade pip blackfire
     RUN mkdir -p /tmp/blackfire \
