@@ -1,5 +1,5 @@
-"register_globals" is deprecated and should not be enabled
-==========================================================
+"register_argc_argv" should be turned off
+=========================================
 
 The `register_globals`_ ini setting was used to automatically register EGPCS
 (Environment, GET, POST, Cookie, Server) variables as global variables in your
