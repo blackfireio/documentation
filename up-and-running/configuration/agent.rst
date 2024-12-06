@@ -6,6 +6,11 @@ Agent Configuration (v2)
 The Blackfire agent can be configured via a configuration file, flags passed to
 the binary, or environment variables.
 
+Installing the Agent
+--------------------
+
+Please refer to the :doc:`installation procedure </up-and-running/installation>`.
+
 Configuring the Agent via a Configuration File
 ----------------------------------------------
 

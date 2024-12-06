@@ -14,7 +14,7 @@ Requirements
 
 - Linux (``glibc`` or ``musl``)
 
-- Blackfire Agent >= 2.13.0
+- :doc:`Blackfire Agent </up-and-running/configuration/agent>` >= 2.13.0
 
 Installation
 ------------
