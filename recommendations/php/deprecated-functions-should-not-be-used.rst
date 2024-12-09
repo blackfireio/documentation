@@ -284,6 +284,16 @@ they actually only converted UTF-8 strings to ISO-8859-1 and vice versa. They ca
 
 Please find the documentation about deprecations in `the official PHP 8.2 migration guide`_.
 
+**Deprecated in PHP 8.3**
+
+Please find the documentation about deprecations in `the official PHP 8.3 migration guide`_.
+
+**Deprecated in PHP 8.4**
+
+Please find the documentation about deprecations in `the official PHP 8.4 migration guide`_.
+
 .. _`the official PHP 8.0 migration guide`: https://www.php.net/manual/en/migration80.deprecated.php
 .. _`the official PHP 8.1 migration guide`: https://www.php.net/manual/en/migration81.deprecated.php
 .. _`the official PHP 8.2 migration guide`: https://www.php.net/manual/en/migration82.deprecated.php
+.. _`the official PHP 8.3 migration guide`: https://www.php.net/manual/en/migration83.deprecated.php
+.. _`the official PHP 8.4 migration guide`: https://www.php.net/manual/en/migration84.deprecated.php
