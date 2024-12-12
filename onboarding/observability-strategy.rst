@@ -1,5 +1,11 @@
-Defining your observability strategy
+Defining your Observability Strategy
 ====================================
+
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/zibhLfeZnL4?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
 
 The quest for performance is a never-ending journey. It is not won as soon as
 that one bottleneck has been patched.
@@ -10,61 +16,94 @@ possible in the long term.
 
 The best approach is to come up with a battle plan: your **observability strategy**.
 
-Here are the ways Blackfire's components could be used to craft yours:
+An effective observability strategy involves combining features in a way that
+aligns with your unique goals. Whether you are responding to production issues
+or striving to build a solid, long-term foundation for performance, your
+strategy will make all the difference.
 
-Blackfire monitoring
---------------------
+Defining your Priorities
+------------------------
 
-:doc:`Blackfire monitoring </monitoring-cookbooks/index>` provides a bird's-eye
-view of an application's performance for both HTTP and CLI traffic.
+Your observability strategy starts by defining your priorities.
 
-It lets you know when and where a specific issue happened so you can react quickly.
+Are you currently dealing with outages and firefighting incidents? Or are you
+focused on long-term performance and proactive optimization?
 
-Continuous profiling
---------------------
+This guide will help you tailor Blackfire to meet your needs at each stage.
 
-:doc:`Continuous profiling </continuous-profiling-cookbooks/index>` is a powerful
-observability feature that combines profiling and monitoring with minimal overhead.
+1. Fighting Outages and Incident Response
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The continuous profiler periodically captures data at specified intervals. It
-gathers information on the functions or services triggered by any active request
-or script during those intervals.
+If your immediate goal is to minimize downtime and keep your application running
+smoothly, focus on features that help you react quickly:
 
-Blackfire alerting
-------------------
+- **Continuous Profiling**:
+  Use Blackfire's :doc:`continuous profiling </continuous-profiling-cookbooks/index>`
+  to identify performance bottlenecks in real time. It helps pinpoint which
+  functions are consuming the most resources, allowing you to address issues
+  before they escalate.
 
-You won't have to sit all day waiting for a crash to happen, you can set up
-:doc:`alerts </monitoring-cookbooks/alerting>` to be notified immediately.
+- **Monitoring**:
+  :doc:`Blackfire monitoring </monitoring-cookbooks/index>` provides a
+  bird's-eye view of your application's behavior, highlighting trends and
+  anomalies. This high-level visibility helps you spot potential issues before
+  they become critical.
 
-Alerts and cooldowns escalate to any channel you use, such as email, Slack,
-Microsoft Teams, or other web services.
+- **Deterministic Profiling**:
+  For precise optimizations, use Blackfire's
+  :doc:`deterministic profiling </profiling-cookbooks/index>` to identify root
+  causes at the function or service call level, ensuring that you can
+  effectively address underlying problems.
 
-Blackfire Profiler
-------------------
+By combining these features, you can efficiently tackle critical performance
+issues, regain control over your application's performance, and resolve
+bottlenecks one at a time.
 
-Once a diagnosis is made, you can dig as deep as possible into the application
-behavior with :doc:`Blackfire Profiler </profiling-cookbooks/index>` until you
-locate the exact function or service calls that are responsible for the
-performance issue.
+2. Long-term Control and Proactive Optimization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Blackfire Profiler lets you understand why your application behaves a certain way.
+If you're focused on building a culture of high-quality performance and
+preventing issues from arising, focus on the following features:
 
-Blackfire tests suite
----------------------
+- **Alerting**:
+  Set up :doc:`alerting </monitoring-cookbooks/alerting>` to ensure you are
+  the first to know about any production issues. By defining alert thresholds,
+  you can respond to performance problems promptly.
 
-Once a script's code is optimized, one more thing remains before pushing it to
-production: writing tests.
+- **Health Report**:
+  Use :doc:`Health report </monitoring-cookbooks/health-report>`
+  to get an aggregated summary of your application's health and performance trends.
+  This helps you monitor the overall state and identify areas needing attention.
 
-Blackfire provides an `extensive test suite <https://blog.blackfire.io/getting-started-with-the-blackfire-test-suite-part-1-of-series.html>`_
-and integrations with major testing frameworks.
+- **Performance Testing**:
+  Write and continuously expand
+  :doc:`performance tests </testing-cookbooks/index>` to keep critical parts of
+  your application under control. Regular testing prevents performance
+  regressions as your application evolves.
 
-Synthetic monitoring
---------------------
+- **Synthetic Monitoring**:
+  Automate performance test with :doc:`synthetic monitoring </builds-cookbooks/index>`
+  by integrating it into your CI/CD pipeline. This ensures your application
+  maintains performance quality with each new release.
 
-Last but not least, the performance of your applications' critical user journeys
-can also be evaluated regularly. Integrating :doc:`Blackfire builds </builds-cookbooks/index>`
-with your CI/CI pipelines prevents a pull request from being merged or code from
-being deployed into production if it degrades the performance of your application.
+Combining Strategies for Effective Observability
+------------------------------------------------
 
-Learn more about defining your observability strategy in `this blog post
-<https://blog.blackfire.io/blackfire-a-complete-observability-solution.html>`_.
+These strategies are not mutually exclusive. The most successful teams combine
+both approaches to achieve immediate resilience and lasting control.
+
+For teams starting with firefighting, it is essential to move toward proactive
+testing and planning once emergencies are under control. Otherwise, recurring
+issues will keep reappearing.
+
+Teams that start with a strong foundation of testing and monitoring can often
+handle unexpected incidents more effectively due to established healthy
+baselines and clear playbooks.
+
+Building an observability strategy with Blackfire isn't about enabling every
+feature at once. Instead, start by focusing on your current needs and gradually
+expand your toolset as your application matures.
+
+Blackfire equips you with the insights to fight today's fires and build
+tomorrow's growth. Define your objectives, start with the features that align
+with those goals, and grow your strategy over time.
