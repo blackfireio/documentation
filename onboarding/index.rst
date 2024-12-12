@@ -28,6 +28,7 @@ Your Onboarding to Blackfire
     priority
     access-management
     billing
+    Features overview <features>
     Observability strategy <observability-strategy>
     Monitoring <monitoring/index>
     Profiling <profiling/index>

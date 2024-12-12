@@ -13,7 +13,7 @@ and grow your applications confidently.
 
 .. include-twig:: `youtube-iframe`
     :title: introduction-to-blackfire
-    :src: https://www.youtube-nocookie.com/embed/SNqQTYzHl0o?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :src: https://www.youtube-nocookie.com/embed/UlDMOoSrvXg?rel=0&showinfo=0&modestbranding=1&autoplay=0
     :width: 700px
     :height: 394px
 
