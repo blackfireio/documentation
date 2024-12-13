@@ -14,6 +14,6 @@ Organization's Environments with the **Organization admins** roles
 .. toctree::
     :maxdepth: 1
 
-    Environment Access Levels <environment-levels>
     Organization Roles <organization-roles>
+    Environment Access Levels <environment-levels>
     Teams Management <teams>

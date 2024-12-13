@@ -7,8 +7,9 @@ Four roles are available at the Organization level: **Member**,
 - **Member**: Can access organization usage data, assigned environments
   and view other members of assigned environments.
 
-- **Billing Manager**: same as **Member**. Can also manage billing
-  and subscription details, and access invoices;
+- **Billing Manager**: Can only manage billing and subscription details,
+  and access invoices. Billing managers do no use a paid seat as they can't
+  access observability data and features.
 
 - **Admin**: Full management of the organization: settings, billing,
   environments and users. The **Admin** role can be seen as the delegation by
