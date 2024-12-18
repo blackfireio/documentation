@@ -1,6 +1,12 @@
 Access Management
 =================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/usIksxOZZLY?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire Access Management allows the management of permissions through
 :doc:`Roles <organization-roles>` at the Organization level and
 :doc:`Access Levels <environment-levels>` for your :doc:`Environments </reference-guide/environments>`.
