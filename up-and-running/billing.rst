@@ -1,6 +1,12 @@
 Managing your subscription
 ==========================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/okaCm_8fWKU?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Organization Admins and Billing Managers can manage their self-service
 :term:`Organization <Organization>` subscription from the organization billing
 settings page in your dashboard.
