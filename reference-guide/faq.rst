@@ -6,6 +6,12 @@ FAQ
 The Blackfire Stack
 -------------------
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/G8PQ96EQ5Mw?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 The Blackfire Stack is made of **five main components**:
 
 * the **Probe** is a language extension that gathers the raw observability data;
