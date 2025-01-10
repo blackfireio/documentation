@@ -1,6 +1,12 @@
 Monitoring Cookbooks
 ====================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/OKI-oY7KiA8?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire Monitoring enables to monitor the performance of a deployed
 application, usually in production or staging environments.
 
@@ -15,12 +21,6 @@ application.
 Blackfire Monitoring is fully integrated with Blackfire Profiler, enabling
 :doc:`automated profiling </monitoring-cookbooks/automatic-profiling>`, and
 providing enhanced :doc:`Health Reports </monitoring-cookbooks/health-report>`.
-
-.. include-twig:: `youtube-iframe`
-    :title: blackfire-monitoring-demo
-    :src: https://www.youtube-nocookie.com/embed/snJvEixS4Ro?rel=0&showinfo=0&modestbranding=1&autoplay=0
-    :width: 700px
-    :height: 394px
 
 Read More on Monitoring
 -----------------------

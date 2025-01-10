@@ -1,6 +1,12 @@
 Introduction to Monitoring [level: Production]
 ==============================================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/OKI-oY7KiA8?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 :doc:`Blackfire monitoring </monitoring-cookbooks/index>` provides a real-time
 bird's-eye view of your application performance.
 

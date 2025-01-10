@@ -1,6 +1,12 @@
 Automatic Profiling
 ===================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/-1aG-d7O8Vs?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire offers three levels of insights into your application performance:
 
 * **Simple traces**: those collect high-level metrics, including overall response

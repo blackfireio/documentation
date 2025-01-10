@@ -1,6 +1,12 @@
 Blackfire Monitoring Dashboard [level: Production]
 ==================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/le6ayYPO6oM?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire monitoring takes a holistic approach to continuous observability,
 providing a bird's-eye view of the health of your applications enabling you to
 identify and drill down on performance issues.

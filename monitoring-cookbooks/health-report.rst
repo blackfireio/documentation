@@ -1,6 +1,12 @@
 Health Report
 =============
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/NNH_K0Wf9Qw?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 The Health Report is designed to let you embrace performance trends for a
 specific :doc:`Blackfire environment </reference-guide/environments>`. It relies
 on the data collected by :doc:`Blackfire Monitoring </monitoring-cookbooks/index>`

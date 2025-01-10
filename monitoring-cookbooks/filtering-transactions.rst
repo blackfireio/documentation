@@ -1,6 +1,12 @@
 Filtering Transactions
 =======================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/pf23gxQuMds?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 You can filter HTTP Monitoring data by HTTP Host, HTTP method, Host, and Runtime.
 You can use those filters individually or combined:
 
