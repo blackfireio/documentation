@@ -42,9 +42,12 @@ The following environment variables are available:
 
 - ``DD_TRACE_AGENT_URL=unix:///var/run/blackfire/agent.sock``
 
+- ``DD_TRACE_ENABLED=false``
+
 - ``DD_PROFILING_ENABLED=true``
 
 - ``DD_PROFILING_LOG_LEVEL=off``
 
-- ``DD_SERVICE="your app name"``
+- ``DD_INSTRUMENTATION_TELEMETRY_ENABLED=false``
 
+- ``DD_SERVICE="your app name"``
