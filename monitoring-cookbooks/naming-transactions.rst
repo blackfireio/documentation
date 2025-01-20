@@ -1,6 +1,12 @@
 Naming Transactions
 ===================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/3LA7BqROq_Q?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 From a Monitoring perspective, **a transaction is a group of server-side requests
 which have been traced by Blackfire**, and for which a name has been defined,
 according to the supported frameworks.

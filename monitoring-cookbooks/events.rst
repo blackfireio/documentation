@@ -1,6 +1,12 @@
 Mark Events in the Monitoring Timeline
 ======================================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/xMNcV6cN7A4?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 You may want to visualize specific events in your Monitoring timeline to check
 the impact of an action, like a deployment.
 

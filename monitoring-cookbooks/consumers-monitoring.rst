@@ -1,6 +1,12 @@
 Consumers Monitoring
 ====================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/48uEe1dINNA?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Consumers and CLI commands can be monitored.
 
 Displaying CLI Monitoring Data
