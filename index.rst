@@ -16,8 +16,9 @@ Blackfire Documentation
     onboarding/index
     PHP <php/index>
     Python <python/index>
-    Node.js <nodejs/index>
     Go <go/index>
+    Java <java/index>
+    Node.js <nodejs/index>
     Ruby <ruby/index>
     Rust <rust/index>
     Monitor <monitoring-cookbooks/index>
