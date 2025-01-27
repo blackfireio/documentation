@@ -35,8 +35,9 @@ Read More on Continuous Profiling
     Comparing timeframes <comparison>
     PHP configuration <php>
     Python configuration <python>
-    Node.js configuration <nodejs>
     Go configuration <go>
+    Java configuration <java>
     Ruby configuration <ruby>
     Rust configuration <rust>
+    Node.js configuration <nodejs>
     Dashboard <dashboard>
