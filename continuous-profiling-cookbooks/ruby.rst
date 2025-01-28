@@ -33,7 +33,7 @@ Installation
 
    - ``DD_SERVICE=my-ruby-app``: sets the application name.
 
-   - ``DD_PROFILING_ALLOCATION_ENABLED=1``: enables allocation profiling
+   - ``DD_PROFILING_ALLOCATION_ENABLED=true``: enables allocation profiling
 
    - ``DD_TRACE_AGENT_URL=unix:///var/run/blackfire/agent.sock``: has Blackfire
       Agent collect traces.

@@ -38,17 +38,19 @@ Installation
          -javaagent:dd-java-agent.jar \
          -jar <YOUR_SERVICE>.jar <YOUR_SERVICE_FLAGS>
 
-3. Enable the Ruby Continuous Profiler by defining these environment variables:
+3. Enable the Java Continuous Profiler by defining these environment variables:
 
    - ``DD_PROFILING_ENABLED=true``: controls the activation of the continuous
      profiler.
+
+   - ``DD_PROFILING_DDPROF_ENABLED=false``: disables native profiling
 
    - ``DD_SERVICE=my-java-app``: sets the application name.
 
    - ``DD_TRACE_AGENT_URL=unix:///var/run/blackfire/agent.sock``: has Blackfire
      Agent collect traces.
 
-   - ``DD_PROFILING_ALLOCATION_ENABLED=1``: enables allocation profiling
+   - ``DD_PROFILING_ALLOCATION_ENABLED=true``: enables allocation profiling
 
    - ``DD_PROFILING_ENABLED_EVENTS="jdk.ObjectAllocationInNewTLAB,jdk.ObjectAllocationOutsideTLAB"``:
      enables Object allocation
