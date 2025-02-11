@@ -29,3 +29,17 @@ The traces used in the organization's other environments are gathered within
 the "Other environments" entry.
 
 .. image:: ../images/monitoring/monitoring-usage.png
+
+Traffic Spike Prevention
+------------------------
+
+Blackfire Monitoring's traffic spike prevention system protects your monthly
+monitoring quota from sudden traffic surges.
+
+It continuously tracks your monitoring traces collection rate. At any time, an
+ingestion rate exceeding 15 times your monthly quota allowance is identified as
+an abnormal traffic spike.
+
+Blackfire monitoring is then automatically paused for 15 minutes. Subsequently,
+monitoring resumes automatically, ensuring you continue to receive insights
+without significant disruption.
