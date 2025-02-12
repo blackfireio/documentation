@@ -105,7 +105,7 @@ performance goals. RAIL stands for:
 .. note::
 
     If you want to dive more in RAIL, watch the "`Dev Tools: State of the
-    Union <https://www.jqueryuk.com/2015/videos/devtools-state-of-the-union>`_"
+    Union <https://www.youtube.com/watch?v=FfGqP8Sqxcc>`_"
     talk.
 
 Let's see how these goals can be observed and improved.
@@ -248,7 +248,7 @@ CSS issues:
    :align: center
 
 To test your optimizations, use automated tools like `PhantomCSS
-<https://github.com/Huddle/PhantomCSS>`_, `huxley
+<https://github.com/HuddleEng/PhantomCSS>`_, `huxley
 <https://github.com/facebookarchive/huxley>`_, `Wraith
 <https://github.com/BBC-News/wraith>`_, or `Needle
 <https://github.com/bfirsh/needle>`_.

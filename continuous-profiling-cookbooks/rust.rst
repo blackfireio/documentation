@@ -22,10 +22,8 @@ Installation
 1. Download the latest `ddprof release <https://github.com/DataDog/ddprof/releases>`_.
 
     .. code-block:: bash
-
-       curl -Lo ddprof-linux.tar.xz https://github.com/DataDog/ddprof/releases/latest/download/ddprof-<INFRA>-linux.tar.xz
-       tar xvf ddprof-linux.tar.xz
-       mv ddprof/bin/ddprof INSTALLATION_TARGET
+      curl -Lo ddprof https://github.com/DataDog/ddprof/releases/latest/download/ddprof-<ARCH>
+      mv ddprof INSTALLATION_TARGET
 
     ``INSTALLATION_TARGET`` specifies the designated location to store the ddprof
     binary. The examples bellow assume ``INSTALLATION_TARGET`` is set to ``./ddprof``.

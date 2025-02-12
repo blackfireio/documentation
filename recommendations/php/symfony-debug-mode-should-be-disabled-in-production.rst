@@ -11,4 +11,4 @@ debug features of Symfony. Although debugging is useful when developing the
 application, it introduces a significant impact in the application performance.
 That's why the Symfony Kernel debug should be disabled in production.
 
-.. _`Kernel class`: https://api.symfony.com/master/Symfony/Component/HttpKernel/Kernel.html
+.. _`Kernel class`: https://github.com/symfony/symfony/blob/master/src/Symfony/Component/HttpKernel/Kernel.php#L88

@@ -17,5 +17,5 @@ to a pretty low value (even caching for 5 minutes helps).
 
 For more information have a look at the `documentation of the caching framework`_.
 
-.. _`documentation of the caching framework`: https://docs.typo3.org/typo3cms/CoreApiReference/CachingFramework/Index.html
+.. _`documentation of the caching framework`: https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/CachingFramework/Architecture/Index.html
 .. _`a contribution by Susanne Moog`: https://blog.blackfire.io/typo3-performance-recommendations.html

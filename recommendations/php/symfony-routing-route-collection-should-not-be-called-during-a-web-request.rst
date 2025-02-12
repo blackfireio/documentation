@@ -20,4 +20,4 @@ If you are looking for a way to know if a route is defined or not, you can use t
         $found = false;
     }
 
-.. _`Router interface`: https://api.symfony.com/4.0/Symfony/Component/Routing/RouterInterface.html
+.. _`Router interface`: https://github.com/symfony/symfony/blob/7.3/src/Symfony/Component/Routing/RouterInterface.php

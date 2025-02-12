@@ -14,6 +14,6 @@ Keep in mind that some of the SPI handlers are not cached:
 
 You can read more at `Persistence cache`_ and `SPI and API repositories`_.
 
-.. _`Persistence cache`: https://doc.ibexa.co/en/latest/guide/persistence_cache/#__toc
-.. _`SPI and API repositories`: https://doc.ibexa.co/en/latest/guide/repository/#spi
+.. _`Persistence cache`: https://doc.ibexa.co/en/latest/infrastructure_and_maintenance/cache/persistence_cache/#__toc
+.. _`SPI and API repositories`: https://doc.ibexa.co/en/3.3/guide/repository/#spi
 .. _`a contribution by ibexa.co`: https://blog.blackfire.io/ez-platform-recommendations.html

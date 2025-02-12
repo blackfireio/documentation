@@ -125,7 +125,7 @@ cases and more, thanks to the following abilities:
 * Server credentials can be configured in the PHP configuration file
   (``php.ini``), allowing you to set up different credential per PHP-FPM pool.
 
-The `configuration <https://docs.blackfire.io/configuration>`_
+The `configuration <https://docs.blackfire.io/reference-guide/environments#environments-configuration>`_
 chapter in the reference guide describes how this works in practice.
 
 Conclusion

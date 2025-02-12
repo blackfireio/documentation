@@ -71,7 +71,7 @@ Exposing ``blackfire`` and ``blackfire-player`` as Lando Commands
 When using the Blackfire Lando plugin, ``blackfire`` and ``blackfire-player``
 are getting installed in your application container.
 
-You may expose these commands as `Lando Tooling Commands <https://docs.lando.dev/config/tooling.html>`_
+You may expose these commands as `Lando Tooling Commands <https://docs.lando.dev/landofile/tooling.html>`_
 using the following snippet in your Landofile:
 
 .. code-block:: yaml

@@ -13,5 +13,5 @@ functions") that may be buggy.
 
 .. _`OPcache`: https://www.php.net/manual/en/book.opcache.php
 .. _`opcodes`: https://en.wikipedia.org/wiki/Opcode
-.. _`OPcache optimizations`: https://github.com/php/php-src/blob/master/ext/opcache/Optimizer/zend_optimizer.h
+.. _`OPcache optimizations`: https://github.com/php/php-src/blob/master/Zend/Optimizer/zend_optimizer.h
 .. _`opcache.optimization_level`: https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.optimization-level

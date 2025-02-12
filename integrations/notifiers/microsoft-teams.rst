@@ -6,7 +6,7 @@ finished, depending on its configuration.
 
 To integrate Microsoft Teams into Blackfire:
 
-1. Follow the Microsoft Teams guide to `add a webhook connector <https://msdn.microsoft.com/en-us/microsoft-teams/connectors>`_;
+1. Follow the Microsoft Teams guide to `add a webhook connector <https://learn.microsoft.com/en-us/connectors/teams/>`_;
 
 2. Copy/paste the Webhook URL in the Webhook URL field;
 

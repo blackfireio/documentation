@@ -4,7 +4,7 @@ Magento [language: PHP]
 Adobe Commerce Cloud
 --------------------
 
-`Adobe Commerce Cloud <https://magento.com/products/magento-commerce>`_ is
+`Adobe Commerce Cloud <https://business.adobe.com/products/magento/magento-commerce.html>`_ is
 Magento-optimized PaaS (Platform-as-a-Service). It enables to fully automate
 continuous integration and continuous deployment of Magento eCommerce websites.
 

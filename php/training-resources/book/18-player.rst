@@ -225,7 +225,7 @@ can also click on links via CSS selectors:
 
     The ``css()`` and ``xpath()`` functions return the DOM elements matching
     the selector. Both functions return instances of `Symfony DomCrawler
-    <https://api.symfony.com/3.0/Symfony/Component/DomCrawler/Crawler.html>`_
+    <https://github.com/symfony/dom-crawler/blob/7.2/Crawler.php>`_
     which give access to many ways to manipulate DOM results.
 
 Values Extraction

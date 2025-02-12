@@ -1,8 +1,7 @@
 Visual Studio Code [language: PHP]
 ==================================
 
-The `PHP Intelephense extension <https://marketplace.visualstudio
-.com/items?itemName=bmewburn.vscode-intelephense-client>`_ for Visual Studio
+The `PHP Intelephense extension <https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client>`_ for Visual Studio
 Code provides stubs for ``\BlackfireProbe`` internal class, from
 :ref:`the Blackfire extension <php-blackfireprobe-internal-class>`.
 These stubs give you **code completion on all available methods of

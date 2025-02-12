@@ -5,7 +5,7 @@ Cloudflare
 that may be configured to cache HTTP responses.
 
 While HTTP caching is disabled by default on Cloudflare, you might activate this feature via
-`page rules <https://support.cloudflare.com/hc/en-us/articles/218411427-Understanding-and-Configuring-Cloudflare-Page-Rules-Page-Rules-Tutorial->`_.
+`page rules <https://developers.cloudflare.com/rules/page-rules/>`_.
 It is possible to enable caching per page, but the matching configuration is only
 possible via *URL matching*, which doesn't allow you to disable the cache
 when :ref:`Blackfire HTTP header <reverse-proxies-headers>` is present in the request.

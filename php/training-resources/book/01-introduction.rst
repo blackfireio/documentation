@@ -100,7 +100,7 @@ enforcement**.
 
 But first, why is performance so important?
 `According to Google
-<https://www.thinkwithgoogle.com/intl/en-154/insights-inspiration/research-data/need-mobile-speed-how-mobile-latency-impacts-publisher-revenue/>`_:
+<https://blog.google/products/admanager/the-need-for-mobile-speed/>`_:
 **53% of visits are abandoned if a mobile site takes longer than 3 seconds to load**.
 Your customer is gone, probably forever. If your web applications are not fast
 enough, you will lose both customers and revenue. That's why performance

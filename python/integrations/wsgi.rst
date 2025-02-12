@@ -107,7 +107,7 @@ HTTP response.
 
 In the example below, the function returns an instance of ``werkzeug.wrappers.Response``.
 
-In the `Django middleware <https://github.com/blackfireio/blackfire.io/blob/master/languages/python/src/sdk/hooks/django/middleware.py>`_,
+In the `Django middleware <https://github.com/blackfireio/python-sdk/blob/master/hooks/django/middleware.py>`_,
 it returns an instance of ``django.http.HttpResponse``.
 
 .. code-block:: python

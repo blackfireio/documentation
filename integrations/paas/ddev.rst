@@ -87,7 +87,7 @@ When profiling with the CLI, prefix the ``blackfire`` commands with ``ddev exec`
     When using ``ddev exec blackfire curl http://127.0.0.1``, there is no need
     to specify a DDEV external port as you are already executing it in a DDEV
     context. Additional documentation is provided by `ddev-contrib
-    <https://ddev.readthedocs.io/en/latest/users/blackfire-profiling/>`_.
+    <https://ddev.readthedocs.io/en/stable/users/debugging-profiling/blackfire-profiling/>`_.
 
 .. _ddev-player:
 

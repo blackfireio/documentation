@@ -13,7 +13,7 @@ find some code optimizations.
 
 The project we are going to work on is a *blog-like* demo project inspired from
 the  Bigfoot/Sasquatch enthusiasts community, as illustrated on the dedicated
-`Wikipedia page <https://en.wikipedia.org/wiki/Bigfoot/>`_.
+`Wikipedia page <https://en.wikipedia.org/wiki/Bigfoot>`_.
 
 .. note::
 

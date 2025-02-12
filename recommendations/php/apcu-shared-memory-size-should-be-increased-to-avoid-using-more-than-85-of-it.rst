@@ -13,5 +13,5 @@ It's recommended to increase the APC shared memory size gradually as much as
 needed to avoid using more than 85% of its total size.
 
 .. _`APCu`: https://www.php.net/manual/en/book.apcu.php
-.. _`apc.shm_size`: https://www.php.net/manual/en/apc.configuration.php#ini.apc.shm-size
-.. _`apc.shm_segments`: https://www.php.net/manual/en/apc.configuration.php#ini.apc.shm-segments
+.. _`apc.shm_size`: https://www.php.net/manual/en/apcu.configuration.php#ini.apc.shm-size
+.. _`apc.shm_segments`: https://www.php.net/manual/en/apcu.configuration.php#ini.apc.shm-segments

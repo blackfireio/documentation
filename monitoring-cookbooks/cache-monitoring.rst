@@ -60,10 +60,10 @@ APCu (APC User Cache) provides a simple API to cache and retrieve data in PHP
 applications. This data is stored in shared memory segments that can be
 configured using these settings:
 
-- `apc.shm_size <https://www.php.net/manual/en/apc.configuration.php#ini.apc.shm-size>`_
+- `apc.shm_size <https://www.php.net/manual/en/apcu.configuration.php#ini.apcu.shm-size>`_
   configures the size of each shared memory segment;
 
-- `apc.shm_segments <https://www.php.net/manual/en/apc.configuration.php#ini.apc.shm-segments>`_
+- `apc.shm_segments <https://www.php.net/manual/en/apcu.configuration.php#ini.apcu.shm-segments>`_
   configures the total number of segments created for APCu.
 
 RealPath Cache

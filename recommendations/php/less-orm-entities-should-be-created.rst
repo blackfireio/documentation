@@ -76,7 +76,7 @@ Examples with Doctrine ORM
         {# ... #}
     {% endfor %}
 
-.. _`EXTRA_LAZY association`: https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/tutorials/extra-lazy-associations.html
-.. _`HYDRATE_ARRAY hydration mode`: https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/dql-doctrine-query-language.html#array-hydration
+.. _`EXTRA_LAZY association`: https://www.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/extra-lazy-associations.html
+.. _`HYDRATE_ARRAY hydration mode`: https://www.doctrine-project.org/projects/doctrine1/en/latest/manual/data-hydrators.html#array
 .. _`Object Relation Mapper`: https://en.wikipedia.org/wiki/Object-relational_mapping
-.. _`DTOs with the NEW operator`: https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/dql-doctrine-query-language.html#new-operator-syntax
+.. _`DTOs with the NEW operator`: https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/dql-doctrine-query-language.html#new-operator-syntax
