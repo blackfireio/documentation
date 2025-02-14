@@ -123,7 +123,7 @@ it returns an instance of ``django.http.HttpResponse``.
         ):
             from werkzeug.wrappers import Response
 
-            # The .blackfire.yaml file should only be sent for authentified request
+            # The .blackfire.yaml file should only be sent for authenticated request
             if agent_response:
                 return Response(
                     response=blackfireyml_content or '', headers=[agent_response]

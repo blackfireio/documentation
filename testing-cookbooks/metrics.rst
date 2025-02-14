@@ -416,7 +416,7 @@ a marker with the label *Markdown to HTML* is added to the timeline.
 
     metrics:
         markdown_to_html:
-            label: 'Mardown to HTML'
+            label: 'Markdown to HTML'
             marker: 'Markdown to HTML Timeline Marker'
             matching_calls:
                 php:
