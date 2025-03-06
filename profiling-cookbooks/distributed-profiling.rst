@@ -71,7 +71,7 @@ that you can freely profile using the CLI.
 .. code-block:: bash
     :zerocopy:
 
-    blackfire curl https://www.book.b7e.io/cascade/
+    blackfire curl -L https://www.book.b7e.io/cascade/
 
 .. _on-demand-distributed-profile-processing:
 
