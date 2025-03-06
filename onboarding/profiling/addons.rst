@@ -1,6 +1,12 @@
 Blackfire add-ons
 =================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/AvvXBQtFq7s?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire provides 4 add-ons that can expand its capabilities: **Quality**,
 **Security**, **Magento**, and **Debug**. Some of which might already be included
 in your current subscription.

@@ -1,6 +1,12 @@
 Assertions
 ==========
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/jSXdP2OsQ0o?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire profiles contain `an "assertions" tab <https://app.blackfire.io/profiles/e99d2386-c3c0-45d3-9c77-33135e726eac/graph?settings%5Bdimension%5D=wt&settings%5Bdisplay%5D=landscape&settings%5BtabPane%5D=assertions&selected=&callname=main()&constraintDoc=>`_
 displaying the results of all the performance tests matching the profiled
 request or CLI command.

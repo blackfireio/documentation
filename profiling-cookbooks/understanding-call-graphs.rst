@@ -1,6 +1,12 @@
 Understanding Call Graphs
 =========================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/ZFHSBH0CiYY?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 After profiling your web application, script, or command console, Blackfire
 shows you the URL where you can analyze the profile. In this article, you'll
 learn how to use the Blackfire interface to detect the problems of your

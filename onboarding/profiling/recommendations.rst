@@ -1,6 +1,12 @@
 Recommendations
 ===============
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/u7_-oDsWH_A?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 A :doc:`Blackfire recommendation</testing-cookbooks/recommendations>` is a best
 practice that we advise to improve your application's performance.
 

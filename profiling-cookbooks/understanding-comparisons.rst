@@ -1,6 +1,12 @@
 Understanding Comparisons
 =========================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/XCft8cHB_0Q?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 One of Blackfire Profiler's key features is the ability to compare profiles.
 This helps users understand the differences between two versions of the same
 endpoint or the discrepancies between samples taken days apart.

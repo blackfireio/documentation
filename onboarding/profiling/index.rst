@@ -1,6 +1,12 @@
 Introduction to Profiling
 =========================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/iCyqQ4spubE?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 **Blackfire profiler** measures how executed code consumes resources at runtime
 and collects the largest set of multidimensional observability data. Enabling
 the comprehensive discovery of performance bottlenecks and understanding of

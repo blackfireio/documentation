@@ -1,6 +1,12 @@
 Triggering Profiles
 ===================
 
+.. include-twig:: `youtube-iframe`
+    :title: introduction-to-blackfire
+    :src: https://www.youtube-nocookie.com/embed/EfRWjkh8C4M?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Profiles are the most extensive set of data that Blackfire can collect. They aim
 to help you understand why a specific script behaves in a certain way and allow
 you to identify the root cause of bottlenecks to the function or service call.
