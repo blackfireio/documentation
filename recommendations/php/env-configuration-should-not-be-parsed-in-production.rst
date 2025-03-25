@@ -10,4 +10,4 @@ Since Symfony Flex 1.2, running ``composer dump-env prod`` when building your ap
 Defining environment variables depends on the web server and/or hosting provider you are using.
 If you are using Symfony, please read the `dedicated documentation`_.
 
-.. _`dedicated documentation`: https://symfony.com/doc/current/configuration/external_parameters.html#configuring-environment-variables-in-production
+.. _`dedicated documentation`: https://symfony.com/doc/current/configuration.html#configuring-environment-variables-in-production
