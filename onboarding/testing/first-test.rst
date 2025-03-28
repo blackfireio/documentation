@@ -1,6 +1,12 @@
 Writing your first performance test
 ===================================
 
+.. include-twig:: `youtube-iframe`
+    :title: Writing your first test
+    :src: https://www.youtube-nocookie.com/embed/9r3BhUVZwwM?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire's tests are defined in a ``.blackfire.yaml`` :doc:`file </testing-cookbooks/tests#the-code-blackfire-yaml-code-file>`
 located at the root of your application.
 

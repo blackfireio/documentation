@@ -1,6 +1,12 @@
 Assertions
 ==========
 
+.. include-twig:: `youtube-iframe`
+    :title: Writing assertions
+    :src: https://www.youtube-nocookie.com/embed/55McQ8-NAg4?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 An assertion is **an expression that must return a Boolean** (``true`` if the
 assertion succeeds, ``false`` otherwise).
 

@@ -1,6 +1,12 @@
 Testing Cookbooks
 =================
 
+.. include-twig:: `youtube-iframe`
+    :title: Introduction to performance testing
+    :src: https://www.youtube-nocookie.com/embed/v7Dy7zMZp9Q?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Performance testing is key to developing reliable software. It ensures your
 application can handle user traffic and workload, proactively identifying issues
 before they become problems.

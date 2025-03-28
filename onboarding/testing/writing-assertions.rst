@@ -1,6 +1,12 @@
 Writing great assertions
 ========================
 
+.. include-twig:: `youtube-iframe`
+    :title: Writing assertions
+    :src: https://www.youtube-nocookie.com/embed/55McQ8-NAg4?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 At this stage, you should hopefully have a ``.blackfire.yaml`` file containing
 your very first test. If not, you can `create one in minutes <https://blog.blackfire.io/getting-started-with-the-blackfire-test-suite-part-1-of-series.html>`_.
 
