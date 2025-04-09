@@ -1,6 +1,12 @@
 Extend your Performance Tests with Custom Metrics
 =================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: Writing custom metrics
+    :src: https://www.youtube-nocookie.com/embed/CLKwosydXsc?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 In addition to the metrics it provides, Blackfire allows you to define custom
 metrics based on your application's logic.
 

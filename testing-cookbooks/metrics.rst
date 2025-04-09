@@ -1,6 +1,12 @@
 Metrics
 =======
 
+.. include-twig:: `youtube-iframe`
+    :title: Writing custom metrics
+    :src: https://www.youtube-nocookie.com/embed/CLKwosydXsc?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 A **metric** is a collection of costs (memory, network, CPU, ...) associated
 with some function calls. Blackfire offers some built-in metrics, but you can
 also create your custom metrics.

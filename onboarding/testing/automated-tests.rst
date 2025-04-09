@@ -1,6 +1,12 @@
 Automated Performance Tests [level: Production]
 ===============================================
 
+.. include-twig:: `youtube-iframe`
+    :title: Writing scenarios
+    :src: https://www.youtube-nocookie.com/embed/ywxzuaj6nxQ?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Your application's critical user journeys can be protected by assessing their
 performance regularly.
 

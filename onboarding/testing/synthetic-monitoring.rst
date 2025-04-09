@@ -1,6 +1,12 @@
 Synthetic Monitoring with Blackfire Builds [level: Production]
 ==============================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: Blackfire Builds 101
+    :src: https://www.youtube-nocookie.com/embed/QWTCfvpe3E8?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 :doc:`Periodic builds </builds-cookbooks/index>` constitute a unique
 **synthetic monitoring** technique, allowing you to simulate a given set of
 actions or paths an end-user would take on your site regularly.

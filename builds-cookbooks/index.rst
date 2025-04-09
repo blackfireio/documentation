@@ -1,6 +1,12 @@
 Using Builds [level: Production]
 ================================
 
+.. include-twig:: `youtube-iframe`
+    :title: Blackfire Builds 101
+    :src: https://www.youtube-nocookie.com/embed/QWTCfvpe3E8?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire Builds offer various options to automatically profile your code, and
 to :doc:`run assertions </testing-cookbooks/assertions>` against it.
 
