@@ -1,6 +1,12 @@
 Introduction to Continuous Profiling [level: Production]
 ========================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: what-is-continuous-profiling
+    :src: https://www.youtube-nocookie.com/embed/uWDdv2IfpXY?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 :doc:`Continuous profiling </continuous-profiling-cookbooks/index>` is a powerful
 observability feature combining profiling and monitoring with minimal overhead.
 

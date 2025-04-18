@@ -1,6 +1,12 @@
 Configuring Blackfire Continuous Profiler for Ruby [level: Production]
 =======================================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: configuring continuous profiling
+    :src: https://www.youtube-nocookie.com/embed/1q_E6fk2Q1Q?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 The Ruby continuous profiling is currently made across 3 dimensions:
 
 - **CPU Time**: Time spent running on the CPU

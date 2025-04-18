@@ -1,6 +1,12 @@
 Continuous Profiling Cookbooks [level: Production]
 ==================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: what-is-continuous-profiling
+    :src: https://www.youtube-nocookie.com/embed/uWDdv2IfpXY?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Continuous profiling is a multi-dimensional performance optimization technique
 where web applications are monitored and profiled in real-time. Lightweight and
 scalable, it's tailored for holistic application oversight.
@@ -32,7 +38,6 @@ Read More on Continuous Profiling
     :titlesonly:
 
     Deterministic vs probabilistic profiling <understanding>
-    Comparing timeframes <comparison>
     PHP configuration <php>
     Python configuration <python>
     Go configuration <go>
@@ -41,3 +46,4 @@ Read More on Continuous Profiling
     Rust configuration <rust>
     Node.js configuration <nodejs>
     Dashboard <dashboard>
+    Comparing timeframes <comparison>

@@ -1,6 +1,12 @@
 Configuring Blackfire Continuous Profiler for Node.js [level: Production]
 =========================================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: configuring continuous profiling
+    :src: https://www.youtube-nocookie.com/embed/1q_E6fk2Q1Q?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 The Node.js continuous profiling is currently made across 2 dimensions:
 
 - **wall-time**: elapsed time per function call

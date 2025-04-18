@@ -1,6 +1,12 @@
 Enable Blackfire's Continuous profiler [level: Production]
 ==========================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: configuring continuous profiling
+    :src: https://www.youtube-nocookie.com/embed/1q_E6fk2Q1Q?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Some extra steps are required to enable the Blackfire continuous profiler to be
 added to your application as the feature requires specific libraries
 (:doc:`Python </continuous-profiling-cookbooks/python>`,

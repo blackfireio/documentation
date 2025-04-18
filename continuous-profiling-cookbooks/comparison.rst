@@ -1,6 +1,12 @@
 Comparing Continuous Profiling Timeframes
 ==========================================
 
+.. include-twig:: `youtube-iframe`
+    :title: comparing timeframes
+    :src: https://www.youtube-nocookie.com/embed/DASuCTt9vHg?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire Continuous Profiler dashboard allows comparing two timeframes to better
 understand application dynamics in various contexts.
 

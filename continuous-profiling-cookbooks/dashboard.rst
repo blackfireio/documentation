@@ -1,6 +1,12 @@
 Blackfire Continuous Profiling Dashboard [level: Production]
 ============================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: the continuous profiling dashboard
+    :src: https://www.youtube-nocookie.com/embed/-B-9peEP--c?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Color-coded node dimensions
 ----------------------------
 

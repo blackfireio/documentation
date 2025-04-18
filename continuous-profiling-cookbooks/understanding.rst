@@ -1,6 +1,12 @@
 Understanding the differences between deterministic and probabilistic observability
 ====================================================================================
 
+.. include-twig:: `youtube-iframe`
+    :title: deterministic vs probabilistic observability
+    :src: https://www.youtube-nocookie.com/embed/00ZpYkDVfQM?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire Profiler: Deterministic observability for PHP and Python
 ___________________________________________________________________
 

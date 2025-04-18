@@ -3,6 +3,12 @@ Distributed Profiling [level: Production]
 
 .. _distributed-profiling:
 
+.. include-twig:: `youtube-iframe`
+    :title: distributed-profiling
+    :src: https://www.youtube-nocookie.com/embed/YJKq9h9T6bM?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire **Distributed Profiling** is a feature that makes it possible to
 **profile any service your application interacts with**, the most common
 being other HTTP applications such as micro-services.
