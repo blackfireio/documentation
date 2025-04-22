@@ -3,7 +3,8 @@ Laravel Octane [language: PHP][status: beta]
 
 Laravel `Octane <https://laravel.com/docs/octane>`_ aims at improving Laravel
 applications' performance by serving them using high-powered application servers,
-including Swoole, Open Swoole, and RoadRunner.
+including :doc:`FrankenPHP </php/integrations/frankenphp>`, Swoole,
+Open Swoole, and RoadRunner.
 
 Integrating Blackfire with Laravel Octane lets you **monitor** and **profile** the
 requests served through Octane:

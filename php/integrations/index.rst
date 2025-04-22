@@ -14,3 +14,4 @@ Integrations
     guzzle
     goutte
     swoole
+    frankenphp
