@@ -750,6 +750,8 @@ Use ``while`` to perform loops:
                 # performance checks
 
 
+.. _organizing-scenarios:
+
 Organizing Scenario Files
 -------------------------
 

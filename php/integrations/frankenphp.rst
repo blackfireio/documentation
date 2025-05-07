@@ -22,6 +22,7 @@ Alternatively, you can use the FrankenPHP base Docker image:
 
 .. code-block:: text
     :zerocopy:
+
     FROM dunglas/frankenphp
 
     RUN version=$(php -r "echo PHP_MAJOR_VERSION.PHP_MINOR_VERSION.'-zts';") \

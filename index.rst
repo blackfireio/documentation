@@ -14,6 +14,7 @@ Blackfire Documentation
     introduction
     up-and-running/index
     onboarding/index
+    Learning Center <academy/index>
     PHP <php/index>
     Python <python/index>
     Go <go/index>
@@ -21,10 +22,10 @@ Blackfire Documentation
     Node.js <nodejs/index>
     Ruby <ruby/index>
     Rust <rust/index>
-    Monitor <monitoring-cookbooks/index>
+    Monitoring <monitoring-cookbooks/index>
     Continuous Profiling <continuous-profiling-cookbooks/index>
-    Profile <profiling-cookbooks/index>
-    Test <testing-cookbooks/index>
+    Deterministic Profiling <profiling-cookbooks/index>
+    Performance Testing <testing-cookbooks/index>
     Build <builds-cookbooks/index>
-    Integrate <integrations/index>
+    Integrations <integrations/index>
     reference-guide/index
