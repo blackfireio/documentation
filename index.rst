@@ -26,6 +26,7 @@ Blackfire Documentation
     Continuous Profiling <continuous-profiling-cookbooks/index>
     Deterministic Profiling <profiling-cookbooks/index>
     Performance Testing <testing-cookbooks/index>
-    Build <builds-cookbooks/index>
+    Synthetic Monitoring (Builds) <builds-cookbooks/index>
+    front-end-observability/index
     Integrations <integrations/index>
     reference-guide/index

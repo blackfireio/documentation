@@ -24,7 +24,10 @@ settings page in your dashboard.
 The organization billing settings page allows you to:
 
 - upgrade, downgrade or cancel your subscription
-- update or top up your monthly monitoring quota
+- update or top up your monthly :doc:`monitoring </monitoring-cookbooks/index>`
+  quota
+- update or top up your monthly :doc:`browser monitoring </front-end-observability/index>`
+  quota
 - subscribe to the :doc:`debug </profiling-cookbooks/debugging>` and `magento
   <https://www.blackfire.io/magento/>`_ add-ons
 - update your billing information

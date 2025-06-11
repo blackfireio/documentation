@@ -34,4 +34,5 @@ Your Onboarding to Blackfire
     Profiling <profiling/index>
     Testing <testing/index>
     Continuous Profiling <continuous-profiling/index>
+    Front-End Observability <front-end-observability/index>
     Dive deeper <congratulations>

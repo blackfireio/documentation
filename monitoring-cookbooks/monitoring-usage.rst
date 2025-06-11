@@ -2,9 +2,9 @@ Monitoring Usage
 =================
 
 Detailed information on the Monitoring traces consumption can be found under the
-Organization Usage menu:
+Organization Monitoring Usage menu:
 
-.. image:: ../images/organization-usage-menu.png
+.. image:: ../images/organization-monitoring-usage-menu.png
     :width: 400px
     :align: center
 

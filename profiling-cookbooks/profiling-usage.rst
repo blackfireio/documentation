@@ -2,9 +2,9 @@ Profiling Usage
 ===============
 
 Detailed information on the Profiles made can be found under the Organization
-Usage menu:
+Profiling Usage menu:
 
-.. image:: ../images/organization-usage-menu.png
+.. image:: ../images/organization-profiling-usage-menu.png
     :width: 400px
     :align: center
 
