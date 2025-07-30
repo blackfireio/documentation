@@ -27,5 +27,6 @@ users interact with your application.
 
     browser-monitoring
     analytics
+    Alerting <alerting>
     configuration
     Usage <front-end-usage>
