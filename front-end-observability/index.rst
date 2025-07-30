@@ -1,6 +1,12 @@
 Front-End Observability
 =======================
 
+.. include-twig:: `youtube-iframe`
+    :title: Introduction to Front-end Observability
+    :src: https://www.youtube-nocookie.com/embed/_E12CszfTGc?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire's frontend observability gives you clear, actionable insights into how
 your application performs in real-world browsers so you can identify bottlenecks
 early, improve user experience, and ship confidently.

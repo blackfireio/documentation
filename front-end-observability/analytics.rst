@@ -1,6 +1,12 @@
 Analytics [level: Production]
 =============================
 
+.. include-twig:: `youtube-iframe`
+    :title: Analytics
+    :src: https://www.youtube-nocookie.com/embed/AWoVXnEA_kM?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Blackfire Analytics gives you a complete picture of how users interact with your
 application, from top-performing pages to high-traffic transactions, popular
 browsers, and UTM campaign effectiveness.

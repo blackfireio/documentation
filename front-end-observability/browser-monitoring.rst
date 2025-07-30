@@ -1,6 +1,12 @@
 Browser Monitoring  [level: Production]
 =======================================
 
+.. include-twig:: `youtube-iframe`
+    :title: Browser Monitoring
+    :src: https://www.youtube-nocookie.com/embed/haPjWc2rZXU?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Browser Monitoring empower you understand how your users truly experience your
 site. It helps you track real-world performance directly from users' browsers.
 

@@ -1,6 +1,12 @@
 Browser Monitoring & Analytics Usage
 ====================================
 
+.. include-twig:: `youtube-iframe`
+    :title: Usage & Traffic Spike
+    :src: https://www.youtube-nocookie.com/embed/P_tEGpibqHQ?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Detailed information on the Browser Monitoring & Analytics traces consumption
 can be found under the Organization Usage menu:
 

@@ -1,6 +1,12 @@
 Configuring Front-End Observability
 ===================================
 
+.. include-twig:: `youtube-iframe`
+    :title: Configuring Front-end Observability
+    :src: https://www.youtube-nocookie.com/embed/9fj-5I_ibek?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 Enabling at the Organization Level
 ----------------------------------
 

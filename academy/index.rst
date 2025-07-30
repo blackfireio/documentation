@@ -38,6 +38,7 @@ Syllabus
     continuous-profiling/index
     profiling/index
     testing/index
+    front-end/index
     Final Steps <final-steps>
 
 Video Transcript
