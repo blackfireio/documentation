@@ -210,6 +210,20 @@ The Agent can also be configured using environment variables:
 
     BLACKFIRE_STATSD_PREFIX="blackfire"
 
+
+- ``BLACKFIRE_ENABLE_TELEMETRY``
+
+  Controls Blackfire CLI telemetry. When enabled (``1`` by default), anonymized
+  data is collected on command usage to help improve the product.
+
+  **No personal or project-identifying data is collected**.
+
+ To disable telemetry:
+
+ .. code-block:: bash
+
+    BLACKFIRE_ENABLE_TELEMETRY=0
+
 You can set these environment variables in a project's local ``.env`` file if
 supported, or in your global shell configuration file (such as ``~/.bashrc`` or
 ``~/.zshrc``):
