@@ -85,6 +85,31 @@ add a ``data-transaction-name`` attribute.
 
 .. include-twig:: `frontend_credentials_with_transaction_name`
 
+Naming HTTP Transactions Using the UI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You may also configure custom transactions from the user interface (UI).
+
+Click on the **Configure Custom Transaction Names** button from your Front-end
+Observability settings or from the *Unnamed transaction* view to configure
+custom transactions names.
+
+A panel appears, allowing you to configure the transaction names based on the
+URI pattern. The pattern can be defined either using a
+`regular expression <https://en.wikipedia.org/wiki/Regular_expression>`_ or
+using a `glob pattern <https://en.wikipedia.org/wiki/Glob_(programming)>`_.
+
+For each pattern, you need to define a single name that is to be assigned to the
+corresponding transaction.
+
+.. image:: ../images/monitoring/monitoring-url-patterns.png
+
+To help you identify the URIs that need to be recognized as transactions,
+a list of the latest URLs, which did not correspond to any transaction, is
+provided.
+
+.. image:: ../images/monitoring/monitoring-url-list.png
+
 Browser Monitoring & Analytics Sample Rate
 ------------------------------------------
 
