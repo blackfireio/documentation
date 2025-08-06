@@ -8,6 +8,7 @@ Integrations
     sdk
     python-docker
     django
+    fastapi
     flask
     odoo
     wsgi
