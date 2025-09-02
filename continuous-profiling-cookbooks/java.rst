@@ -50,6 +50,8 @@ Installation
      profiler.
 
    - ``DD_PROFILING_DDPROF_ENABLED=false``: disables native profiling
+   - ``DD_INSTRUMENTATION_TELEMETRY_ENABLED=false``: disables internal telemetry
+   - ``DD_TRACE_ENABLED=false``: disable tracing
 
    - ``DD_SERVICE=my-java-app``: sets the application name.
 
