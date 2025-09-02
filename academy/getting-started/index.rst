@@ -9,4 +9,5 @@ Getting Started
     access-management
     components
     installation
+    Blackfire Doctor <doctor>
     billing

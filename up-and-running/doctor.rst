@@ -1,6 +1,12 @@
 Blackfire Doctor
 ================
 
+.. include-twig:: `youtube-iframe`
+    :title: Blackfire Doctor
+    :src: https://www.youtube-nocookie.com/embed/OXU1YJJwCXM?rel=0&showinfo=0&modestbranding=1&autoplay=0
+    :width: 700px
+    :height: 394px
+
 The ``blackfire doctor`` CLI command is the go-to tool to validate your Blackfire installation. It automatically checks your :doc:`Agent <configuration/agent>`,
 :term:`Probe <Probe>`, configuration, and connectivity.
 
