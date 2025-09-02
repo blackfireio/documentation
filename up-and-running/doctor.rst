@@ -19,7 +19,7 @@ The ``blackfire doctor`` CLI command is the go-to tool to validate your Blackfir
 Requirements
 ------------
 
-- :doc:`Blackfire Agent </up-and-running/configuration/agent>` >= 2.29.0
+- :doc:`Blackfire Agent <configuration/agent>` >= 2.29.0
 
 Usage
 -----
@@ -43,3 +43,14 @@ Troubleshoot Remote Installation
 .. code-block:: bash
 
     blackfire doctor --socket /path/to/blackfire-agent.sock
+
+Running in Docker
+~~~~~~~~~~~~~~~~~~
+
+You can use ``blackfire doctor`` on your host machine to validate a
+:doc:`Docker/OCI <docker>` setup containing an Agent normally available on
+port ``8307``:
+
+.. code-block:: bash
+
+    blackfire doctor --socket=tcp://localhost:8307
