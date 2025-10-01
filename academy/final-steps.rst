@@ -38,7 +38,7 @@ own custom tools and integrations so that you can tailor Blackfire to your exact
 needs.
 
 Do you need help along the way? You can reach out to our `support team <https://support.blackfire.io>`_
-or join your conversation in our `community on Discord <https://discord.gg/platformsh>`_.
+or join your conversation in our `community on Discord <https://discord.gg/upsun>`_.
 You will find direct links to both right from your Blackfire dashboard.
 
 It's now time to crush performance bottlenecks.
