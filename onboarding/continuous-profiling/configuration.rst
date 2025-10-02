@@ -12,7 +12,7 @@ added to your application as the feature requires specific libraries
 (:doc:`Python </continuous-profiling-cookbooks/python>`,
 :doc:`Java </continuous-profiling-cookbooks/java>`,
 :doc:`Golang </continuous-profiling-cookbooks/go>`,
-:doc:`Node.js </continuous-profiling-cookbooks/nodejs>`,
+:doc:`Node.js </continuous-profiling-cookbooks/nodejs/index>`,
 :doc:`Ruby </continuous-profiling-cookbooks/ruby>`, or
 :doc:`Rust </continuous-profiling-cookbooks/rust>`) or a
 :doc:`PHP extension </continuous-profiling-cookbooks/php>` as they will be

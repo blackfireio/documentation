@@ -44,6 +44,6 @@ Read More on Continuous Profiling
     Java configuration <java>
     Ruby configuration <ruby>
     Rust configuration <rust>
-    Node.js configuration <nodejs>
+    Node.js <nodejs/index>
     Dashboard <dashboard>
     Comparing timeframes <comparison>

@@ -30,7 +30,7 @@ To make to most out of the Production Edition, follow these steps:
    organization and environments.
 3. Configure Continuous Profiling for your :doc:`PHP</continuous-profiling-cookbooks/php>`,
    :doc:`Python</continuous-profiling-cookbooks/python>`,
-   :doc:`Node.js</continuous-profiling-cookbooks/nodejs>`, and
+   :doc:`Node.js</continuous-profiling-cookbooks/nodejs/index>`, and
    :doc:`Golang</continuous-profiling-cookbooks/go>` applications.
 4. If you have configured Blackfire on a public website, set up :ref:`periodic
    builds <trigger-scheduled>`.

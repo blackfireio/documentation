@@ -44,7 +44,7 @@ explore.
 
 As of recording, Blackfire continuous profiling supports :doc:`PHP </continuous-profiling-cookbooks/php>`,
 :doc:`Python </continuous-profiling-cookbooks/python>`,
-:doc:`Node.js </continuous-profiling-cookbooks/nodejs>`,
+:doc:`Node.js </continuous-profiling-cookbooks/nodejs/index>`,
 :doc:`Go, </continuous-profiling-cookbooks/go>`
 :doc:`Ruby </continuous-profiling-cookbooks/ruby>`,
 :doc:`Rust </continuous-profiling-cookbooks/rust>`,
