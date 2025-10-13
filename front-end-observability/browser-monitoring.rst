@@ -123,6 +123,24 @@ inspect it into Blackfire's other features.
     :align: center
     :alt: Linking observability features
 
+Top Resources Breakdown
+-----------------------
+
+A Top Resources table summarizes key metrics across fetched assets:
+
+- Number of requests
+- Average duration
+- Transferred size
+- Cache hit rate
+- Compression ratio
+
+Use this view to identify slow or heavy front-end resources affecting load time
+and user experience.
+
+.. image:: ../images/front-end/top-resources.png
+    :align: center
+    :alt: Displaying top resources
+
 Geographic Distribution
 -----------------------
 

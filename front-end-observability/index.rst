@@ -26,6 +26,7 @@ users interact with your application.
     :titlesonly:
 
     browser-monitoring
+    browse-traces
     analytics
     Alerting <alerting>
     configuration
