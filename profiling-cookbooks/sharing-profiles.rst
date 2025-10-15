@@ -1,16 +1,32 @@
 Sharing Profiles
 ================
 
-It is possible to share your profiles publicly.
+Sharing Performance Summaries
+-----------------------------
 
-Doing so will result in making it accessible to search engines. Please make sure
-not to make public any content that you don't want or are not allowed to share.
+From any profile view, click Share your performance to generate a visual
+summary of your profile's key metrics.
 
-Publicly shared profiles benefit from unlimited retention.
+.. image:: ../images/sharing-profile.png
+    :align: center
+    :alt: Sharing a profile performance score card
 
-We hope that this will help you show the results of your work and write blog
-articles to let the rest of the world learn from your expertise. Try embedding
-interactive profile views in your articles!
+This summary can be:
+
+- **Shared on social media** (LinkedIn, X, WhatsApp, Facebook, Email)
+- **Copied as an image** to include in reports, chat threads, or blog posts
+
+Public Sharing
+--------------
+
+You can also make a profile public to share it with anyone. Public profiles:
+
+- Are accessible via a public link
+- Benefit from **unlimited retention**
+- Can be embedded in blogs or article
+
+Publicly sharing profiles makes them accessible to search engines. Only share
+content you're comfortable making public.
 
 oEmbed
 ------
