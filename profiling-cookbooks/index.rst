@@ -32,6 +32,7 @@ as profiling overhead only applies to the specific requests initiated by develop
     profiling-microservices
     distributed-profiling
     debugging
+    searching-profiles
     sharing-profiles
     understanding-call-graphs
     understanding-comparisons
