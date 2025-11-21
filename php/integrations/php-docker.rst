@@ -74,7 +74,7 @@ that retrieves the client at build time:
 .. code-block:: text
     :zerocopy:
 
-    FROM php:8.4-fpm
+    FROM php:8.5-fpm
 
     RUN mkdir -p /tmp/blackfire \
         && architecture=$(uname -m) \
