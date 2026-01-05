@@ -59,7 +59,10 @@ Deterministic Profiling
     **Laravel Octane users**: :doc:`our integration </php/integrations/laravel/octane>`
     supports Deterministic Profiling out of the box.
 
-If you are not using Laravel Octane, update your FrankenPHP worker script to
+    **Symfony Runtime users**: :doc:`our integration </php/integrations/symfony/runtime>`
+    also supports Deterministic Profiling out of the box.
+
+If you are not using Laravel Octane or Symfony Runtime, update your FrankenPHP worker script to
 control the instrumentation manually:
 
 .. code-block:: php
@@ -111,6 +114,9 @@ Monitoring requires :doc:`PHP Probe </up-and-running/update>` ``v1.92.44`` or la
 :doc:`Automatic profiling </monitoring-cookbooks/automatic-profiling>` isn't
 supported yet.
 
+`Watching for files mode <https://frankenphp.dev/docs/config/#watching-for-file-changes>`_ isn't supported yet.
+
+`Hot Reloading <https://frankenphp.dev/docs/hot-reload/>`_ isn't supported yet.
 
 Report an issue
 ---------------
