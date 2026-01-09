@@ -10,7 +10,7 @@ The `Symfony Runtime Component <https://symfony.com/packages/Runtime>`_ applicat
 Requirements
 ------------
 
-- :doc:`PHP Probe </up-and-running/update>` >= ``v1.92.44``
+- :doc:`PHP Probe </up-and-running/update>` >= ``v1.92.44+``
 - :doc:`Our FrankenPHP integration </php/integrations/frankenphp>` is required.
 
 FrankenPHP Integration
@@ -21,7 +21,7 @@ FrankenPHP Integration
 Installation
 ~~~~~~~~~~~~
 
-1. Add :ref:`Blackfire PHP SDK v2.51.0+ <php-sdk-installation>` as a dependency
+1. Add :ref:`Blackfire PHP SDK v2.5.11+ <php-sdk-installation>` as a dependency
 2. Register the profiler subscriber using the Symfony ``config/services.yaml`` file:
 
 .. code-block:: yaml

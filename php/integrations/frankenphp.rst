@@ -11,7 +11,7 @@ built on top of the `Caddy <https://caddyserver.com/>`_ webserver
 Requirements
 ------------
 
-- :doc:`PHP Probe </up-and-running/update>` >= ``v1.92.44``
+- :doc:`PHP Probe </up-and-running/update>` >= ``v1.92.44+``
 
 Coverage
 --------
