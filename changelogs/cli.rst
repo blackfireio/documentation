@@ -1,0 +1,4 @@
+CLI
+===
+
+.. changelog:: cli

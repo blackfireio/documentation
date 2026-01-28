@@ -30,3 +30,4 @@ Blackfire Documentation
     front-end-observability/index
     Integrations <integrations/index>
     reference-guide/index
+    CHANGELOGs <changelogs/index>

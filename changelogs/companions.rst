@@ -1,0 +1,4 @@
+Browser Extensions
+==================
+
+.. changelog:: companions
