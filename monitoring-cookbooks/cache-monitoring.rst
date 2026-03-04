@@ -80,5 +80,11 @@ ini setting defines the size of this cache.
 PCRE Cache
 ----------
 
-The `PCRE PHP <https://www.php.net/manual/en/intro.pcre.php>`_ extension
-maintains a global per-thread cache of compiled regular expressions.
+The `PCRE PHP <https://www.php.net/manual/en/book.pcre.php>`_ extension
+maintains a per-thread cache of compiled regular expressions (one global cache
+in NTS builds, one per thread in ZTS builds such as FrankenPHP), hardcoded to
+4096 entries. Unlike the other caches listed above, this limit is not configurable
+via an INI setting. When the cache is full, up to 512 of the oldest entries (by insertion
+order) that are not currently in use are evicted in bulk. High cache usage indicates frequent evictions and regex
+recompilation; the only mitigation is to reduce the number of unique regex
+patterns in the application code.
