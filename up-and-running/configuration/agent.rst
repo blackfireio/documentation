@@ -1,5 +1,5 @@
-Agent Configuration (v2)
-========================
+Agent Configuration
+===================
 
 .. include:: /up-and-running/_agent-lifecycle.rst
 
