@@ -1,6 +1,8 @@
 Agent Configuration (v2)
 ========================
 
+.. include:: /up-and-running/_agent-lifecycle.rst
+
 .. _configuration-agent:
 
 The Blackfire agent can be configured via a configuration file, flags passed to

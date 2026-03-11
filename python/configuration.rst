@@ -1,6 +1,8 @@
 Configuration [language: Python]
 ================================
 
+.. include:: /up-and-running/_probe-lifecycle.rst
+
 Configuring the Probe via Environment Variables
 -----------------------------------------------
 

@@ -1,6 +1,8 @@
 Legacy Agent v1 Configuration (deprecated)
 ==========================================
 
+.. include:: /up-and-running/_agent-lifecycle.rst
+
 .. warning::
 
   The legacy Agent v1 is deprecated and no longer maintained.

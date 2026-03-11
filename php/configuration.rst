@@ -1,6 +1,8 @@
 Configuration [language: PHP]
 =============================
 
+.. include:: /up-and-running/_probe-lifecycle.rst
+
 .. _configuration-probe-php:
 
 Configuring the Probe via Environment Variables

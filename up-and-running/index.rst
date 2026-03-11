@@ -9,6 +9,7 @@ Getting Up and Running
     configuration/index
     update
     Agent Upgrade Guide <agent-upgrade>
+    Depreciation Policy <depreciation-policy>
     docker
     reverse-proxies
     access-management/index
