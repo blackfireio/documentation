@@ -6,5 +6,5 @@
 
     Running a Retired version will trigger warnings and is at your own risk.
 
-    - :doc:`View the full depreciation policy </up-and-running/depreciation-policy>`
+    - :doc:`View the full deprecation policy </up-and-running/deprecation-policy>`
     - :doc:`Go to the upgrade guide </up-and-running/update>`

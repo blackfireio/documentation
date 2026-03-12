@@ -1,5 +1,5 @@
 Version Lifecycle and Deprecation Policy
-==========================================
+========================================
 
 We maintain a **predictable deprecation policy** to ensure you benefit from the
 latest security patches, performance improvements, and reliability enhancements.
