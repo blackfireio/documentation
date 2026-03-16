@@ -9,7 +9,7 @@ Getting Up and Running
     configuration/index
     update
     Agent Upgrade Guide <agent-upgrade>
-    deprecation Policy <deprecation-policy>
+    Deprecation Policy <deprecation-policy>
     docker
     reverse-proxies
     access-management/index
