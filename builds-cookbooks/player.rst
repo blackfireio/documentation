@@ -157,6 +157,20 @@ It is required only when using the :doc:`Blackfire Profiler integration </integr
 
     blackfire-player run my-scenario.bkf --blackfire-env=<ENVIRONMENT_NAME_OR_UUID>
 
+Use the ``--report`` option to print an aggregated report after all scenarios
+complete. It lists each profiled step with a link to its profile and key
+performance figures. Requires ``--blackfire-env``:
+
+.. code-block:: bash
+
+    blackfire-player run my-scenario.bkf --blackfire-env=<ENVIRONMENT_NAME_OR_UUID> --report
+
+.. note::
+
+    ``--report`` is the recommended option when running
+    :doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>`
+    from a CI/CD pipeline or deployment script.
+
 **The "run" command uses the following exit codes in case of failure:**
 
 * ``64`` if at least one scenario fails;

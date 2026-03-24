@@ -37,7 +37,7 @@ Builds can be triggered with:
   :doc:`PHPUnit</php/integrations/phpunit>` or :doc:`Symfony Function Tests
   integration </php/integrations/symfony/functional-tests>`);
 
-* :ref:`synthetic monitoring <trigger-scheduled>` on production or staging;
+* :doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>` on production or staging;
 
 * :ref:`deployments via integrated PaaS services <build-integrations>`;
 
@@ -50,13 +50,16 @@ Builds can be triggered with:
 
 .. caution::
 
-  In most cases, Builds are run from the Blackfire's servers.
-  As a result, if the profiled application is behind a firewall, you must
-  let the Blackfire servers access the application by **allowing the following
-  IP addresses** on the web ports (usually ``80`` and ``443``):
+  Builds triggered via webhook, periodic scheduling, or PaaS integrations
+  are run from Blackfire's servers. If the profiled application is behind a
+  firewall, **allow the following IP addresses** on the web ports (usually
+  ``80`` and ``443``):
 
   * ``46.51.168.2``
   * ``54.75.240.245``
+
+  This does not apply to :doc:`Blackfire Player </builds-cookbooks/player>`
+  runs, which initiate requests from your own environment.
 
 Being Notified of a Build Report
 --------------------------------
@@ -71,6 +74,7 @@ Read More on Builds
     :maxdepth: 2
     :titlesonly:
 
+    Setting up <synthetic-monitoring>
     scenarios
     player
     builds-periodic
