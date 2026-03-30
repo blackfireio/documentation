@@ -411,10 +411,6 @@ Generate random images with the ``simple_image`` generator:
     ``fake()`` use the `Faker library <https://github.com/FakerPHP/Faker>`_
     under the hood.
 
-    Read the ``simple_image`` `generator documentation
-    <https://github.com/maltyxx/images-generator>`_ for more information about
-    its arguments.
-
 .. _following-redirections:
 
 Following Redirections
