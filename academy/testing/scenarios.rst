@@ -1,3 +1,5 @@
+.. To be redirected to /builds-cookbooks/synthetic-monitoring
+
 Synthetic Monitoring using Scenarios
 ====================================
 

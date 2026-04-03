@@ -3,6 +3,8 @@ Starting a Build Using a Native Integration [level: Production]
 
 .. _build-integrations:
 
+.. include:: _builds-deprecation.rst
+
 Blackfire supports a number of native integrations with third-party tools.
 Please check their dedicated documentation:
 

@@ -10,4 +10,3 @@ Performance Testing
     assertions
     Custom Metrics <custom-metrics>
     Synthetic Monitoring <scenarios>
-    Automation & CI-CD <builds>

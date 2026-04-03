@@ -3,6 +3,8 @@ Configuring Periodic Builds [level: Production]
 
 .. _trigger-scheduled:
 
+.. include:: _builds-deprecation.rst
+
 Periodic Builds constitute a **unique Synthetic Monitoring technique**.
 
 They allow you to simulate regularly a given set of actions or path that an end-user

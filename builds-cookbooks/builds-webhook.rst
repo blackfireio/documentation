@@ -3,6 +3,8 @@ Starting a Build using a Webhook [level: Production]
 
 .. _build-webhook:
 
+.. include:: _builds-deprecation.rst
+
 Starting a build with a webhook offers the most flexible way of triggering
 Blackfire scenarios based on third-party tool events (e.g. CI/CD systems,
 Cloud providers...). Thereby, you can add performance tests at any point of

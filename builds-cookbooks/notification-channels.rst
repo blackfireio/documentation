@@ -1,6 +1,8 @@
 Scenario Notification Channels [level: Production]
 ==========================================================
 
+.. include:: _builds-deprecation.rst
+
 Notification channels are executed whenever a :doc:`scenario </builds-cookbooks/scenarios>` is
 finished and a report is available. As notification channels are environment specific,
 configure them in the "Notification Channels" section of a "Builds" tab in the dashboard.

@@ -1,33 +1,29 @@
-Synthetic Monitoring with Blackfire Builds [level: Production]
-==============================================================
+Synthetic Monitoring [level: Production]
+=========================================
 
-.. include-twig:: `youtube-iframe`
-    :title: Blackfire Builds 101
-    :src: https://www.youtube-nocookie.com/embed/QWTCfvpe3E8?rel=0&showinfo=0&modestbranding=1&autoplay=0
-    :width: 700px
-    :height: 394px
+Synthetic monitoring simulates real user journeys against your live
+application to verify its performance and behavior.
 
-:doc:`Periodic builds </builds-cookbooks/index>` constitute a unique
-**synthetic monitoring** technique, allowing you to simulate a given set of
-actions or paths an end-user would take on your site regularly.
+With :doc:`Blackfire Player </builds-cookbooks/player>`, you write scenarios
+in ``.bkf`` files that visit URLs, submit forms, and assert on responses and
+performance metrics. Running those scenarios with ``--blackfire-env`` and
+``--report`` sends the results to Blackfire and produces a consolidated build
+report.
 
-Each scenario step triggering back-end code execution automatically generates a
-profile of that code. Each profile is tested against your custom assertions and
-:doc:`Blackfire recommendations </testing-cookbooks/recommendations>`.
+.. code-block:: bash
 
-Builds can be triggered on demand via Blackfire's dashboard or periodically
-scheduled every 1, 6, 12, or 24 hours. This allows a periodical check-up on your
-application performance and early warning if needed.
+    blackfire-player run monitoring.bkf \
+        --blackfire-env=<ENV_NAME_OR_UUID> \
+        --report
 
-Builds can also be triggered via the ``blackfire build-trigger`` command,
-via cURL, and even through :doc:`native integrations </builds-cookbooks/builds-integrations>`
-with the main CI/CD platforms and PaaS such as :doc:`Platform.sh </integrations/paas/platformsh#builds>`, and :doc:`Upsun </integrations/paas/upsun#builds>`.
-
-You have many options at your disposal to integrate performance tests into your
-development and deployment workflow and project the impact of changes before
-they reach production.
+Player exits with a non-zero code when assertions fail, making it easy to
+gate a deployment on performance results. Run it from your CI/CD pipeline
+after each deployment, on pull-request preview environments, or on a schedule
+— from your own infrastructure, with full control over timing and secret
+management.
 
 .. note::
 
-    :doc:`Explore the possibilities </builds-cookbooks/index>`, to schedule
-    builds.
+    :doc:`Explore the full setup guide </builds-cookbooks/synthetic-monitoring>`,
+    including scenario examples, GitHub Actions integration, pull-request
+    comparison builds, and exit-code reference.

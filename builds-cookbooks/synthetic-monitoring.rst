@@ -27,6 +27,11 @@ advantages over external scheduling:
 * **Targets any environment.** Point Player at feature-branch previews,
   staging, or production using ``--endpoint``.
 
+* **Gives you a consolidated report.** The ``--report`` flag produces
+  an aggregated summary with links to each profile. Results are also
+  sent to your Blackfire environment for history, notifications, and
+  comparison.
+
 Prerequisites
 -------------
 

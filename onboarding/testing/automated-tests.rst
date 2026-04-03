@@ -17,27 +17,26 @@ scenarios.
 As for all profiles, the matching assertions will be evaluated, and all the
 results will be grouped in a convenient report.
 
-Scenarios can be defined in the ``.blackfire.yaml`` file or custom ``.bkf`` ones,
-like so:
+Scenarios are written in ``.bkf`` files using the Blackfire Player DSL:
 
-.. code-block:: yaml
+.. code-block:: blackfire
 
-    scenarios: |
-        #!blackfire-player
+    name "Website Pages Check"
 
-        scenario
-                name 'Visitor'
+    scenario
+        visit url('/pricing')
+            name 'Pricing page'
+            expect status_code() == 200
+            assert metrics.sql.queries.count < 10
 
-                visit url('/pricing')
-                name 'Pricing page'
+        visit url('/docs/introduction')
+            name 'Documentation'
+            expect status_code() == 200
 
-                visit url('/docs/introduction')
-                name 'Documentation'
-
-An `online validator <https://blackfire.io/validator>`_ can help you validate the
-syntax of your test files.
+An `online validator <https://blackfire.io/validator>`_ can help you validate
+the syntax of your ``.bkf`` files.
 
 .. note::
 
-    :doc:`Explore the possibilities </builds-cookbooks/scenarios>`, such as
-    reusing blocks, using variables, including files, and more.
+    :doc:`Explore the full Player DSL </builds-cookbooks/player>`, including
+    reusable blocks, variables, form submission, and more.

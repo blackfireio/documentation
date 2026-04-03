@@ -1,11 +1,7 @@
 Writing Scenarios [level: Production]
 =====================================
 
-.. include-twig:: `youtube-iframe`
-    :title: Writing scenarios
-    :src: https://www.youtube-nocookie.com/embed/ywxzuaj6nxQ?rel=0&showinfo=0&modestbranding=1&autoplay=0
-    :width: 700px
-    :height: 394px
+.. include:: _builds-deprecation.rst
 
 Blackfire scenarios provide a powerful way to test your application
 **regularly**, like when you deploy your code on a staging environment or in
