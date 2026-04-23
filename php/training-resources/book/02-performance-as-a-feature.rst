@@ -61,8 +61,7 @@ between Google and your server).
 
 .. raw:: html
 
-    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Adoption of <a href="https://twitter.com/blackfireio">@blackfireio</a> is improving the technical performance, and hence the commercial performance, of our website.</p>&mdash; Sam Burns (@AgileTillIDie) <a href="https://twitter.com/AgileTillIDie/status/647361933566414848">September 25, 2015</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Adoption of <a href="https://x.com/blackfireio">@blackfireio</a> is improving the technical performance, and hence the commercial performance, of our website.</p>&mdash; Sam Burns (@AgileTillIDie) <a href="https://x.com/AgileTillIDie/status/647361933566414848">September 25, 2015</a></blockquote>
 
 Measuring Performance
 ---------------------
