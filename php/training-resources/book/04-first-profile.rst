@@ -293,7 +293,7 @@ behavior and showed us front and center exactly where to look to improve its
 performance.
 
 We call that the "Blackfire effect", and `lots of people are experiencing
-<https://x.com/blackfireio/likes>`_ it on their projects:
+<https://bsky.app/profile/blackfire.io>`_ it on their projects:
 
 .. raw:: html
 
