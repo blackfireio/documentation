@@ -59,10 +59,6 @@ server response time below 200ms (time it takes to load the necessary HTML to
 begin rendering the page from your server, subtracting out the network latency
 between Google and your server).
 
-.. raw:: html
-
-    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Adoption of <a href="https://x.com/blackfireio">@blackfireio</a> is improving the technical performance, and hence the commercial performance, of our website.</p>&mdash; Sam Burns (@AgileTillIDie) <a href="https://x.com/AgileTillIDie/status/647361933566414848">September 25, 2015</a></blockquote>
-
 Measuring Performance
 ---------------------
 
