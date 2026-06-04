@@ -1,6 +1,8 @@
 Setting up Synthetic Monitoring [level: Production]
 ===================================================
 
+.. include:: _builds-deprecation.rst
+
 .. _synthetic-monitoring-player:
 
 Synthetic monitoring simulates real user journeys against a live application
@@ -166,9 +168,7 @@ Scheduled monitoring
 ~~~~~~~~~~~~~~~~~~~~~
 
 Run Player on a schedule using cron or a CI/CD scheduled pipeline. This
-gives you full control over frequency and target environment, as an
-alternative to :doc:`Blackfire's server-side periodic builds
-</builds-cookbooks/builds-periodic>`:
+gives you full control over frequency and target environment:
 
 .. code-block:: bash
 

@@ -27,18 +27,12 @@ The expected workflow is as follows:
     The following options require that Backfire can reach the HTTP
     server serving the pull request version of the code.
 
-.. tip::
-
-    Some PaaS, like :doc:`Platform.sh </integrations/paas/platformsh>` have
-    built-in support for automatically deploying Pull Requests and triggering
-    Blackfire scenarios.
-
 If your toolchain enables you to deploy your code automatically for each new Pull
 Request, create a webhook payload that you will use (for instance with Jenkins,
 Travis,...) to let Blackfire run the test scenarios.
 
-Please read the :ref:`builds webhook documentation <build-webhook>` to configure
-them.
+Please read the :doc:`Synthetic Monitoring documentation
+</builds-cookbooks/synthetic-monitoring>` to configure it.
 
 To make sure that GitHub can receive a notification back from Blackfire, please
 configure the following parameters:
@@ -73,29 +67,3 @@ deploying it. You will need to configure it to:
 * :ref:`Generate profiles and aggregate them in a build <php-sdk-builds>`;
 
 * :ref:`Send the build result to GitHub as a commit status <php-sdk-commit-status>`.
-
-.. _github-notification-channel:
-
-Setting up the GitHub Notification Channel
-------------------------------------------
-
-Anytime a build report is available, the :doc:`GitHub notification channel
-</builds-cookbooks/notification-channels>` updates the commit status on the
-corresponding Pull Request.
-
-.. note::
-
-    You must make sure to create the webhook payload like described above.
-
-To configure a GitHub notification channel:
-
-* Go to your settings on GitHub to create a `new personal access token
-  <https://github.com/settings/tokens>`_, and grant it the ``repo:status``
-  scope;
-
-* Go to the Dashboard ``Build`` tab of the related Blackfire environment and
-  look for the Notification Channel section;
-
-* Add a new GitHub notification channel. The configuration requires the
-  repository name (like ``username/project-name``) and the GitHub Token to be
-  able to post build statuses on pull requests.

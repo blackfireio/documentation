@@ -7,8 +7,7 @@ integration platform that comes with `GitHub <https://github.com/>`_.
 Integrating Blackfire with GitHub Actions enables running Blackfire tests and
 scenarios, through :doc:`PHPUnit tests </php/integrations/phpunit>`, the
 :doc:`Blackfire Player </builds-cookbooks/player>`, or the :ref:`Blackfire CLI
-Tool <configuration-cli>`. It also makes it possible to :ref:`trigger Blackfire
-builds <build-webhook>`.
+Tool <configuration-cli>`.
 
 .. note::
 
@@ -123,34 +122,3 @@ Blackfire Player scenarios directly from your running job.
             symfony local:server:start -d # Start Symfony local webserver
             # Run Blackfire Player scenarios from .blackfire.yaml or .bkf files
             blackfire-player run --endpoint=http://localhost:8000 --blackfire-env=<your-blackfire-environment-id> .blackfire.yaml
-
-Triggering a Blackfire Build [level: Production]
-------------------------------------------------
-
-`setup-php action <https://github.com/marketplace/actions/setup-php-action>`_
-supports the ``blackfire`` CLI tool. It enables to :ref:`trigger a Blackfire build
-<build-webhook-trigger>`:
-
-.. code-block:: yaml
-
-    jobs:
-      build:
-        runs-on: ubuntu-latest
-
-        steps:
-        - uses: actions/checkout@v2
-
-        - name: Setup PHP Action
-          uses: shivammathur/setup-php@v2
-          with:
-            # Setup Blackfire Agent and CLI tool and Blackfire Player
-            tools: blackfire, blackfire-player
-          env:
-            BLACKFIRE_SERVER_ID: ${{ secrets.BLACKFIRE_SERVER_ID }}
-            BLACKFIRE_SERVER_TOKEN: ${{ secrets.BLACKFIRE_SERVER_TOKEN }}
-            BLACKFIRE_CLIENT_ID: ${{ secrets.BLACKFIRE_CLIENT_ID }}
-            BLACKFIRE_CLIENT_TOKEN: ${{ secrets.BLACKFIRE_CLIENT_TOKEN }}
-
-        - name: Trigger a Blackfire Build
-          run: |
-            blackfire build-trigger <ENDPOINT> --env=<ENV-UUID> --token=<TOKEN-VALUE>

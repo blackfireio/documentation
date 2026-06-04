@@ -64,15 +64,6 @@ Behind the scenes, an open source web crawler called Blackfire Player does all
 the work. It'll trigger a full profile for each endpoint considered. For all
 profiles, the matching assertions are automatically evaluated.
 
-Build Reports
-~~~~~~~~~~~~~
-
-The result of all the performance tests are gathered in a convenient view we
-call the :doc:`Build Reports </builds-cookbooks/index>`.
-
-In a Build Report, you will find a convenient overview of the passing and
-failing tests, all the recommendations associated with each profile.
-
 Define Expectations
 ~~~~~~~~~~~~~~~~~~~
 
@@ -96,10 +87,6 @@ or submit a form. All those requests as well will be profiled.
 
 Define Secrets and Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can :doc:`define secrets </builds-cookbooks/builds-periodic>` like login
-credentials, securely in the Blackfire Build dashboard. This helps you test
-applications requiring user login
 
 To go beyond, you can :ref:`define variables <using-variables>` with results
 from a previous test and start defining groups, which are reusable parts of

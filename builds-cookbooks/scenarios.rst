@@ -9,11 +9,6 @@ production, or when you create a pull-request to add a new feature or fix a
 bug. The idea is to assess the performance of your code and to check its
 behavior.
 
-Scenarios are run within :doc:`builds, periodic or externally triggered
-</builds-cookbooks/index>`.
-
-Once scenarios are completed, a :ref:`Build Report <build-report>` is generated.
-
 Scenarios
 ---------
 
@@ -87,15 +82,6 @@ assert responses, and extract data from HTML/XML/JSON responses.
 
     Please also note that the Player script must start with ``#!blackfire-player``
 
-.. note::
-
-    If you trigger a build with a webhook URL, please ensure it is not
-    an outdated version.
-
-    If the URL contains ``/api/v1/build/``, upgrade your webhook URL by
-    generating a new one on the environment build's tab.
-
-When a build is triggered, it generates a report and notifications are sent.
 
 Variables
 ---------
@@ -110,21 +96,6 @@ available in your environment dashboard:
 .. image:: ../images/scenarios/variables-edit.png
 
 .. _build-report:
-
-Build Report
-------------
-
-Build reports contain the result of all assertions written in the scenarios or in
-the :doc:`Tests </testing-cookbooks/tests>` section of the ``.blackfire.yaml`` file.
-
-They are available from an :doc:`environment's </reference-guide/environments>` **Builds** section.
-
-Build Reports have an overall **status** (pass or fail). The availability
-of a new report and its status can be sent as a notification to users with a wide
-variety of :doc:`Notification Channels</builds-cookbooks/notification-channels>`.
-
-Builds reports have a retention policy of 13 months. Their profiles are subject
-to the retention policy of your plan.
 
 Other Ways to Automate Scenarios
 --------------------------------

@@ -33,39 +33,6 @@ command from the root directory of your project):
 
 .. include:: ../../profiling-cookbooks/_cli-profiling-warning-simplified.rst
 
-.. _trigger-upsun:
-
-Builds
-------
-
-To enable Blackfire builds on all of your **Upsun environments**
-each time a branch is deployed (after a push, merge, or redeploy event), you
-need to set up a specific webhook.
-
-To do so, follow these steps:
-
-#. Install the `Upsun <https://docs.upsun.com/administration/cli.html>`_ CLI.
-
-#. Run the following command:
-
-.. include-twig:: `upsun_hook`
-
-The command asks several questions. Hit enter to accept the default for all of
-them. If you get a permission error, ask a project admin to upgrade your account
-or ask someone who is an admin to run this command.
-
-Now, whenever you push to an Upsun environment, Blackfire will
-automatically trigger a build for this specific environment. Blackfire scenarios
-will be run for all your pull requests.
-
-GitHub integration
-------------------
-
-If you are using GitHub and if you have setup the synchronization between GitHub
-and Upsun, don't forget to configure the :ref:`Blackfire GitHub
-notification channel <github-notification-channel>`. That way, Blackfire will
-post a status on your GitHub pull requests.
-
 Develop on GitHub, Deploy to Upsun and Test on Blackfire
 --------------------------------------------------------
 

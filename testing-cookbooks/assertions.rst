@@ -56,14 +56,11 @@ to assert the performance evolution of your code:
 
 .. note::
 
-    Comparison assertions are only evaluated :doc:`when running builds
-    </builds-cookbooks/index>`.
+    Comparison assertions are only evaluated :doc:`when running Synthetic
+    Monitoring </builds-cookbooks/index>`.
 
     Values are **compared between the current build and a reference build**.
-    The reference can be either :ref:`the last successful periodic build
-    <build-periodic-scenarios>` or :ref:`a build that has been referenced in
-    the webhook command <builds-comparison-webhook>` with
-    ``--external_parent_id`` option.
+    The reference is passed using the ``--external_parent_id`` option.
 
 Metric Values
 -------------
@@ -248,13 +245,10 @@ When an assertion is run from an environment, the ``is_dev()`` function returns
 Builds Comparison
 -----------------
 
-When :doc:`using builds </builds-cookbooks/index>`, it is possible
+When :doc:`using Synthetic Monitoring </builds-cookbooks/index>`, it is possible
 to compare one build to another. This is useful when you want to validate a
-code merge (e.g. a pull-request) by :ref:`triggering a build webhook
-<builds-comparison-webhook>` or a :ref:`Blackfire Player collection of scenarios
-<builds-comparison-player>`. It can also ensure that your code doesn't
-have performance regression over time :ref:`using periodic builds
-<builds-comparison-periodic>`.
+code merge (e.g. a pull-request). It can also ensure that your code doesn't
+have performance regression over time.
 
 Comparison can be made within assertion expressions thanks to the ``percent()``
 and ``diff()`` functions:

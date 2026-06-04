@@ -22,10 +22,7 @@ providing you insights on the most impactful transactions not yet protected by
 :doc:`performance tests </testing-cookbooks/index>`.
 
 To benefit from all of the Health Report features, we strongly recommend to
-activate at least, on a given environment:
-
-- :doc:`Periodic Builds </builds-cookbooks/builds-periodic>`;
-- :doc:`Monitoring </monitoring-cookbooks/configuration>`.
+activate :doc:`Blackfire Monitoring </monitoring-cookbooks/configuration>`.
 
 .. note::
 

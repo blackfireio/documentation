@@ -129,11 +129,10 @@ A build report is a convenient tool for checking the health of large parts of an
 application at once. Blackfire Build can be triggered manually, periodically,
 or through webhooks.
 
- I cannot recommend you enough to plug synthetic monitoring into your
-:doc:`CI/CD pipelines </builds-cookbooks/builds-integrations>`. Such integration
-prevents a pull request from being merged or code from being deployed into
-production if it degrades the performance of your application. It ensures the.
-performance of your applications in the long run.
+ I cannot recommend you enough to plug synthetic monitoring into your CI/CD
+pipelines. Such integration prevents a pull request from being merged or code
+from being deployed into production if it degrades the performance of your
+application. It ensures the performance of your applications in the long run.
 
  That's it for our look at the key features and benefits of Blackfire.
 

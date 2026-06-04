@@ -22,18 +22,8 @@ Blackfire can be configured on Adobe Commerce Cloud, to:
 * Validate code changes with :doc:`Blackfire builds </builds-cookbooks/index>` at
   each new deployment;
 
-* Enable :doc:`Synthetic User Monitoring </builds-cookbooks/builds-periodic>` and
+* Enable :doc:`Synthetic User Monitoring </builds-cookbooks/index>` and
   proactively identify issues in production.
-
-The following video shows an example workflow when integrating GitHub, Adobe
-Commerce Cloud, and Blackfire to automatically check the performance of your
-code at each commit.
-
-.. include-twig:: `youtube-iframe`
-    :title: magento-integration
-    :src: https://www.youtube-nocookie.com/embed/jAFXh7I9Dns?rel=0&showinfo=0&modestbranding=1&autoplay=0
-    :width: 560px
-    :height: 315px
 
 Magento On Premise
 ------------------

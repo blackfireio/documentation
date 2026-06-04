@@ -76,143 +76,26 @@ Triggering Scenarios
 --------------------
 
 Now that the Finding Bigfoot scenarios are defined, we need a way to trigger
-them. Blackfire has `several ways to trigger them
-<https://docs.blackfire.io/builds-cookbooks/index>`_, but the
-most simple one is to use a **periodic build**.
-
-Periodic Builds
-~~~~~~~~~~~~~~~
-
-Select your :route:`Environment <my_environments>`, and select the "Builds"
-entry on the left menu to access the ``Builds`` section. Then, click the
-"Enable periodic builds" button. By default, Blackfire will launch a new
-build every 6 hours. But you can fine-tune those settings. Click the "Edit"
-icon.
-
-.. image:: ../../../images/book/blackfire-triggers.png
-    :width: 500px
-    :align: center
-
-By default, Blackfire will run builds on the endpoint you defined when you
-created the environment, but you can change that. However, periodic builds can
-target a single endpoint. You'll need to create multiple environments if you
-want to periodic run builds on multiple endpoints.
-
-Webhook
-~~~~~~~
-
-.. note::
-
-    The Production Edition of Blackfire offers all `ways to trigger them
-    <https://docs.blackfire.io/builds-cookbooks/index>`_, such
-    as the webhook.
-
-Go to the ``Builds`` section of your environment and click the "Start
-a build" button:
-
-.. image:: ../../../images/book/blackfire-webhook.png
-    :width: 500px
-    :align: center
-
-Then enter the endpoint (``https://www.book.b7e.io/``),
-trigger the build by submitting the form, and wait for the profiles to finish.
-
-Alternatively, you can also trigger a build
-:doc:`using a Webhook </builds-cookbooks/builds-webhook>`.
-
-You can create Build Tokens from your Environment Builds dashboard. In the
-right panel, click the ``Create Token`` button:
-
-.. image:: ../../../images/book/blackfire-builds-panel.png
-    :align: center
-
-Then give the Token a name. Note that you can also enable/disable it with the
-help of the ``Enabled`` checkbox.
-
-.. image:: ../../../images/book/blackfire-create-token.png
-    :width: 500px
-    :align: center
-
-You can now trigger by running this command in a console:
+them. Blackfire has a straightforward way to  `trigger them using Blackfire
+Player <https://docs.blackfire.io/builds-cookbooks/index>`_.
 
 .. code-block:: bash
     :zerocopy:
 
-    curl -i -X POST https://blackfire.io/api/v2/builds/env/ENV-UUID/webhook \
-    --user 'TOKEN' \
-    -d 'endpoint=https://www.book.b7e.io/' \
-    -d 'title=My First Scenario!'
+    blackfire-player run monitoring.bkf \
+        --blackfire-env=<ENV_NAME_OR_UUID> \
+        --report
 
 .. note::
 
-    To use the command above, replace the ``ENV-UUID`` placeholder with the
-    UUID of one of your Blackfire environments and the ``TOKEN`` with the token
-    you generated.
+    To use the command above, replace the ``ENV_NAME_OR_UUID`` placeholder with
+    the name or UUID of one of your Blackfire environments .
 
-If the trigger fired correctly, the JSON output should contain "A new build has
-been started". Go to the ``Builds`` section of your environment and select the
-newest build:
-
-.. image:: ../../../images/book/blackfire-builds-overview.png
-    :width: 500px
-    :align: center
-
-Build Report
-------------
-
-With one simple request, we were able to automatically generate 6 profiles in
-parallel for the main Finding Bigfoot URLs.
-
-The build report displays all profile results, highlights failed scenarios, and
-provides details for any failed assertions:
-
-.. image:: ../../../images/book/bigfoot-build-master.png
-    :width: 500px
-    :align: center
-
-As expected, some scenarios fail. Next execute the scenarios on the ``blackfireyaml``
-branch (from the web or from the console), where our performance patches have
-been applied:
-
-.. code-block:: bash
-    :zerocopy:
-
-    curl -i -X POST https://blackfire.io/api/v2/builds/env/ENV-UUID/webhook \
-    --user 'TOKEN' \
-    -d 'endpoint=https://blackfireyaml.book.b7e.io/' \
-    -d 'title=Scenario on the blackfire-yaml branch'
-
-The results are definitely better, but not as good as we could have hoped. Have
-a closer look and you will realize that some pages are slower than expected.
-This is the time to dig into the root causes and try to find more optimizations.
-
-.. note::
-
-    Remember that the main benefits of storing scenarios in a
-    ``.blackfire.yaml`` file alongside your code is to make them specific to
-    your current work: a pull request, a branch, a specific version of your
-    code, etc. Whenever you add a new feature, don't forget to update the
-    scenarios.
-
-Being Notified
---------------
-
-Webhooks are a great way to integrate Blackfire into any tool. Then, once
-your checks are automated, you will need a way to be alerted when performance
-degrades.
-
-Blackfire notification channels alert you when a build fails or when a
-project's status changes. Blackfire comes with many `built-in notification
-channels <https://docs.blackfire.io/builds-cookbooks/notification-channels>`_,
-but the simplest one is the **email notification channel**.
-
-On the dashboard Builds view, add an email notification channel.
-Configure the email notification channel to receive an email whenever there is a
-failure or when the build status changes:
-
-.. image:: ../../../images/book/blackfire-notifiers-email.png
-    :width: 300px
-    :align: center
+Remember that the main benefits of storing scenarios in a
+``.blackfire.yaml`` file alongside your code is to make them specific to
+your current work: a pull request, a branch, a specific version of your
+code, etc. Whenever you add a new feature, don't forget to update the
+scenarios.
 
 Conclusion
 ----------

@@ -30,8 +30,7 @@ Environments Configuration
 Environments configuration include:
 
  * The ability to add collaborators;
- * The ability to :doc:`start builds </builds-cookbooks/index>`;
- * The ability to :doc:`configure notification channels </builds-cookbooks/notification-channels>`;
+ * The ability to :doc:`trigger synthetic monitoring </builds-cookbooks/index>`;
  * The ability to :ref:`configure variables <assertions-variables>`;
  * The ability to :ref:`configure the environment's server credentials <configuration-agent>`
    in any machine where Blackfire is installed.

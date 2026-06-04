@@ -505,9 +505,6 @@ Using builds and scenarios has the following benefits:
 
 * A scenario consolidates tests results and generates a :ref:`Report <build-report>`
 
-* A build consolidates **scenarios results** and **sends notifications**
-  (GitHub, Slack, ...);
-
 * A build contains **all profiles from a profiling session** (individual profiles
   are not displayed in the dashboard anymore);
 
@@ -555,7 +552,7 @@ UUID). Optionally pass an array of options:
 
 * ``external_id``: A unique identifier for the build; commonly, a unique
   reference from a third party service like the Git commit sha1 related to the
-  build. It is used by some notifications (like GitHub);
+  build;
 
 * ``external_parent_id``: The unique identifier of the parent build.
 
@@ -780,9 +777,7 @@ instance with a :doc:`GitHub integration </integrations/git/github>` or
 the commit status to ease the validation and merge decision.
 
 Commit statuses are associated to builds via the corresponding Git commit sha1.
-After enabling the :doc:`notification channel
-</builds-cookbooks/notification-channels>` (GitHub, GitLab, or webhooks) for an
-environment, pass the Git sha1 to the ``startBuild()`` method options:
+Pass the Git sha1 to the ``startBuild()`` method options:
 
 .. code-block:: php
     :emphasize-lines: 3

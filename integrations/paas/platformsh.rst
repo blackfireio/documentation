@@ -73,39 +73,6 @@ to start your webserver:
             # Replace "my_app.wsgi" by your actual WSGI script.
             start: "blackfire-python gunicorn -w 4 -b unix:$SOCKET my_app.wsgi:application"
 
-.. _trigger-platformsh:
-
-Builds [level: Production]
---------------------------
-
-To enable Blackfire builds on all of your **Platform.sh environments**
-each time a branch is deployed (after a push, merge, or redeploy event), you
-need to set up a specific webhook.
-
-To do so, follow these steps:
-
-#. Install the `platform <https://github.com/platformsh/cli>`_ utility
-
-#. Run the following command:
-
-.. include-twig:: `platformsh_hook`
-
-The command asks several questions. Hit enter to accept the default for all of
-them. If you get a permission error, ask a project admin to upgrade your account
-or ask someone who is an admin to run this command.
-
-Now, whenever you push to a Platform.sh environment, Blackfire will
-automatically trigger a build for this specific environment. Blackfire scenarios
-will be run for all your pull requests.
-
-GitHub integration
-------------------
-
-If you are using GitHub and if you have setup the synchronization between GitHub
-and Platform.sh, don't forget to configure the :ref:`Blackfire GitHub
-notification channel <github-notification-channel>`. That way, Blackfire will
-post a status on your GitHub pull requests.
-
 Develop on GitHub, Deploy to Platform.sh and Test on Blackfire [level: Production]
 ----------------------------------------------------------------------------------
 

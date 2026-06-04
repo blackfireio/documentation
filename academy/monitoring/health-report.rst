@@ -37,8 +37,8 @@ transactions are not yet protected by performance tests.
 
 To fully unlock the potential of the Health Report, you need to have
 :doc:`Blackfire Monitoring </monitoring-cookbooks/index>` enabled on your
-environment and we recommend enabling :doc:`periodic builds </builds-cookbooks/builds-periodic>`
-as well. This ensures a comprehensive view of your performance metrics and trends.
+environment. This ensures a comprehensive view of your performance metrics and
+trends.
 
 Some advanced metric, like long-term trends require up to six weeks of data
 collection. So, the longer you use Blackfire monitoring and builds, the more

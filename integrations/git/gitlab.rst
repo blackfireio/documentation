@@ -32,8 +32,8 @@ The first step to configure Blackfire in the above-mentioned workflow is to
 create a webhook payload, that GitLab will use to let Blackfire run the test
 scenarios.
 
-Please read the :ref:`builds API documentation <build-webhook>` to configure
-them.
+Please read the :doc:`Synthetic Monitoring documentation
+</builds-cookbooks/synthetic-monitoring>` to configure it.
 
 To make sure that GitLab can receive a notification back from
 Blackfire, please make sure to configure the following parameters:
@@ -61,21 +61,3 @@ deploying it. You will need to configure it to:
 
 * :ref:`Send the build result to GitLab as a commit status
   <php-sdk-commit-status>`.
-
-Setting up the GitLab Notification Channel
-------------------------------------------
-
-Anytime a build report is available, the :doc:`GitLab notification channel
-</builds-cookbooks/notification-channels>` updates the commit status on the
-corresponding Merge Request.
-
-.. note::
-    :class: doc-cta
-
-    You must make sure to create the webhook payload like described above.
-
-To configure a GitLab notification channel, open the dashboard build tab of the
-related Blackfire environment and look for the *Notification Channels* section.
-Add a new notification channel. The configuration requires the repository
-endpoint (like ``https://gitlab.example.com/api/v4/projects/17``) and a GitLab
-Token to be able to post build statuses on Merge Requests.

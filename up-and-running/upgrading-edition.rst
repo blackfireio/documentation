@@ -32,17 +32,10 @@ To make to most out of the Production Edition, follow these steps:
    :doc:`Python</continuous-profiling-cookbooks/python>`,
    :doc:`Node.js</continuous-profiling-cookbooks/nodejs/index>`, and
    :doc:`Golang</continuous-profiling-cookbooks/go>` applications.
-4. If you have configured Blackfire on a public website, set up :ref:`periodic
-   builds <trigger-scheduled>`.
+4. If you have configured Blackfire on a public website, set up :doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>`.
 5. Write your first :doc:`tests </testing-cookbooks/tests>`,
    :doc:`scenarios </builds-cookbooks/scenarios>` and :doc:`metrics
    </testing-cookbooks/metrics>`.
-6. Learn how to :doc:`trigger builds</builds-cookbooks/index>` using
-   :doc:`native integrations </integrations/index>`, :doc:`CI/CD pipelines
-   </integrations/ci/index>` and the API (:doc:`PHP </php/integrations/sdk>`
-   or :doc:`Python </python/integrations/sdk>`).
-7. Set up :doc:`notification channels </builds-cookbooks/notification-channels>`
-   for your monitoring alerts and build results.
 
 When you configure :doc:`Blackfire environments </reference-guide/environments>`,
 consider where your app is deployed and why. For instance, you can create the
@@ -55,8 +48,8 @@ following environments:
   automatically start Blackfire builds if you have continuous
   integration/continuous development tooling and infrastructure
   configured.
-* One environment for production, where you can configure periodic builds and
-  get detailed insights into code performance.
+* One environment for production, where you can configure Synthetic Monitoring
+  and get detailed insights into code performance.
   Configure :doc:`Blackfire Monitoring </monitoring-cookbooks/index>` and
-  :ref:`periodic builds <trigger-scheduled>` and get live insights into code
-  performance where it really matters.
+  :doc:`Synthetic Monitoring </builds-cookbooks/scenarios>` and get live
+  insights into code performance where it really matters.
