@@ -58,14 +58,6 @@ Now, whenever you push to a Adobe Commerce Cloud environment, Blackfire will
 automatically trigger a build for this specific environment. Also, Blackfire
 scenarios will be run for all your pull-requests.
 
-Git integration [level: Production]
------------------------------------
-
-If you are using GitHub, Bitbucket, or GitLab, and if you have setup the
-synchronization with Adobe Commerce Cloud, don't forget to configure the
-:doc:`corresponding notification channel </integrations/git/index>`. That
-way, Blackfire can update the status of your pull-requests / merge-requests.
-
 Troubleshooting
 ---------------
 

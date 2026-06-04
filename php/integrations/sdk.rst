@@ -556,11 +556,6 @@ UUID). Optionally pass an array of options:
 
 * ``external_parent_id``: The unique identifier of the parent build.
 
-.. tip::
-
-    The ``external_id`` and ``external_parent_id`` options can be used to
-    :doc:`integrate Blackfire with GitHub pull request statuses </integrations/git/github>`
-
 To create a scenario, call ``startScenario()`` and pass it a build,
 or null to create a new build). Optionally pass an array of options:
 
@@ -770,11 +765,6 @@ Signal the consumer with ``SIGUSR1`` to generate a regular profile.
 
 Enabling the Update of Git Commit Statuses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-When using the SDK to automatically run test scenarios on git branches, for
-instance with a :doc:`GitHub integration </integrations/git/github>` or
-:doc:`GitLab integration </integrations/git/gitlab>`, you will need to update
-the commit status to ease the validation and merge decision.
 
 Commit statuses are associated to builds via the corresponding Git commit sha1.
 Pass the Git sha1 to the ``startBuild()`` method options:

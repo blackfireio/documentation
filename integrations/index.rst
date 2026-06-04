@@ -8,7 +8,6 @@ Integrations
     proxies/index
     blackfire-player
     paas/index
-    git/index
     ci/index
     chef
     cpanel
