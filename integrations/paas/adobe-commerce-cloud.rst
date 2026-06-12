@@ -36,27 +36,15 @@ branch on which you want to configure Blackfire.
 
 .. _trigger-magentocloud:
 
-Builds [level: Production]
---------------------------
+Synthetic monitoring [level: Production]
+----------------------------------------
 
-.. note::
-
-    Learn more about builds :doc:`in the dedicated documentation
-    </builds-cookbooks/index>`.
-
-Follow these steps to enable Blackfire builds on each of your **Adobe Commerce
-Cloud environments** each time a branch is deployed (after a ``push``, ``merge``,
-or ``redeploy`` event):
-
-.. include-twig:: `magentocloud_hook`
-
-The command asks several questions. Hit the ``Enter`` key to accept the default
-for all of them. If you get a permission error, ask a project admin to
-upgrade your account or ask someone who is an admin to run this command.
-
-Now, whenever you push to a Adobe Commerce Cloud environment, Blackfire will
-automatically trigger a build for this specific environment. Also, Blackfire
-scenarios will be run for all your pull-requests.
+To verify performance on each deployment, run
+:doc:`Blackfire Player </builds-cookbooks/synthetic-monitoring>` with the
+``--report`` option from your Adobe Commerce Cloud deploy hook or CI pipeline.
+Point Player at the deployed environment with ``--endpoint`` so it profiles your
+scenarios after every ``push``, ``merge``, or ``redeploy`` event, and gate the
+job on its exit code.
 
 Troubleshooting
 ---------------

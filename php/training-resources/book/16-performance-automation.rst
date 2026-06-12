@@ -76,8 +76,8 @@ Triggering Scenarios
 --------------------
 
 Now that the Finding Bigfoot scenarios are defined, we need a way to trigger
-them. Blackfire has a straightforward way to  `trigger them using Blackfire
-Player <https://docs.blackfire.io/builds-cookbooks/index>`_.
+them. Blackfire has a straightforward way to run them using `Blackfire
+Player <https://docs.blackfire.io/builds-cookbooks/synthetic-monitoring>`_.
 
 .. code-block:: bash
     :zerocopy:
@@ -103,15 +103,13 @@ Conclusion
 In development, update your application scenarios whenever you make significant
 changes.
 
-Configure your test environment to run the scenarios via the webhook and use
-the email notification channel to receive a notification whenever a build fails.
+Run the scenarios with Blackfire Player from your CI/CD pipeline on each pull
+request, and gate the job on Player's exit code so regressions block the merge.
 
-For production, configure the Blackfire "Periodic builds" to automatically
-profile your application on a periodic basis and use the `Slack
-<https://docs.blackfire.io/integrations/notifiers/slack>`_ or `Microsoft
-Teams <https://docs.blackfire.io/integrations/notifiers/microsoft-teams>`_
-notification channel to get fast feedback.
+For production, run Player on a schedule — from a cron job or a scheduled CI/CD
+pipeline — to profile your application regularly. See the `Synthetic Monitoring
+documentation <https://docs.blackfire.io/builds-cookbooks/synthetic-monitoring>`_
+for the full setup.
 
-But there is more. Builds are also available in the SDK, which opens the door to
-dynamically building scenarios. The SDK is the best way to leverage Blackfire
-powerful features, and in the next chapter we will study some advanced usages.
+The SDK is the best way to leverage Blackfire's powerful features, and in the
+next chapter we will study some advanced usages.

@@ -82,9 +82,9 @@ preventing issues from arising, focus on the following features:
   regressions as your application evolves.
 
 - **Synthetic Monitoring**:
-  Automate performance test with :doc:`synthetic monitoring </builds-cookbooks/index>`
-  by integrating it into your CI/CD pipeline. This ensures your application
-  maintains performance quality with each new release.
+  Run :doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>` with
+  Blackfire Player from your CI/CD pipeline or on your own schedule. This keeps
+  your application's performance quality under control with each new release.
 
 Combining Strategies for Effective Observability
 ------------------------------------------------

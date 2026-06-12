@@ -107,27 +107,27 @@ Custom assertions are defined into a .blackfire.yaml file, and they are evaluate
 every time a profile is triggered. This eases the detection of performance
 regressions.
 
-There are also integrations with :doc:`PHPUnit </php/integrations/phpunit>`,
-:doc:`Behat </php/integrations/behat>`,
-:doc:`Symfony Functional Tests </php/integrations/symfony/functional-tests>`, and
-:doc:`Laravel Tests </php/integrations/laravel/tests>`. Other integrations could
+You can also run these assertions from your test suite with the
+:doc:`PHPUnit integration </php/integrations/phpunit>`. Other integrations could
 be made thanks to the `PHP SDK </php/integrations/sdk>` and `Python SDK </python/integrations/sdk>`.
 
 Automation
 ~~~~~~~~~~
 
 The performance of your application's critical user journeys can also be
-:doc:`evaluated regularly </builds-cookbooks/index>`. Those user journeys, as
-well as the expectations for each of them, can be described in
+evaluated regularly with
+:doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>`. Those user
+journeys, as well as the expectations for each of them, can be described in
 :doc:`scenarios </builds-cookbooks/scenarios>`.
 
-When evaluating, a profile is triggered at every step of every scenario. As for
-profiles, the assertions matching the requests are evaluated and the results are
-gathered in what we call a Build report.
+When you run :doc:`Blackfire Player </builds-cookbooks/player>`, a profile is
+triggered at every step of every scenario. As for profiles, the assertions
+matching the requests are evaluated and the results are gathered in what we call
+a Build report.
 
 A build report is a convenient tool for checking the health of large parts of an
-application at once. Blackfire Build can be triggered manually, periodically,
-or through webhooks.
+application at once. You run Blackfire Player from your own infrastructure: from
+your CI/CD pipeline, on pull requests, or on your own schedule.
 
  I cannot recommend you enough to plug synthetic monitoring into your CI/CD
 pipelines. Such integration prevents a pull request from being merged or code

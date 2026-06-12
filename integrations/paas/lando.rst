@@ -120,5 +120,5 @@ Next Steps
 
 1. :doc:`Profile with a browser extension </profiling-cookbooks/profiling-http-via-browser>`
    or :doc:`using CLI </profiling-cookbooks/profiling-http-via-cli>`;
-2. :doc:`Automate profiling with builds </builds-cookbooks/index>`;
+2. :doc:`Automate profiling with synthetic monitoring </builds-cookbooks/synthetic-monitoring>`;
 3. Install in production and :doc:`setup Blackfire Monitoring </monitoring-cookbooks/index>`.

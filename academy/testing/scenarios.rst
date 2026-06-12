@@ -113,4 +113,4 @@ Your next step is to create your first scenario. A good practice is to add or
 improve the scenarios every time you work on a feature.
 
 You can secure your application even more by :doc:`integrating these automated tests
-into your CI/CD pipelines <builds>`.
+into your CI/CD pipelines </builds-cookbooks/synthetic-monitoring>`.

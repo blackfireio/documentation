@@ -17,7 +17,7 @@ This feature provides an actionable overview of your application health, helping
 you make data driven decisions to improve and optimize it. Let's dive in!
 
 The Health Report consolidates key metrics and insights from Blackfire monitoring
-and Blackfire builds, the synthetic monitoring, into a single easy to read overview.
+and synthetic monitoring, into a single easy to read overview.
 It's designed for a specific environment and highlights trends over a seven day
 period, comparing them to the previous week.
 
@@ -40,9 +40,6 @@ To fully unlock the potential of the Health Report, you need to have
 environment. This ensures a comprehensive view of your performance metrics and
 trends.
 
-Some advanced metric, like long-term trends require up to six weeks of data
-collection. So, the longer you use Blackfire monitoring and builds, the more
-accurate and insightful your Health Report becomes.
 
 Every Monday, you'll receive a summary of your Health Report directly into your
 inbox. These updates are sent at 9am based on the time zone configured in your
@@ -52,9 +49,8 @@ And don't worry, you can customize your subscription preferences for these
 reports anytime.
 
 To start benefitting from Health Report, ensure your application has monitoring
-enabled to collect performance data, and periodic builds to test and validate
-your application regularly. Run this for at least 14 days to generate your first
-complete report.
+enabled to collect performance data. Run this for at least 14
+days to generate your first complete report.
 
 The Blackfire Health Report is your weekly check up, ensuring your application
 stays robust, responsive, and ready for anything.

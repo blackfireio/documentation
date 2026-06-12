@@ -18,7 +18,6 @@ with Laravel:
 
     artisan
     horizon
-    tests
     octane
 
 The Laravel ecosystem also offers extensive support for Blackfire. Find more about:

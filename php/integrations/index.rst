@@ -7,7 +7,6 @@ Integrations
     php-docker
     sdk
     phpunit
-    behat
     symfony/index
     laravel/index
     magento

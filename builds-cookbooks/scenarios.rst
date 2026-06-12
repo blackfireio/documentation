@@ -81,33 +81,3 @@ assert responses, and extract data from HTML/XML/JSON responses.
     Don't forget the ``|`` (pipe) at the end of the ``scenarios: |`` line to start a multiline string.
 
     Please also note that the Player script must start with ``#!blackfire-player``
-
-
-Variables
----------
-
-You may use **variables within your automated scenarios** like for :ref:`any
-Blackfire Player scenario <using-variables>`. To inject values for these
-variables, define their key/value pairs in the Variables edition panel,
-available in your environment dashboard:
-
-.. image:: ../images/scenarios/variables-panel.png
-
-.. image:: ../images/scenarios/variables-edit.png
-
-.. _build-report:
-
-Other Ways to Automate Scenarios
---------------------------------
-
-You can write your HTTP scenarios by using the following integrations:
-
-* :doc:`Blackfire Player </integrations/blackfire-player>`;
-* :doc:`The PHP SDK </php/integrations/sdk>`;
-* :ref:`Goutte <goutte-builds>`;
-* :ref:`Guzzle <guzzle-builds>`.
-
-You can also write scenarios "manually" via :doc:`PHPunit
-</php/integrations/phpunit>` for libraries or CLI commands and automatically
-benefit from the builds and notification channels of your continuous integration
-platform.

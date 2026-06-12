@@ -24,8 +24,8 @@ It is recommended to avoid practices that would involve profiling actual end-use
 requests to avoid adding the profiling overhead on those (:ref:`read more
 about the profiling overhead <understanding-blackfire-overhead>`).
 We do recommend that you :doc:`profile regularly your application manually
-</profiling-cookbooks/index>`, as well as :doc:`automatically through Builds
-</builds-cookbooks/index>`
+</profiling-cookbooks/index>`, as well as automatically through
+:doc:`synthetic monitoring with Blackfire Player </builds-cookbooks/synthetic-monitoring>`
 
 However, profiling actual end-user requests also offers additional "real-life"
 context which may show valuable information to spot and debug a particular

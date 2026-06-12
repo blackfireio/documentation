@@ -168,9 +168,9 @@ time-consuming.
 
 .. note::
 
-    Comparison assertions are only evaluated :doc:`when running builds </builds-cookbooks/index>`.
-    Blackfire Builds are sets of Profiles triggered during automated tests.
-    They will be covered in :doc:`chapter 15 <15-unit-tests>`.
+    Comparison assertions are only evaluated when a profile can be compared
+    against a reference. Run :doc:`synthetic monitoring with Blackfire Player
+    </builds-cookbooks/synthetic-monitoring>`.
 
 For instance, you can limit the increase of memory from one version to the next
 with the following assertions:

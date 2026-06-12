@@ -382,7 +382,7 @@ or an array of method selectors:
 HTTP Profiling
 ~~~~~~~~~~~~~~
 
-Using the Blackfire Client, you can create HTTP scenarios directly from PHP.
+Using the Blackfire Client, you can profile HTTP requests directly from PHP.
 Enabling code instrumentation for HTTP requests is done via a specific HTTP
 header (``X-Blackfire-Query``); the value containing the profile configuration
 and a signature used for authorization.
@@ -479,149 +479,6 @@ By default, profiles are sent to your personal profiles, but you can change the
 
     $config->setEnv('mywebsite');
 
-.. _php-sdk-builds:
-
-Scenarios & Builds [level: Production]
---------------------------------------
-
-.. note::
-
-    Instead of creating Scenarios and Builds programmatically like described below,
-    you may **consider one of the following integrations** provided by the PHP SDK:
-
-    - :doc:`Symfony Functional Tests </php/integrations/symfony/functional-tests>`
-
-    - :doc:`Behat </php/integrations/behat>`
-
-When generating more than one profile, like when you profile **complex user
-interactions** with your application, you might want to aggregate them in a
-scenario.
-Scenarios can be grouped in a build.
-
-Using builds and scenarios has the following benefits:
-
-* A scenario written in PHP is a powerful alternative to the :doc:`scenarios
-  </builds-cookbooks/scenarios>` defined in a ``.blackfire.yaml`` file.
-
-* A scenario consolidates tests results and generates a :ref:`Report <build-report>`
-
-* A build contains **all profiles from a profiling session** (individual profiles
-  are not displayed in the dashboard anymore);
-
-Creating a scenario is not that different from profiling individual pages as
-described in the previous paragraphs:
-
-.. code-block:: php
-    :emphasize-lines: 2,9,19
-
-    // create a build (optional)
-    $build = $blackfire->startBuild('Symfony Prod', array(
-        'title' => 'Build from PHP',
-        'trigger_name' => 'PHP',
-    ));
-
-    // create a scenario (if the $build argument is null, a new build will be created)
-    $scenario = $blackfire->startScenario($build, array(
-        'title' => 'Test documentation'
-    ));
-
-    // create a configuration
-    $config = new \Blackfire\Profile\Configuration();
-    $config->setScenario($scenario);
-
-    // create as many profiles as you need
-    $probe = $blackfire->createProbe($config);
-
-    // some PHP code you want to profile
-
-    $blackfire->endProbe($probe);
-
-    // end the scenario and fetch the report
-    $report = $blackfire->closeScenario($scenario);
-
-    // end the build
-    $blackfire->closeBuild($build);
-    // or if the build was created automatically: $blackfire->closeBuild($scenario->getBuild());
-
-To create a build, call ``startBuild()`` and pass it the environment name (or
-UUID). Optionally pass an array of options:
-
-* ``title``: A build title;
-
-* ``trigger_name``: A trigger name (displayed in the dashboard);
-
-* ``external_id``: A unique identifier for the build; commonly, a unique
-  reference from a third party service like the Git commit sha1 related to the
-  build;
-
-* ``external_parent_id``: The unique identifier of the parent build.
-
-To create a scenario, call ``startScenario()`` and pass it a build,
-or null to create a new build). Optionally pass an array of options:
-
-* ``title``: A scenario title;
-
-* ``metadata``: An array of metadata to associated with the scenario;
-
-* ``external_id``: A unique identifier for the scenario;
-
-* ``external_parent_id``: The unique identifier of the parent scenario.
-  It is used to compare scenarios;
-
-To store a profile in the scenario, call ``createProbe()`` and pass it a
-``Configuration`` object that has been tied to the scenario
-(``$config->setScenario($scenario)``).
-
-Stop the scenario by calling ``closeScenario()`` and the build by calling ``closeBuild()``.
-The ``closeScenario()`` call returns the :ref:`Report <php-sdk-report>` when ready.
-
-You can store the scenario UUID to get report back later:
-
-.. code-block:: php
-
-    // store the scenario UUID
-    $uuid = $scenario->getUuid();
-
-    // retrieve the report later on
-    $report = $blackfire->getReport($uuid);
-
-.. tip::
-
-    HTTP scenarios can be created with :ref:`Goutte <goutte-builds>` or
-    :ref:`Guzzle <guzzle-builds>`.
-
-.. _php-sdk-report:
-
-Report
-~~~~~~
-
-``Blackfire\\Report`` instances (as returned by ``Client::closeScenario()``) give
-you access to builds data:
-
-.. code-block:: php
-
-    $report = $blackfire->closeScenario($scenario);
-
-You can also get any report by UUID:
-
-.. code-block:: php
-
-    $report = $blackfire->getReport($uuid);
-
-Here is a summary of available methods:
-
-.. code-block:: php
-
-    // the report URL
-    $report->getUrl();
-
-    // tests were successful (all assertions pass)
-    $report->isSuccessful();
-
-    // an error occurred when running the tests (different from assertion failures)
-    // an error can be a syntax error in an assertion for instance
-    $report->isErrored();
-
 .. _php-sdk-manual-instrumentation:
 
 Controlling Automatic Instrumentation
@@ -715,24 +572,6 @@ loop iteration (before consuming a message for instance), and call
 
 .. _php-sdk-signals:
 
-Calling the ``generateBuilds()`` method automatically configures ``LoopClient``
-to generate a build for each profile:
-
-.. code-block:: php
-
-    $blackfire->generateBuilds('ENV_NAME_OR_UUID');
-
-If you need more flexibility, like setting a different title for each build,
-pass a Build factory as the second argument:
-
-.. code-block:: php
-
-    use Blackfire\Client;
-
-    $blackfire->generateBuilds('ENV_NAME_OR_UUID', function (Client $blackfire, $env) {
-        return $blackfire->startBuild($env, array('title' => 'Some generated title'));
-    });
-
 Using Signals
 ~~~~~~~~~~~~~
 
@@ -760,41 +599,6 @@ Signal the consumer with ``SIGUSR1`` to generate a regular profile.
 
     Triggering profiles on a pre-defined schedule can be done by adding an
     entry in the crontab that signals the consumer process.
-
-.. _php-sdk-commit-status:
-
-Enabling the Update of Git Commit Statuses
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Commit statuses are associated to builds via the corresponding Git commit sha1.
-Pass the Git sha1 to the ``startBuild()`` method options:
-
-.. code-block:: php
-    :emphasize-lines: 3
-
-    $build = $blackfire->startBuild('env-name-or-uuid', array(
-        'title' => 'Build from PHP',
-        'external_id' => '178f05003a095eb6b3a838d403544962262b7ed4',
-    ));
-
-.. note::
-
-    You must pass the full 40-character sha1 or GitHub won't accept the commit
-    statuses.
-
-To activate the comparison assertions on scenarios, pass a ``external_parent_id``
-to the scenario's options.
-This is typically the sha1 of the base branch of the pull request, concatenated
-with the name of the scenario:
-
-.. code-block:: php
-    :emphasize-lines: 3-4
-
-    $scenario = $blackfire->startScenario($build, array(
-        'title' => 'My Scenario',
-        'external_id' => '178f05003a095eb6b3a838d403544962262b7ed4:my-scenario',
-        'external_parent_id' => 'f72aa774dd33cfc5eac43e1bfaf67e4028acca8b:my-scenario',
-    ));
 
 .. _sub-profiles-php:
 

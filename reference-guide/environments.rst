@@ -18,8 +18,8 @@ and testing data is shared with the team.
 business logic, define tests and their applicability, and where you compare
 profiles and iterate.
 
-**It is plugged into your tools and workflow** where you trigger test scenarios,
-receive build reports and notifications.
+**It is plugged into your tools and workflow** where you run test scenarios
+and gather their reports.
 
 **It lets you manage access to your servers** where you configure at will
 the probe, agent, and credentials.
@@ -30,7 +30,7 @@ Environments Configuration
 Environments configuration include:
 
  * The ability to add collaborators;
- * The ability to :doc:`trigger synthetic monitoring </builds-cookbooks/index>`;
+ * The ability to :doc:`run synthetic monitoring </builds-cookbooks/synthetic-monitoring>` with Blackfire Player;
  * The ability to :ref:`configure variables <assertions-variables>`;
  * The ability to :ref:`configure the environment's server credentials <configuration-agent>`
    in any machine where Blackfire is installed.
@@ -45,12 +45,8 @@ Environments configuration include:
       and agent of a unique Blackfire Environment on multiple servers.
     * There's no limit on the number of projects: The same Blackfire Environment
       can be used to gather data from as many projects as you need
-    * There's no limit in the number of webhook endpoints: If you're a
-      Production user, you can start builds using the webhook and have access
-      to Platform.sh integrations.
-      As an Production user, you have access to all notification channels.
-      There's no limit in an environment's endpoint configuration, so that with
-      the same environment you can execute your test scenarios on different
+    * There's no limit in an environment's endpoint configuration, so that with
+      the same environment you can run your test scenarios on different
       domains/sub-domains.
 
 Favorite Environments

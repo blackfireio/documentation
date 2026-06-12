@@ -13,7 +13,7 @@ features:
 * :doc:`Alerting </monitoring-cookbooks/alerting>`.
 * :doc:`Automatic Profiling </monitoring-cookbooks/automatic-profiling>`.
 * :doc:`Distributed Profiling </profiling-cookbooks/distributed-profiling>`.
-* :doc:`Testing automation features </builds-cookbooks/index>`.
+* :doc:`Testing automation features </builds-cookbooks/synthetic-monitoring>`.
 * :doc:`Advanced integrations </integrations/index>`.
 * :doc:`Notifications </integrations/notifiers/index>`.
 * `Security <https://www.blackfire.io/code-security/>`_ and `Quality <https://www.blackfire.io/quality/>`_ Addons included.
@@ -44,12 +44,11 @@ following environments:
 * One environment for development. All of your team members can use the
   corresponding server credentials on their machines to benefit from the
   Production Edition features while profiling locally deployed apps.
-* One environment for testing/staging. This allows you to
-  automatically start Blackfire builds if you have continuous
-  integration/continuous development tooling and infrastructure
-  configured.
-* One environment for production, where you can configure Synthetic Monitoring
+* One environment for testing/staging. This lets you run
+  :doc:`synthetic monitoring with Blackfire Player </builds-cookbooks/synthetic-monitoring>`
+  from your continuous integration/continuous deployment pipeline.
+* One environment for production, where you can configure synthetic monitoring
   and get detailed insights into code performance.
   Configure :doc:`Blackfire Monitoring </monitoring-cookbooks/index>` and
-  :doc:`Synthetic Monitoring </builds-cookbooks/scenarios>` and get live
+  :doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>` and get live
   insights into code performance where it really matters.

@@ -86,10 +86,12 @@ and integrations with major testing frameworks.
 Synthetic Monitoring
 --------------------
 
-Last but not least, the performance of your applications' critical user journeys
-can also be evaluated regularly. Integrating :doc:`Blackfire builds </builds-cookbooks/index>`
-with your CI/CI pipelines prevents a pull request from being merged or code from
-being deployed into production if it degrades the performance of your application.
+Last but not least, you can evaluate the performance of your applications'
+critical user journeys regularly. Run
+:doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>` with
+Blackfire Player from your CI/CD pipelines to prevent a pull request from being
+merged or code from being deployed into production if it degrades the
+performance of your application.
 
 It ensures the performance of your applications in the long run.
 

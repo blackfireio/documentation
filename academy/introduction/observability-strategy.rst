@@ -91,7 +91,7 @@ parts of your apps under control.
 Regular testing allows you to prevent performance regressions as your
 application evolves.
 
-Finally, automate tests with :doc:`synthetic monitoring </builds-cookbooks/index>`.
+Finally, automate tests with :doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>`.
 
 Integrate synthetic monitoring into your CI/CD pipelines to automate performance
 testing. This will futureproof your application and ensure you don't deploy a

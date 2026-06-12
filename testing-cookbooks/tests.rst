@@ -23,8 +23,8 @@ needed, such tests can go beyond performance, like our
 Tests will be run on any profile you generate, may it be on-demand (like via
 the :doc:`browser </profiling-cookbooks/profiling-http-via-browser>` or the
 :doc:`CLI </profiling-cookbooks/profiling-http-via-browser>`), or automatically
-(like via the :doc:`Blackfire Player </builds-cookbooks/player>` or
-:doc:`Builds </builds-cookbooks/index>`).
+(like via :doc:`Blackfire Player </builds-cookbooks/player>` and
+:doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>`).
 
 Test results will be displayed via the profile view (under the assertions tab on the
 left-hand side), or aggregated in a Build report view.

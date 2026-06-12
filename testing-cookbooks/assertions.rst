@@ -56,8 +56,8 @@ to assert the performance evolution of your code:
 
 .. note::
 
-    Comparison assertions are only evaluated :doc:`when running Synthetic
-    Monitoring </builds-cookbooks/index>`.
+    Comparison assertions are only evaluated :doc:`when running synthetic
+    monitoring </builds-cookbooks/synthetic-monitoring>`.
 
     Values are **compared between the current build and a reference build**.
     The reference is passed using the ``--external_parent_id`` option.
@@ -245,7 +245,7 @@ When an assertion is run from an environment, the ``is_dev()`` function returns
 Builds Comparison
 -----------------
 
-When :doc:`using Synthetic Monitoring </builds-cookbooks/index>`, it is possible
+When :doc:`using synthetic monitoring </builds-cookbooks/synthetic-monitoring>`, it is possible
 to compare one build to another. This is useful when you want to validate a
 code merge (e.g. a pull-request). It can also ensure that your code doesn't
 have performance regression over time.

@@ -45,11 +45,6 @@ directory here) and it is mapped to the ``/app`` path in the Docker container.
 need to be properly exposed from the host in order to be able to use the
 :doc:`Blackfire Profiler integration </integrations/blackfire-player>`.
 
-The :doc:`Blackfire Profiler integration </integrations/blackfire-player>` allows
-to trigger :doc:`Blackfire Builds </builds-cookbooks/index>` locally to evaluate
-the performance of critical user journeys gathering the related profile into a
-convenient report.
-
 .. _player-alias:
 
 .. note::
@@ -149,9 +144,9 @@ Use the ``--concurrency`` option to run scenarios in parallel (experimental):
 Use ``-v`` to get logs about the progress of the player or use ``tracer`` option
 to store all requests and responses on disk.
 
-Use the ``--blackfire-env`` option defines the :doc:`environment </reference-guide/environments>`
-to which send the :doc:`Blackfire Build </builds-cookbooks/index>` results.
-It is required only when using the :doc:`Blackfire Profiler integration </integrations/blackfire-player>`.
+Use the ``--blackfire-env`` option to define the :doc:`environment </reference-guide/environments>`
+to which the profiles are sent. It is required only when using the
+:doc:`Blackfire Profiler integration </integrations/blackfire-player>`.
 
 .. code-block:: bash
 
@@ -174,7 +169,7 @@ performance figures. Requires ``--blackfire-env``:
 **The "run" command uses the following exit codes in case of failure:**
 
 * ``64`` if at least one scenario fails;
-* ``65`` if a fatal error occurs, preventing the build to play correctly;
+* ``65`` if a fatal error occurs, preventing the scenarios from running;
 * ``66`` if a non-fatal error occurs;
 
 The "validate" Command
@@ -217,10 +212,10 @@ written in a domain specific language:
 
 .. code-block:: blackfire
 
-    name "A build made of scenario"
+    name "A set of scenarios"
 
     # Default endpoint
-    # Can be override with option "--endpoint=http://newendpoint.com"
+    # Can be overridden with the "--endpoint=http://newendpoint.com" option
     endpoint "http://example.com/"
 
     scenario

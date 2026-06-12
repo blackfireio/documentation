@@ -48,25 +48,13 @@ signals to instrument your production code. It works like this:
   When Blackfire's servers receive the profile, associated **tests are run**.
 
 Whenever you want to better understand the status of one of your consumers,
-signal it once and be done. That gives you on-demand profiles, but how can you
-achieve periodic builds for consumers? As you might have guessed, this is a
-matter of configuring a cron job:
+signal it once and be done. That gives you on-demand profiles. To profile
+consumers on a regular basis, configure a cron job that signals the process:
 
 .. code-block:: text
 
     # generate a profile every hour
     0 * * * * pkill -SIGUSR1 -f consumer.php
-
-If you want to be notified whenever some tests fail, create builds and configure
-a notification channel to receive build statuses and reports.
-
-The PHP SDK provides everything you need to start builds programmatically (see
-below), but ``LoopClient`` makes it even easier. Call ``generateBuilds()`` and
-pass it the environment name or UUID:
-
-.. code-block:: php
-
-    $blackfire->generateBuilds('ENV_NAME_OR_UUID');
 
 And you have it: **a fully automated way to continuously profile consumers**,
 monitor their intrinsic performance, and their performance evolution over time.
@@ -221,71 +209,8 @@ your API calls, but the general idea looks like this:
 You can find more information about :ref:`profiling HTTP requests
 <php-sdk-http-profiling>` with the PHP SDK in the documentation.
 
-Generating Builds Programmatically
-----------------------------------
-
-Creating builds via the SDK is another very powerful feature, which looks like
-this:
-
-.. code-block:: php
-
-    // create a build
-    $build = $blackfire->startBuild('example_env', array('title' => 'Build from PHP'));
-
-    // create a scenario
-    $scenario = $blackfire->startScenario($build, array('title' => 'My first scenario'));
-
-    // add some profiles to the scenario, see below
-
-    // end the scenario and fetch the report
-    $report = $blackfire->closeScenario($scenario);
-
-    // end the build
-    $blackfire->closeBuild($build);
-
-    // print the report URL
-    print $report->getUrl();
-
-Attaching profiles to a build can be done via the profile configuration:
-
-.. code-block:: php
-
-    // create a configuration
-    $config = new \Blackfire\Profile\Configuration();
-
-    // attach the scenario
-    $config->setScenario($scenario);
-
-How do you generate profiles now? There are so many ways that it is up to you!
-
-Use the SDK to generate profiles for the current executed code:
-
-.. code-block:: php
-
-    // generate a profile via the SDK
-    $probe = $blackfire->createProbe($config);
-
-    // some PHP code you want to profile
-
-    $blackfire->endProbe($probe);
-
-    // generate some other profiles if that makes sense
-
-Or use Guzzle for HTTP requests:
-
-.. code-block:: php
-
-    // generate a profile with Guzzle
-    $response = $guzzle->request('GET', $url, array(
-        'blackfire' => $config,
-    ));
-
 Conclusion
 ----------
 
 Blackfire exposes a lot of features through the PHP SDK. This chapter showed
 you various ways to use the SDK to solve advanced use cases.
-
-The next logical step for the last recipe would be to generate dynamic
-scenarios and store the results in build, taking flexibility to the next level.
-This is a great topic for the next chapter.

@@ -1,8 +1,8 @@
-Using Builds [level: Production]
-================================
+Synthetic Monitoring [level: Production]
+========================================
 
-Read More on Builds
--------------------
+Read More on Synthetic Monitoring
+----------------------------------
 
 .. toctree::
     :maxdepth: 2

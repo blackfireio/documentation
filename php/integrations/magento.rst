@@ -19,11 +19,9 @@ Blackfire can be configured on Adobe Commerce Cloud, to:
 * :doc:`Profile Magento shops </profiling-cookbooks/index>` on demand on production,
   staging, integration, and development environments;
 
-* Validate code changes with :doc:`Blackfire builds </builds-cookbooks/index>` at
-  each new deployment;
 
-* Enable :doc:`Synthetic User Monitoring </builds-cookbooks/index>` and
-  proactively identify issues in production.
+* Run :doc:`synthetic monitoring </builds-cookbooks/synthetic-monitoring>` with
+  Blackfire Player to proactively identify issues in production.
 
 Magento On Premise
 ------------------
