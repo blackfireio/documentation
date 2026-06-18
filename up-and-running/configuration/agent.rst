@@ -13,6 +13,31 @@ Installing the Agent
 
 Please refer to the :doc:`installation procedure </up-and-running/installation>`.
 
+Configuring the Agent with the Configuration Wizard
+---------------------------------------------------
+
+The ``blackfire agent:config`` command runs an interactive wizard that does the
+heavy lifting for you: it collects your credentials, validates them against the
+Blackfire API, and writes the configuration file to the correct location for
+your platform.
+
+.. code-block:: bash
+
+    blackfire agent:config
+
+You can also pass the credentials as flags to skip the prompts, which is useful
+for non-interactive environments:
+
+.. include-twig:: `agent_config_credentials`
+
+
+To print the current configuration instead of changing it, use the ``--dump``
+flag:
+
+.. code-block:: bash
+
+    blackfire agent:config --dump
+
 Configuring the Agent via a Configuration File
 ----------------------------------------------
 
