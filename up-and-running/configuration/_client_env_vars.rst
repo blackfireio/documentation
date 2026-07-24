@@ -42,3 +42,11 @@
   .. code-block:: bash
 
     BLACKFIRE_APM_ENABLED=1
+
+- ``BLACKFIRE_APM_ENABLE_AUTOMATIC_BROWSER_PROBE``
+
+  Controls Front-end Observability tracking snippet injection.
+
+  .. code-block:: bash
+
+    BLACKFIRE_APM_ENABLE_AUTOMATIC_BROWSER_PROBE=1

@@ -80,6 +80,10 @@ You can also configure the PHP probe via your ``php.ini`` configuration file:
     ; Enabled by default since version 1.61.0
     ;blackfire.apm_enabled = 1
 
+    ; Controls Front-end Observability tracking snippet injection.
+    ; Enabled by default
+    ;blackfire.apm_enable_automatic_browser_probe = 1
+
 .. note::
 
     If you don't know where your ``php.ini`` file is located, run this

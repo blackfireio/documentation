@@ -54,6 +54,22 @@ placing it in your frontend code:
 
     The Browser Key is unique to your Blackfire :doc:`Environment </reference-guide/environments>`
 
+Disabling Automatic Snippet Injection
+-------------------------------------
+
+To avoid duplicate injection, disable the automatic tracking snippet while
+keeping Front-end Observability enabled, using either of these options:
+
+.. code-block:: ini
+
+    ; php.ini
+    blackfire.apm_enable_automatic_browser_probe = 0
+
+.. code-block:: bash
+
+    # environment variable
+    BLACKFIRE_APM_ENABLE_AUTOMATIC_BROWSER_PROBE=0
+
 Naming Transactions
 -------------------
 
