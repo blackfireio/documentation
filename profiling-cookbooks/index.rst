@@ -33,6 +33,7 @@ as profiling overhead only applies to the specific requests initiated by develop
     distributed-profiling
     debugging
     searching-profiles
+    migrating-profiles
     sharing-profiles
     understanding-call-graphs
     understanding-comparisons

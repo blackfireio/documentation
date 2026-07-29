@@ -33,7 +33,8 @@ Environments configuration include:
  * The ability to :doc:`run synthetic monitoring </builds-cookbooks/synthetic-monitoring>` with Blackfire Player;
  * The ability to :ref:`configure variables <assertions-variables>`;
  * The ability to :ref:`configure the environment's server credentials <configuration-agent>`
-   in any machine where Blackfire is installed.
+   in any machine where Blackfire is installed;
+ * The ability to :doc:`migrate profiles from another environment </profiling-cookbooks/migrating-profiles>`.
 
 .. note::
 
@@ -48,6 +49,44 @@ Environments configuration include:
     * There's no limit in an environment's endpoint configuration, so that with
       the same environment you can run your test scenarios on different
       domains/sub-domains.
+
+.. _sandbox-environment:
+
+Sandbox Environment
+-------------------
+
+Every paying plan includes one dedicated **Sandbox** environment at no extra
+cost.
+
+Use it to run deterministic profiles outside of your team workflow:
+reproduce an issue in isolation, test an instrumentation change, or hand off a
+profiling context to a colleague.
+
+The Sandbox is a first-class environment. It behaves like any other environment,
+so you configure it the same way, with the same features.
+
+Migration from the Personal Agent
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Personal Agent is sunset and the Sandbox environment replaces it.
+
+.. caution::
+
+    The Personal Agent will be removed entirely in December 2026. Move to your
+    Sandbox environment before then.
+
+To move to the Sandbox environment:
+
+1. Configure the agent for your Sandbox environment as you would for any other
+   environment. The :ref:`blackfire agent:config <configuration-agent>` command
+   runs an interactive wizard that collects and validates the credentials for
+   you.
+2. :doc:`Migrate the profiles </profiling-cookbooks/migrating-profiles>` made
+   with the Personal Agent to your Sandbox environment. Batch migration moves
+   them in a single operation.
+
+If you run into anything unexpected during the transition,
+:route:`contact Support <contact-us>`.
 
 Favorite Environments
 ----------------------
