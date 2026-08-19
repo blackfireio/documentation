@@ -11,14 +11,13 @@ built on top of the `Caddy <https://caddyserver.com/>`_ webserver
 Requirements
 ------------
 
-- :doc:`PHP Probe </up-and-running/update>` >= ``v1.92.44+``
+- :doc:`PHP Probe </up-and-running/update>` >= ``v2026.8.4``
 
 Coverage
 --------
 
 - :doc:`Deterministic Profiling </monitoring-cookbooks/index>`: Fully supported.
-  Some code changes may be required (:ref:`see below <frankenphp-profiling>`).
-- :doc:`Monitoring </monitoring-cookbooks/index>`: Supported, without Automatic Profiling.
+- :doc:`Monitoring </monitoring-cookbooks/index>`: Supported, with Automatic Profiling.
 - :doc:`Continuous Profiling </continuous-profiling-cookbooks/index>`: Supported
   via the Datadog extension on ZTS builds.
 - :doc:`Browser Monitoring </front-end-observability/browser-monitoring>`: Fully supported
@@ -49,70 +48,8 @@ Alternatively, you can use the FrankenPHP base Docker image:
     && printf "extension=blackfire.so\nblackfire.agent_socket=tcp://blackfire:8307" > $PHP_INI_DIR/conf.d/blackfire.ini \
     && rm -rf /tmp/blackfire /tmp/blackfire-probe.tar.gz
 
-.. _frankenphp-profiling:
-
-Deterministic Profiling
------------------------
-
-.. note::
-
-    **Laravel Octane users**: :doc:`our integration </php/integrations/laravel/octane>`
-    supports Deterministic Profiling out of the box.
-
-    **Symfony Runtime users**: :doc:`our integration </php/integrations/symfony/runtime>`
-    also supports Deterministic Profiling out of the box.
-
-If you are not using Laravel Octane or Symfony Runtime, update your FrankenPHP worker script to
-control the instrumentation manually:
-
-.. code-block:: php
-
-    <?php
-
-    ignore_user_abort(true);
-
-    $handler = static function () {
-        echo 'Hello Blackfire!';
-    };
-
-    $blackfireMiddleware = static function () use ($handler) {
-        $probe = null;
-        // Only create a Blackfire probe if the Blackfire header is present
-        if (isset($_SERVER['HTTP_X_BLACKFIRE_QUERY'])) {
-            $probe = new \BlackfireProbe($_SERVER['HTTP_X_BLACKFIRE_QUERY']);
-            $probe->enable();
-        }
-
-        try {
-            $handler();
-        } catch (\Throwable $e) {
-            throw $e;
-        } finally {
-            if (probe) {
-                $probe->close();
-            }
-        }
-    };
-
-    // See https://frankenphp.dev/docs/worker/ for more information
-    $maxRequests = (int)($_SERVER['MAX_REQUESTS'] ?? 0);
-    for ($nbRequests = 0; !$maxRequests || $nbRequests < $maxRequests; ++$nbRequests) {
-        $keepRunning = \frankenphp_handle_request($blackfireMiddleware);
-
-        gc_collect_cycles();
-
-        if (!$keepRunning) break;
-    }
-
-Learn more about controlling Deterministic Profiling using the :ref:`PHP SDK <php-sdk-profile>`.
-
-Monitoring
-----------
-
-Monitoring requires :doc:`PHP Probe </up-and-running/update>` ``v1.92.44`` or later.
-
-:doc:`Automatic profiling </monitoring-cookbooks/automatic-profiling>` isn't
-supported yet.
+Support
+-------
 
 `Watching for files mode <https://frankenphp.dev/docs/config/#watching-for-file-changes>`_ isn't supported yet.
 
