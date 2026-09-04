@@ -50,4 +50,4 @@ Troubleshooting
 ---------------
 
 For any issue related to Adobe Commerce Cloud, please check our `dedicated support
-documentation <https://support.blackfire.platform.sh/hc/en-us/sections/4843063030162>`_.
+documentation <https://support.blackfire.upsun.com/hc/en-us/sections/37505146285714-Getting-Started>`_.

@@ -18,7 +18,7 @@ Four roles are available at the Organization level: **Member**,
 
 - **Owner**: The **Owner** can perform all possible actions. Only the **Owner**
   can delete the Organization. That role cannot be shared but can be transferred
-  by reaching out to `Blackfire support <https://support.blackfire.platform.sh>`_.
+  by reaching out to `Blackfire support <https://support.blackfire.upsun.com>`_.
 
 The **Organization admins** (**Admin** and **Owner**) get automatically the
 highest possible level of permissions on all the Environments of the

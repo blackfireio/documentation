@@ -34,5 +34,5 @@ see green checks across the board. And if something's off ``blackfire doctor``
 tells you exactly what and puts you in the right direction.
 
 No more wasting time stressing over setup issues. And if you ever need to reach
-out to `our support team <https://support.blackfire.platform.sh/>`_ ,
+out to `our support team <https://support.blackfire.upsun.com/>`_ ,
 you can share the doctor report for faster help.

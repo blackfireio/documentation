@@ -14,7 +14,7 @@ The ``blackfire doctor`` CLI command is the go-to tool to validate your Blackfir
 
 - Instant confirmation your setup is correct.
 - Guidance when something's off.
-- A clear human-readable report you can share with `our support team <https://support.blackfire.platform.sh/>`_ if you need extra help.
+- A clear human-readable report you can share with `our support team <https://support.blackfire.upsun.com/>`_ if you need extra help.
 
 Requirements
 ------------

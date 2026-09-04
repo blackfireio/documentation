@@ -19,7 +19,7 @@ Support
 -------
 
 If you need help with this integration, please `contact Blackfire support
-<https://support.blackfire.platform.sh>`_.
+<https://support.blackfire.upsun.com>`_.
 
 Integration Walkthrough
 -----------------------

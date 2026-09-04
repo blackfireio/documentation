@@ -85,7 +85,7 @@ First, validate your installation by generating a profile from a browser
 extension (`Firefox <https://docs.blackfire.io/integrations/browsers/firefox>`_
 and `Google Chrome <https://docs.blackfire.io/integrations/browsers/chrome>`_).
 If you have any problems, read our `troubleshooting
-<https://support.blackfire.platform.sh/hc/en-us/sections/4792498935058-Troubleshooting>`_
+<https://support.blackfire.upsun.com/hc/en-us/sections/37504662359698-Troubleshooting>`_
 guide or :route:`contact our support <contact-us>`.
 
 Once you're able to generate a profile, use the profiling methodology we
