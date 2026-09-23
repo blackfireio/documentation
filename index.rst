@@ -28,6 +28,7 @@ Blackfire Documentation
     Performance Testing <testing-cookbooks/index>
     Synthetic Monitoring <builds-cookbooks/index>
     front-end-observability/index
+    AI Agents <ai-agents/index>
     Integrations <integrations/index>
     reference-guide/index
     CHANGELOGs <changelogs/index>
