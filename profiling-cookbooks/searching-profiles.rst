@@ -40,3 +40,24 @@ Sharing Search Queries
 
 As you search, the URL automatically updates. You can copy and share it with
 your teammates to reproduce the same search view and collaborate more easily.
+
+.. _profiles-batch-actions:
+
+Batch actions
+-------------
+
+You can act on several profiles at once from the Profiles listing page.
+Batch actions only apply to profiles you own.
+
+Select the checkbox of each profile you want to act on. An action bar then
+appears above the list with the following actions:
+
+* **Change visibility**: make the selected profiles **public** or **private**.
+* **Migrate**: move the selected profiles to another
+  :doc:`environment </reference-guide/environments>`. See
+  :doc:`/profiling-cookbooks/migrating-profiles`.
+* **Delete**: delete the selected profiles.
+
+.. caution::
+
+    Deleting profiles cannot be undone.

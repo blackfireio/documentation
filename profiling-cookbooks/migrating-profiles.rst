@@ -15,6 +15,9 @@ want to move, then select the destination environment.
     :align: center
     :alt: Migrating a profile from one environment to another
 
+To migrate several profiles at once, select them and use the **Migrate**
+:ref:`batch action <profiles-batch-actions>`.
+
 Profiles Made with the Personal Agent
 -------------------------------------
 

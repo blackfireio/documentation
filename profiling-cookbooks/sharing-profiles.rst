@@ -28,6 +28,9 @@ You can also make a profile public to share it with anyone. Public profiles:
 Publicly sharing profiles makes them accessible to search engines. Only share
 content you're comfortable making public.
 
+To change the visibility of several profiles at once, use the **Change
+visibility** :ref:`batch action <profiles-batch-actions>` from the Profiles listing page.
+
 oEmbed
 ------
 
