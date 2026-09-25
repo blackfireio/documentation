@@ -64,8 +64,6 @@ hosting solutions, such as :doc:`Upsun </integrations/paas/upsun>` or
 to check out those dedicated pages if you are deploying there.
 
 Lastly, don't forget to configure your :doc:`reverse proxies or CDN </integrations/proxies/index>`.
-Make sure any IP filtering includes Blackfire IP addresses, so that data is
-always sent and received seamlessly.
 
 You're now ready to install all of the :doc:`Blackfire components <components>`
 needed to collect observability data for your applications.

@@ -107,15 +107,6 @@ as the value it provides to the Controller.
 **Blackfire is not a Processor of any data you collect from your users. There is
 therefore no need for you to have a Data Processing Addendum with Blackfire.**
 
-How Should I Configure my Firewall to let Blackfire Access my Apps?
--------------------------------------------------------------------
-
-When configuring Blackfire to run performance test scenarios on your application,
-the Blackfire servers need access to your application's servers.
-If the profiled application is behind a firewall, let the Blackfire servers
-access the application by allowing IPs ``46.51.168.2`` and ``54.75.240.245`` in
-your configuration for the web ports (usually ``80`` and ``443``).
-
 What Do Function Suffixes like ``@1`` Mean?
 -------------------------------------------
 

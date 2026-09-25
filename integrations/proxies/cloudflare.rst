@@ -31,9 +31,6 @@ code in the online editor:
 
     async function handleRequest(request) {
         const acl = [
-            // Blackfire.io IPs
-            // Ref https://docs.blackfire.io/reference-guide/faq#how-should-i-configure-my-firewall-to-let-blackfire-access-my-apps
-            '46.51.168.2', '54.75.240.245'
             // Add your own IPs here, from which you'd like to disable the cache.
             // 'x.y.z.w'
         ]

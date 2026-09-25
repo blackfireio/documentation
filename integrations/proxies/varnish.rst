@@ -13,11 +13,6 @@ VCL Sample
     acl profile {
        # Authorized IPs, add your own IPs from which you want to profile.
        "x.y.z.w";
-
-       # Add the Blackfire.io IPs when using builds:
-       # Ref https://docs.blackfire.io/reference-guide/faq#how-should-i-configure-my-firewall-to-let-blackfire-access-my-apps
-       "46.51.168.2";
-       "54.75.240.245";
     }
 
     sub vcl_recv {
