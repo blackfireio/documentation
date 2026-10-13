@@ -15,7 +15,8 @@ Not only can you discover what issues occurred but **when and where** they
 happened as well.
 
 The interactive dashboard lies at the heart of Blackfire monitoring. It allows
-you to filter monitoring data based on HTTP host, HTTP method, host, and runtime.
+you to filter monitoring data based on HTTP host, HTTP method, host, runtime, and
+:ref:`application <monitoring_filtering_by_application>`.
 
 .. image:: ../images/monitoring/monitoring-dashboard.png
     :width: 500px
