@@ -292,8 +292,87 @@ Please find the documentation about deprecations in `the official PHP 8.3 migrat
 
 Please find the documentation about deprecations in `the official PHP 8.4 migration guide`_.
 
+**Deprecated in PHP 8.5**
+
+Calls to these functions are reported only when the profiled application runs PHP 8.5 or later.
+
+* ``curl_close()``, ``curl_share_close()``, ``imagedestroy()`` and ``xml_parser_free()``
+
+These functions have no effect since PHP 8.0. Remove the calls.
+
+* ``finfo_close()``
+
+``finfo`` objects are freed automatically. Remove the calls.
+
+* ``ReflectionMethod::setAccessible()`` and ``ReflectionProperty::setAccessible()``
+
+These methods have no effect since PHP 8.1. Remove the calls.
+
+* ``SplObjectStorage::attach()``, ``SplObjectStorage::detach()`` and ``SplObjectStorage::contains()``
+
+Use ``SplObjectStorage::offsetSet()``, ``SplObjectStorage::offsetUnset()`` and ``SplObjectStorage::offsetExists()``
+instead.
+
+* ``mysqli_execute()`` and ``socket_set_timeout()``
+
+Use ``mysqli_stmt_execute()`` and ``stream_set_timeout()`` instead.
+
+* ``__wakeup()`` of ``DateTime``, ``DateTimeImmutable``, ``DateTimeZone``, ``DateInterval`` and ``DatePeriod``
+
+Use ``__unserialize()`` instead.
+
+* PDO driver specific methods
+
+``PDO::pgsqlCopyFromArray()``, ``PDO::sqliteCreateFunction()`` and the other ``PDO::pgsql*()`` and ``PDO::sqlite*()``
+methods should be replaced by the methods of the driver specific classes, like ``Pdo\Pgsql::copyFromArray()`` or
+``Pdo\Sqlite::createFunction()``.
+
+Please find the documentation about deprecations in `the official PHP 8.5 migration guide`_.
+
+**Deprecated in PHP 8.6**
+
+Calls to these functions are reported only when the profiled application runs PHP 8.6 or later.
+
+* ``mb_ereg()``, ``mb_eregi()``, ``mb_ereg_replace()``, ``mb_split()`` and the other multibyte regular expression functions
+
+The Oniguruma library behind these functions is not maintained anymore. Use the ``preg_*()`` functions with the ``u``
+modifier instead.
+
+* ``doubleval()``, ``is_double()``, ``is_integer()`` and ``is_long()``
+
+Use ``floatval()``, ``is_float()`` and ``is_int()`` instead.
+
+* ``spl_object_hash()`` and ``spl_classes()``
+
+Use ``spl_object_id()`` and ``ReflectionExtension::getClassNames()`` instead.
+
+* ``strcoll()`` and ``metaphone()``
+
+Use ``Collator::compare()`` instead of ``strcoll()``, and a userland phonetic matching library instead of
+``metaphone()``.
+
+* ``mysqli_get_charset()`` and ``mysqli_stmt_init()``
+
+Use ``mysqli_character_set_name()`` and ``mysqli_prepare()`` instead. The ``mysqli::get_charset()`` and
+``mysqli::stmt_init()`` methods are deprecated too.
+
+* ``ArrayIterator`` sorting, flags and serialization methods
+
+``ArrayIterator::asort()``, ``ksort()``, ``uasort()``, ``uksort()``, ``natsort()``, ``natcasesort()``, ``getFlags()``,
+``setFlags()``, ``serialize()`` and ``unserialize()`` are deprecated. These methods are still available on
+``ArrayObject``.
+
+* ``SplFileObject`` CSV methods
+
+``SplFileObject::fgetcsv()``, ``fputcsv()``, ``getCsvControl()`` and ``setCsvControl()`` are deprecated. Use the
+``fgetcsv()`` and ``fputcsv()`` functions instead.
+
+Please find the documentation about deprecations in `the official PHP 8.6 migration guide`_.
+
 .. _`the official PHP 8.0 migration guide`: https://www.php.net/manual/en/migration80.deprecated.php
 .. _`the official PHP 8.1 migration guide`: https://www.php.net/manual/en/migration81.deprecated.php
 .. _`the official PHP 8.2 migration guide`: https://www.php.net/manual/en/migration82.deprecated.php
 .. _`the official PHP 8.3 migration guide`: https://www.php.net/manual/en/migration83.deprecated.php
 .. _`the official PHP 8.4 migration guide`: https://www.php.net/manual/en/migration84.deprecated.php
+.. _`the official PHP 8.5 migration guide`: https://www.php.net/manual/en/migration85.deprecated.php
+.. _`the official PHP 8.6 migration guide`: https://www.php.net/manual/en/migration86.deprecated.php
