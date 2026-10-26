@@ -26,6 +26,17 @@ You can use the following environment variables:
 
     BLACKFIRE_DEBUG_SIGSEGV_HANDLER=0
 
+- ``BLACKFIRE_APM_CLI_WORKERS``
+
+  Monitors Symfony Messenger workers without code changes: one transaction per
+  message. In beta. See :ref:`symfony-messenger-automatic-monitoring`.
+
+  Default value is ``0`` (disabled).
+
+  .. code-block:: bash
+
+    BLACKFIRE_APM_CLI_WORKERS=1
+
 .. include:: /up-and-running/configuration/_client_env_vars.rst
 .. include:: /up-and-running/configuration/_client_env_vars_server_cred.rst
 .. include:: /up-and-running/configuration/_client_env_vars_example.rst
@@ -87,6 +98,11 @@ You can also configure the PHP probe via your ``php.ini`` configuration file:
     ; Controls Front-end Observability tracking snippet injection.
     ; Enabled by default
     ;blackfire.apm_enable_automatic_browser_probe = 1
+
+    ; Monitors Symfony Messenger workers without code changes (beta).
+    ; Can also be set with the BLACKFIRE_APM_CLI_WORKERS environment variable.
+    ; Disabled by default
+    ;blackfire.apm_cli_workers = 0
 
 .. note::
 

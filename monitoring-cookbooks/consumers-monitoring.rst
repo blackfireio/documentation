@@ -19,7 +19,25 @@ The consumers and CLI command monitoring data can be displayed toggling the Web/
 Enabling CLI Monitoring
 -----------------------
 
-Instrumentation of CLI commands and consumers needs to be manually triggered:
+Symfony Messenger workers
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For PHP applications, a single setting monitors your Symfony Messenger workers
+without any code change. Blackfire creates one transaction per consumed
+message. This feature is in beta and opt-in:
+
+.. code-block:: ini
+
+    blackfire.apm_cli_workers = 1
+
+See :ref:`automatic monitoring <symfony-messenger-automatic-monitoring>` for
+the requirements, and :ref:`concurrent workers <symfony-messenger-concurrent-workers>`
+to monitor workers started with ``--concurrency``.
+
+Other CLI commands and consumers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You instrument other CLI commands and consumers manually:
 
 **PHP Application**
 
