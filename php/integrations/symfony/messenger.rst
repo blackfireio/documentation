@@ -54,8 +54,13 @@ What Blackfire monitors
   uses the name of the wrapped message, ``RunCommandMessage`` the command name,
   and a Scheduler ``ServiceCallMessage`` the service and method
   (``@service::method``). Each scheduled task gets its own name.
+* When a worker only forwards a received message to another transport, like a
+  Scheduler task routed to a transport or an outbox relay, the transaction name
+  gets a ``(forward)`` suffix, so it does not mix with the transaction of the
+  worker that handles the message.
 * Blackfire creates one transaction per batch handler flush, named after the
-  handler class.
+  handler class. When several batch handlers of the same message flush
+  together, the name lists their classes.
 * Blackfire measures peak memory per message, not for the whole worker process.
 * Blackfire samples messages like web requests and counts failed messages as
   errors.
