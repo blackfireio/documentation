@@ -19,20 +19,22 @@ The consumers and CLI command monitoring data can be displayed toggling the Web/
 Enabling CLI Monitoring
 -----------------------
 
-Symfony Messenger workers
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Symfony Messenger and Laravel queue workers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For PHP applications, a single setting monitors your Symfony Messenger workers
-without any code change. Blackfire creates one transaction per consumed
-message. This feature is in beta and opt-in:
+For PHP applications, a single setting monitors your Symfony Messenger and
+Laravel queue workers without any code change. Blackfire creates one
+transaction per consumed message or processed job. This feature is in beta and
+opt-in:
 
 .. code-block:: ini
 
     blackfire.apm_cli_workers = 1
 
-See :ref:`automatic monitoring <symfony-messenger-automatic-monitoring>` for
-the requirements, and :ref:`concurrent workers <symfony-messenger-concurrent-workers>`
-to monitor workers started with ``--concurrency``.
+See :ref:`Symfony Messenger <symfony-messenger-automatic-monitoring>` and
+:ref:`Laravel queue <laravel-queue-automatic-monitoring>` automatic monitoring
+for the requirements, and :ref:`concurrent workers <symfony-messenger-concurrent-workers>`
+to monitor Messenger workers started with ``--concurrency``.
 
 Other CLI commands and consumers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

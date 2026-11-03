@@ -28,8 +28,10 @@ You can use the following environment variables:
 
 - ``BLACKFIRE_APM_CLI_WORKERS``
 
-  Monitors Symfony Messenger workers without code changes: one transaction per
-  message. In beta. See :ref:`symfony-messenger-automatic-monitoring`.
+  Monitors Symfony Messenger and Laravel queue workers without code changes: one
+  transaction per message or job. In beta. See
+  :ref:`symfony-messenger-automatic-monitoring` and
+  :ref:`laravel-queue-automatic-monitoring`.
 
   Default value is ``0`` (disabled).
 
@@ -99,7 +101,7 @@ You can also configure the PHP probe via your ``php.ini`` configuration file:
     ; Enabled by default
     ;blackfire.apm_enable_automatic_browser_probe = 1
 
-    ; Monitors Symfony Messenger workers without code changes (beta).
+    ; Monitors Symfony Messenger and Laravel queue workers without code changes (beta).
     ; Can also be set with the BLACKFIRE_APM_CLI_WORKERS environment variable.
     ; Disabled by default
     ;blackfire.apm_cli_workers = 0

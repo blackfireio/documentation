@@ -6,12 +6,35 @@ like any PHP application.
 
 :doc:`Install Blackfire for PHP </install/php>`.
 
-However, in some cases, you may want to go further and :doc:`monitor messages
-processing </php/integrations/laravel/horizon>` or :doc:`monitor Artisan commands
+.. _laravel-transaction-names:
+
+Transaction names
+-----------------
+
+The **Probe** names your HTTP transactions after the code that handles them:
+
+* A controller action takes the controller class and method, like
+  ``App\Http\Controllers\UserController::show``.
+* A closure route takes its route name when it has one, like ``users.show``,
+  and its method and URI otherwise, like ``GET /users/{id}``. ``HEAD``
+  requests share the name of the matching ``GET`` route.
+* A Livewire 3 or 4 update takes the component name and the first method it
+  calls, like ``livewire counter@increment``, so each interaction gets its own
+  transaction. An update that calls no method, such as a property change, takes
+  the component name alone, like ``livewire counter``.
+
+When a route dispatches another route, the outer route names the transaction.
+
+Naming closure routes and Livewire updates requires Blackfire PHP Probe
+``>= 2026.11.0``.
+
+However, in some cases, you may want to go further and :doc:`monitor your
+queue workers </php/integrations/laravel/horizon>`, automatically with the
+**Probe** or with the SDK, or :doc:`monitor Artisan commands
 </php/integrations/laravel/artisan>`.
 
-For these advanced cases, the Blackfire PHP SDK provides the following integrations
-with Laravel:
+For these advanced cases, Blackfire provides the following integrations with
+Laravel:
 
 .. toctree::
     :maxdepth: 1
@@ -21,8 +44,6 @@ with Laravel:
     octane
 
 The Laravel ecosystem also offers extensive support for Blackfire. Find more about:
-
-* Blackfire on `Laravel Forge <https://forge.laravel.com/docs/1.0/resources/integrations.html#blackfire-io>`_
 
 * Blackfire on `Laravel Homestead <https://laravel.com/docs/master/homestead#profiling-applications-with-blackfire>`_
 
