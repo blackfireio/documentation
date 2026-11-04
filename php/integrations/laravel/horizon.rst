@@ -55,15 +55,15 @@ What Blackfire monitors
   the queued event listener, mailable or notification it carries. A queued
   closure is named after its file and line, like ``Closure (web.php:12)``.
 * Blackfire measures peak memory per job, not for the whole worker process.
-* Blackfire samples jobs like web requests and counts failed jobs as errors. A
-  job fails when it throws an exception, even when Laravel retries it later, or
-  when it calls ``$this->fail()``.
-* When a job exceeds its timeout, Blackfire sends its transaction as failed
-  before the worker kills the process. Job timeouts require the ``pcntl``
-  extension, as in Laravel.
+* Blackfire samples jobs like web requests. Monitoring does not report errors
+  for CLI transactions, so a job that throws an exception or calls
+  ``$this->fail()`` appears like a successful one.
+* When a job exceeds its timeout, Blackfire sends its transaction before the
+  worker kills the process. Job timeouts require the ``pcntl`` extension, as in
+  Laravel.
 * A job that the ``Skip`` middleware deletes never runs, so it creates no
-  transaction. A job released back to the queue without an exception, for
-  instance by the ``RateLimited`` middleware, counts as a success.
+  transaction. A job released back to the queue, for instance by the
+  ``RateLimited`` middleware, gets a new transaction each time a worker runs it.
 
 .. tip::
 

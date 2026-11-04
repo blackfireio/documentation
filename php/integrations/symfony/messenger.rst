@@ -62,8 +62,9 @@ What Blackfire monitors
   handler class. When several batch handlers of the same message flush
   together, the name lists their classes.
 * Blackfire measures peak memory per message, not for the whole worker process.
-* Blackfire samples messages like web requests and counts failed messages as
-  errors.
+* Blackfire samples messages like web requests. Monitoring does not report
+  errors for CLI transactions, so a failed message appears like a successful
+  one.
 
 .. tip::
 
