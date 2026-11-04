@@ -1,9 +1,5 @@
-FrankenPHP [language: PHP][status: beta]
-========================================
-
-.. caution::
-
-    FrankenPHP support is in beta and not yet feature-complete.
+FrankenPHP [language: PHP]
+==========================
 
 `FrankenPHP <https://frankenphp.dev/>`_ is a modern application server for PHP
 built on top of the `Caddy <https://caddyserver.com/>`_ webserver
@@ -11,12 +7,12 @@ built on top of the `Caddy <https://caddyserver.com/>`_ webserver
 Requirements
 ------------
 
-- :doc:`PHP Probe </up-and-running/update>` >= ``v2026.8.4``
+- :doc:`PHP Probe </up-and-running/update>` >= ``v2026.10.4``
 
 Coverage
 --------
 
-- :doc:`Deterministic Profiling </monitoring-cookbooks/index>`: Fully supported.
+- :doc:`Deterministic Profiling </profiling-cookbooks/index>`: Fully supported.
 - :doc:`Monitoring </monitoring-cookbooks/index>`: Supported, with Automatic Profiling.
 - :doc:`Continuous Profiling </continuous-profiling-cookbooks/index>`: Supported
   via the Datadog extension on ZTS builds.
@@ -54,9 +50,3 @@ Support
 `Watching for files mode <https://frankenphp.dev/docs/config/#watching-for-file-changes>`_ isn't supported yet.
 
 `Hot Reloading <https://frankenphp.dev/docs/hot-reload/>`_ isn't supported yet.
-
-Report an issue
----------------
-
-FrankenPHP support is still in beta.
-If you run into a problem, please `open a ticket on the Blackfire support site <https://support.blackfire.io>`_.
