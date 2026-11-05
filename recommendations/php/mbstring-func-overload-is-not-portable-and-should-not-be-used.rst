@@ -9,9 +9,9 @@ issues when used with third-party libraries that don't expect the string
 functions to behave differently than the default ones.
 
 For these reasons, the ``mbstring.func_overload`` setting has been deprecated in
-PHP 7.2. and it's strongly recommended to disable it in your ``php.ini``
-configuration using ``mbstring.func_overload=off`` (or by removing it, since
-"off" is the default value).
+PHP 7.2 and removed in PHP 8.0. It's strongly recommended to disable it in your
+``php.ini`` configuration using ``mbstring.func_overload=off`` (or by removing
+it, since "off" is the default value).
 
 .. _`mbstring.func_overload`: https://www.php.net/manual/en/mbstring.overload.php
 .. _`mbstring`: https://www.php.net/manual/en/book.mbstring.php

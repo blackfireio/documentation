@@ -8,6 +8,7 @@ is generated and sent back to the browser.
 
 Disabling this setting makes you vulnerable to `session fixation`_ attacks and
 therefore, you should always enable it using ``session.use_strict_mode=On``.
+PHP 8.6 enables it by default.
 
 .. _`session.use_strict_mode`: https://www.php.net/manual/en/session.configuration.php#ini.session.use-strict-mode
 .. _`session fixation`: https://www.owasp.org/index.php/Session_fixation

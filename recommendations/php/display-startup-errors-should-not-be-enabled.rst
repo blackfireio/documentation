@@ -12,6 +12,7 @@ Displaying these messages is useful in development to debug configuration issues
 However, displaying them in production is a bad practice you should avoid.
 
 It's strongly recommended to disable this setting in your ``php.ini``
-configuration using ``display_startup_errors=off``.
+configuration using ``display_startup_errors=off``, as it is enabled by default
+since PHP 8.0.
 
 .. _`display_startup_errors`: https://www.php.net/manual/en/errorfunc.configuration.php#ini.display-startup-errors

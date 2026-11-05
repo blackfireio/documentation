@@ -9,7 +9,8 @@ If the server memory is completely full, the whole system will slow down, making
 your server an easy target for `denial of service attacks`_.
 
 It's strongly recommended to reduce this setting in your ``php.ini``
-configuration using ``memory_limit=256M``.
+configuration using ``memory_limit=256M``. The ``-1`` value removes the limit,
+so it fails this recommendation too.
 
 .. _`memory_limit`: https://www.php.net/manual/en/ini.core.php#ini.memory-limit
 .. _`denial of service attacks`: https://en.wikipedia.org/wiki/Denial-of-service_attack

@@ -15,5 +15,8 @@ Displaying errors this way is a bad practice you should avoid. Use the
 It's strongly recommended to disable this setting in your ``php.ini``
 configuration using ``display_errors=off``.
 
+Blackfire only checks this setting on HTTP requests, as the PHP CLI enables it
+by default to print errors in the console running the command.
+
 .. _`display_errors`: https://www.php.net/manual/en/errorfunc.configuration.php#ini.display-errors
 .. _`log_errors`: https://www.php.net/manual/en/errorfunc.configuration.php#ini.log-errors

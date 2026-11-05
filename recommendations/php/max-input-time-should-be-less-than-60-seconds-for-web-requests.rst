@@ -9,7 +9,10 @@ in reaching this limit more easily, turning your server into an easy target for
 `denial of service attacks`_.
 
 It's strongly recommended to reduce this setting in your ``php.ini``
-configuration using ``max_input_time=60``.
+configuration using ``max_input_time=60``. The PHP default value ``-1`` uses
+the `max_execution_time`_ value instead, so it passes when ``max_execution_time``
+is between 1 and 60 seconds.
 
 .. _`max_input_time`: https://www.php.net/manual/en/info.configuration.php#ini.max-input-time
 .. _`denial of service attacks`: https://en.wikipedia.org/wiki/Denial-of-service_attack
+.. _`max_execution_time`: https://www.php.net/manual/en/info.configuration.php#ini.max-execution-time

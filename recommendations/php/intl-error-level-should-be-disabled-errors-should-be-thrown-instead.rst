@@ -12,10 +12,15 @@ exceptions instead. `Exceptions`_ are explicit, can be caught, and carry enough
 information to help debugging.
 
 Consider using the `set of functions`_ provided by the internationalization
-extension to detect errors, such as ``intl_get_error_code()``.
+extension to detect errors, such as ``intl_get_error_code()``, or enable the
+`intl.use_exceptions`_ ini setting to throw exceptions on errors.
+
+PHP 8.5 deprecates the ``intl.error_level`` setting and emits a deprecation
+notice when its value is not ``0``.
 
 .. _`intl.error_level`: https://www.php.net/manual/en/intl.configuration.php#ini.intl.error-level
 .. _`internationalization functions`: https://www.php.net/manual/en/book.intl.php
 .. _`error handling predefined constants`: https://www.php.net/manual/en/errorfunc.constants.php
 .. _`Exceptions`: https://www.php.net/manual/en/language.exceptions.php
 .. _`set of functions`: https://www.php.net/manual/en/ref.intl.php
+.. _`intl.use_exceptions`: https://www.php.net/manual/en/intl.configuration.php#ini.intl.use-exceptions

@@ -11,7 +11,8 @@ application performance.
 
 This option should only be enabled when debugging and it must be disabled in
 production. Disable this setting using ``opcache.consistency_checks=0`` or
-remove this setting (since ``0`` is the default value).
+remove this setting (since ``0`` is the default value). PHP 8.3 removed this
+setting.
 
 .. _`OPcache`: https://www.php.net/manual/en/book.opcache.php
 .. _`opcodes`: https://en.wikipedia.org/wiki/Opcode

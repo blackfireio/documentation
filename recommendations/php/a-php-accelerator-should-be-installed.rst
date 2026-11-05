@@ -6,7 +6,10 @@ caching the `opcodes`_ generated when PHP files are compiled before executing
 them.
 
 Since PHP 5.5.0, `Zend OPcache`_ has been integrated into PHP and is the best
-choice for opcode caching.
+choice for opcode caching. Since PHP 8.5, it is always loaded, and the
+``opcache.enable`` ini setting still turns it on or off.
+
+Blackfire checks this recommendation on HTTP requests only.
 
 Prior to this version, we recommend to use `APC`_ as opcode cache.
 
